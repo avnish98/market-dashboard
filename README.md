@@ -38,4 +38,4 @@ Runs optimizer to create best portfolio using strategies in pyportfolioopt
 
 ## User Dashboard
 Stores data of stocks owned by user.
-Displays metrics like Stop loss and profit exit.
+Displays metrics like Stop loss and profit exit (dynamic).
