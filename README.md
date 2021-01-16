@@ -9,11 +9,11 @@
 * Python (Scikit-learn, Pandas, Dash(Django+Plotly))
 
 ## Components
-* Datalake
+* Database
 * Portfolio Optimizers
 * User Dashboard
 
-## Datalake
+## Database
 Database local (or global in future) to store OHLC data of all stocks (in index or on exchange).
 Updates every business day with close price of last day.
 
