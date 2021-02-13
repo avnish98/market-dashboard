@@ -294,7 +294,7 @@ class Nifty500(Index):
         outdated = {}
         for ticker in self.ticker_list:
             try:
-                temp_df = pd.read_csv(source+"/{}.csv".format(ticker))
+                temp_df = pd.read_csv("{}/{}.csv".format(source,ticker))
                 last_date = pd.to_datetime(temp_df['Date']).values[-1]
             
                 if(last_date != last_bday):
