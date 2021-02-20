@@ -27,67 +27,53 @@ class Index:
         Fetcher object, contains methods for fetching data    
     ticker_list : list[str]
         List of constituent tickers
+    ohlc_dir : str
+        Location of OHLC data
+    metadata_dir : str
+        Location of Metadata
     
     Methods
     -------
-    update_list(link=str, dest=str): void
-        Updates static CSV containing tickers
-    read_list(source=str): void
-        Reads static CSV containing tickers into ticker_list
-    fetch_metadata(dest=str, update_list=bool): void
+    read_list(): void
+        Reads static CSV containing tickers into ticker_list, updates if specified
+    fetch_metadata(hiccup=int): void
         Fetches metadata and stores as static CSVs
-    fetch_data(dest=str, start_date=datetime.date, end_date=datetime.date, update_list=bool): void
+    fetch_data(start_date=datetime.date, end_date=datetime.date, hiccup=5): void
         Fetches OHLC data and stores as static CSVs
-    ohlc_updation_check(source=str): dict[str]=datetime.date
+    ohlc_updation_check(): dict[str]=datetime.date
         Checks if static CSVs are outdated and returns a dictionary
         of outdated tickers with last date as values
-    update_ohlc(source=str, hiccup=int): void
+    update_ohlc(hiccup=int): void
         Updates OHLC data using list from ohlc_updation_check()
     """
 
     def __init__(self):
         self.fetcher = None
         self.ticker_list = []
+        self.ohlc_dir = ''
+        self.metadata_dir = ''
 
-    def update_list(self, link='', dest=''):
-        """Updates static CSV containing tickers
-
-        Parameters
-        ----------
-        link : str
-            Link for reading ticker data
-        dest : str
-            Location to store ticker data (locally)
-        """
-
-        df = pd.read_csv(link)
-        df.to_csv(dest)
-    
-    def read_list(self, source=''):
-        """Reads static CSV containing tickers into ticker_list
+    def read_list(self, url='', update=False):
+        """Reads static CSV containing tickers
+        Updates if specified
 
         Parameters
         ----------
-        source : str
-            Source of local ticker data CSV
+        url : str
+            Hyperlink of ticker data
+        update: bool (False)
+            Toggle to update ticker list
         """
 
-        self.ticker_list = source
-    
-    def fetch_metadata(self, dest='', update_list=True):
+        pass 
+
+    def fetch_metadata(self):
         """Fetches metadata and stores as static CSVs
-
-        Parameters
-        ----------
-        dest : str
-            Location to store metadata (locally)
-        update_list : bool (True)
-            True if you want to update ticker list before downloading metadata
         """
 
         pass
     
-    def fetch_data(self, start_date=date(1980, 1, 1), end_date=date.today(), dest='', update_list=True):
+    def fetch_data(self, start_date=date(1980, 1, 1), end_date=date.today(), hiccup=5):
         """Fetches OHLC data and stores as static CSVs
 
         Parameters
@@ -96,41 +82,31 @@ class Index:
             Starting date of OHLC data
         end_date: datetime.date (Today)
             Ending date of OHLC data
-        dest : str
-            Location to store OHLC data (locally)
-        update_list : bool (True)
-            True if you want to update ticker list before downloading data
+        hiccup: int (5)
+            Pause between every OHLC fetch. Keep > 0 if you don't want to be 
+            blacklisted by provider
         """
 
         pass
 
 
-    def ohlc_updation_check(self, source=''):
+    def ohlc_updation_check(self):
         """Checks if static CSVs are outdated and returns a dictionary
         of outdated tickers with last date as values
-
-        Parameters
-        ----------
-        source : str
-            Location to OHLC data (locally)
         
         Returns
         -------
         outdated: dict[str] = datetime.date
             Dictionary of outdated tickers
         """
-        
-        self.read_list()
-        outdated = {}
-        return outdated
 
-    def update_ohlc(self, source="", hiccup=5):
+        pass
+
+    def update_ohlc(self, hiccup=5):
         """Updates OHLC data using list from ohlc_updation_check()
 
         Parameters
         ----------
-        source : str
-            Location to OHLC data (locally)
         hiccup: int (5)
             Pause between every OHLC fetch. Keep > 0 if you don't want to be 
             blacklisted by provider
@@ -146,60 +122,62 @@ class Nifty500(Index):
 
     Attributes
     ----------
-    fetcher : nsetools.nse.Nse
+    fetcher : nsetools.nse.Nse 
         Nse Fetcher object    
     ticker_list : list[str]
         List of constituent tickers
+    ohlc_dir : str
+        Location of OHLC data
+    metadata_dir : str
+        Location of Metadata
     
     Methods
     -------
-    update_list(link=str, dest=str): void
-        Updates static CSV containing tickers
-    read_list(source=str): void
+    read_list(url=str, update=bool): void
         Reads static CSV containing tickers into ticker_list
-    fetch_metadata(dest=str, update_list=bool): void
+    fetch_metadata(hiccup=int): void
         Fetches metadata and stores as static CSVs
-    fetch_data(dest=str, update_list=bool, hiccup=int): void
+    fetch_data(start_date=datetime.date, end_date=datetime.date, hiccup=int): void
         Fetches OHLC data and stores as static CSVs
-    ohlc_updation_check(source=str): dict[str]=datetime.date
+    ohlc_updation_check(): dict[str]=datetime.date
         Checks if static CSVs are outdated and returns a dictionary
         of outdated tickers with last date as values
-    update_ohlc(source=str, hiccup=int): void
-        Updates OHLC data using list from ohlc_updation_check()
+    update_ohlc(hiccup=int): void
+        Updates OHLC data using list from ohlc_updation_check(
     """
 
     def __init__(self):
         super().__init__()
         self.fetcher = Nse()
         self.ticker_list = []
+        self.ohlc_dir = 'static_files/NSE'
+        self.metadata_dir = 'static_files'
      
-    def read_list(self, source='static_files/nifty500list.csv'):
+    def read_list(self, url = 'https://www1.nseindia.com/content/indices/ind_nifty500list.csv', update=False):
         """Reads static CSV containing tickers into ticker_list
         By extarcting 'Symbol' column's values as python list
 
         Parameters
         ----------
-        source : str ('static_files/nifty500list.csv')
-            Source of local ticker data CSV
+        url : str
+            Hyperlink of ticker data
+        update: bool (False)
+            Toggle to update ticker list
         """
 
-        self.ticker_list = list(pd.read_csv(source)['Symbol'].values)
+        if(update):
+            try: 
+                df = pd.read_csv(url)
+                df.to_csv('{}/nifty_500_list.csv'.format(self.metadata_dir))
+
+            except Exception as e:
+                print("Exception {} occured ticker list not updated".format(e))
+
+        self.ticker_list = list(pd.read_csv("{}/nifty_500_list.csv".format(self.metadata_dir))['Symbol'].values)
     
-    def fetch_metadata(self, dest='static_files/nifty500metadata.csv', update_list=False):
+    def fetch_metadata(self, hiccup=5):
         """Fetches metadata and stores as static CSVs
-
-        Parameters
-        ----------
-        dest : str ('static_files/nifty500metadata.csv')
-            Location to store metadata (locally)
-        update_list : bool (False)
-            True if you want to update ticker list before downloading metadata
         """
-
-        url = 'https://www1.nseindia.com/content/indices/ind_nifty500list.csv'
-
-        if(update_list):
-            self.update_list(link = url, dest='static_files/nifty500list.csv')
 
         self.read_list()
 
@@ -220,10 +198,11 @@ class Nifty500(Index):
             progress +=1
             progress_perc = np.round((progress/num_tickers)*100, 2)
             print("Progress: {}% Last ticker: {}".format(progress_perc, c))
-        pd.DataFrame.from_dict(meta_data, orient='columns').to_csv(dest)
+            time.sleep(hiccup)
 
-    def fetch_data(self, start_date=date(1980, 1, 1), end_date=date.today(), 
-                   dest='static_files/NSE', update_list=False, hiccup=5):
+        pd.DataFrame.from_dict(meta_data, orient='columns').to_csv("{}/nifty_500_metadata.csv".format(self.metadata_dir))
+
+    def fetch_data(self, start_date=date(1980, 1, 1), end_date=date.today(), hiccup=5):
         """Fetches OHLC data and stores as static CSVs
 
         Parameters
@@ -232,20 +211,11 @@ class Nifty500(Index):
             Starting date of OHLC data
         end_date: datetime.date (Today)
             Ending date of OHLC data
-        dest : str
-            Location to store OHLC data (locally)
-        update_list : bool (True)
-            True if you want to update ticker list before downloading data
         hiccup: int (5)
             Pause between every OHLC fetch. Keep > 0 if you don't want to be 
             blacklisted by provider
         """
         
-        url = 'https://www1.nseindia.com/content/indices/ind_nifty500list.csv'
-
-        if(update_list):
-            self.update_list(link = url, dest='static_files/nifty500list.csv')
-
         self.read_list()
 
         num_tickers = len(self.ticker_list)
@@ -255,7 +225,7 @@ class Nifty500(Index):
         for c in self.ticker_list:
             try:
                 data = get_history(symbol=c, start=start_date, end=end_date)
-                data.to_csv("{}/{}.csv".format(dest, c))
+                data.to_csv("{}/{}.csv".format(self.ohlc_dir, c))
 
             except Exception as e:
                 print("Exception {} occured for ticker: {}".format(e, c))
@@ -264,18 +234,12 @@ class Nifty500(Index):
             progress +=1
             progress_perc = np.round((progress/num_tickers)*100, 2)
             print("Progress: {}% Last ticker: {}".format(progress_perc, c))
-
             time.sleep(hiccup)
     
-    def ohlc_updation_check(self, source='static_files/NSE'):
+    def ohlc_updation_check(self):
         """Checks if static CSVs are outdated and returns a dictionary
         of outdated tickers with last date as values
 
-        Parameters
-        ----------
-        source : str
-            Location to OHLC data (locally)
-        
         Returns
         -------
         outdated: dict[str] = datetime.date
@@ -294,7 +258,7 @@ class Nifty500(Index):
         outdated = {}
         for ticker in self.ticker_list:
             try:
-                temp_df = pd.read_csv("{}/{}.csv".format(source,ticker))
+                temp_df = pd.read_csv("{}/{}.csv".format(self.ohlc_dir,ticker))
                 last_date = pd.to_datetime(temp_df['Date']).values[-1]
             
                 if(last_date != last_bday):
@@ -310,13 +274,11 @@ class Nifty500(Index):
         
         return outdated
 
-    def update_ohlc(self, source="static_files/NSE", hiccup=5):
-        """Updates OHLC data using list from ohlc_updation_check()
+    def update_ohlc(self, hiccup=5):
+        """Updates OHLC data using dict from ohlc_updation_check()
 
         Parameters
         ----------
-        source : str
-            Location to OHLC data (locally)
         hiccup: int (5)
             Pause between every OHLC fetch. Keep > 0 if you don't want to be 
             blacklisted by provider
@@ -335,11 +297,11 @@ class Nifty500(Index):
 
                 try:
                     data = get_history(symbol=c, start=start_date, end=end_date)
-                    old_data = pd.read_csv("{}/{}.csv".format(source, c))
+                    old_data = pd.read_csv("{}/{}.csv".format(self.ohlc_dir, c))
                     old_data.set_index('Date', inplace=True)
 
                     new_data = pd.concat([old_data, data]).drop_duplicates()
-                    new_data.to_csv("{}/{}.csv".format(source, c))
+                    new_data.to_csv("{}/{}.csv".format(self.ohlc_dir, c))
 
                     last_date = new_data.index[-1]
 
@@ -350,7 +312,6 @@ class Nifty500(Index):
                 progress +=1
                 progress_perc = np.round((progress/num_tickers)*100, 2)
                 print("Progress: {}% Ticker: {} updated till: {}".format(progress_perc, c, last_date))
-
                 time.sleep(hiccup)
         
         else:
