@@ -37,8 +37,6 @@ app.layout = html.Div([
     html.Div(id='tabs-example-content')
 ])
 
-df = px.data.iris()
-df2 = pd.read_csv('3MINDIA.csv')
 
 # <div class="card border-secondary mb-3" style="max-width: 20rem;">
 #   <div class="card-header">Header</div>
@@ -71,7 +69,7 @@ def data_mapper(dump):
             print(e)
     return row_wrap(cards)
 
-df3 = pd.read_csv("nifty_500_metadata.csv")
+df3 = pd.read_csv("static_files/nifty_500_metadata.csv")
 @app.callback(Output('tabs-example-content', 'children'),
               Input('tabs-example', 'value'),
               Input('demo-dropdown', 'value'))
