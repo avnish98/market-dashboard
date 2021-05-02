@@ -9,6 +9,7 @@ It contains following classes
 
 import time
 from datetime import date, datetime
+import os
 
 import pandas as pd
 import numpy as np
@@ -150,8 +151,15 @@ class Nifty500(Index):
         super().__init__()
         self.fetcher = Nse()
         self.ticker_list = []
-        self.ohlc_dir = 'static_files/NSE'
-        self.metadata_dir = 'static_files'
+
+        if not os.path.exists('data'):
+            os.makedirs('data')
+        self.metadata_dir = 'data'
+
+        if not os.path.exists('data/NSE'):
+            os.makedirs('data/NSE')
+        self.ohlc_dir = 'data/NSE'
+
      
     def read_list(self, url = 'https://www1.nseindia.com/content/indices/ind_nifty500list.csv', update=False):
         """Reads static CSV containing tickers into ticker_list
