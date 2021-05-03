@@ -3,7 +3,7 @@ import json
 
 import pandas as pd
 
-from utils import find_in_json
+from utils import find_in_json, write_json
 
 class Cleaner:
     def __init__(self):
@@ -46,6 +46,7 @@ class Nifty500Cleaner(Cleaner):
                     'Ticker': entry['Symbol'],
                     'Company Name': entry['Company Name'],
                     'Sector':entry['Industry'],
+                    'Price':entry2['closePrice'],
                     'Book Closure End Date':entry2['bcEndDate'],
                     'Book Closure Start Date':entry2['bcStartDate'],
                     'Ex Date':entry2['exDate'],
@@ -54,5 +55,4 @@ class Nifty500Cleaner(Cleaner):
                     'OHLC Data Location':'{}/{}.csv'.format(self.ohlc_clean_data, entry['Symbol'])
                 })
         
-        with open('{}/nifty500.json'.format(self.metadata_clean), 'w') as outfile:
-            json.dump(metadata_json, outfile)
+        write_json(metadata_json, '{}/nifty500.json'.format(self.metadata_clean))

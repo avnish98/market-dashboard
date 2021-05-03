@@ -2,13 +2,18 @@ import os
 
 import pandas as pd
 
-from ds import Portfolio
+from ds import Portfolio, Stock
+from utils import read_json, find_in_json
 
-class PortfolioProcessor:
+class StockProcessor:
+    def __init__(self, symbol=None, ohlc_loc=None, meta_data_loc=None):
+        self.stock = Stock()
+        self.stock.load(find_in_json(read_json(meta_data_loc), 'Ticker', symbol))
+        
+class IndexProcessor:
     def __init__(self, ohlc_loc=None, meta_data_loc=None):
-        self.portfolio = Portfolio()
         self.ohlc_location = ohlc_loc
-        self.meta_data_json = []
+        self.meta_data_json = read_json(meta_data_loc)
         self.meta_data_loc = meta_data_loc
         self.close_matrix = pd.DataFrame
         self.returns_matrix = pd.DataFrame
@@ -33,8 +38,6 @@ class PortfolioProcessor:
         if(self.close_matrix.shape[0] != 0):
             self.cov_matrix = self.close_matrix.cov()
     
-    def process_metadata(self):
-        temp_df = pd.read_csv(self.meta_data_loc).to_dict(orient='records')
-        self.meta_data_json.append(temp_df)
-    # def process_latest_price(self):
-    #     return self.close_matrix.tail(1).T
+class PortfolioProcessor:
+    def __init__(self):
+        self.portfolio = Portfolio()
