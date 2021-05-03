@@ -8,7 +8,7 @@ from ds import Portfolio
 from processor import PortfolioProcessor
 
 class EffOptimizer:
-    def __init__(self, processor=PortfolioProcessor('data/NSE')):
+    def __init__(self, processor=IndexProcessor()):
         self.portfolio = Portfolio()
         self.processor = processor
         self.mu = expected_returns.capm_return(processor.close_matrix)
@@ -19,17 +19,17 @@ class EffOptimizer:
         self.optimizer = EfficientFrontier(self.mu, self.s)
 
         self.portfolio.composition = self.optimizer.max_sharpe()
-        self.portfolio.update_statistics(self.optimizer.portfolio_performance())
+        self.portfolio.construct(self.processor.meta_data_loc)
 
     def optimize_min_volatility(self):
         self.s = risk_models.sample_cov(self.processor.close_matrix)
         self.optimizer = EfficientFrontier(None, self.s)
 
         self.portfolio.composition = self.optimizer.min_volatility()
-        self.portfolio.update_statistics(self.optimizer.portfolio_performance())
+        self.portfolio.construct(self.processor.meta_data_loc)
 
 class HRPOptimizer:
-    def __init__(self, processor=PortfolioProcessor('data/NSE')):
+    def __init__(self, processor=IndexProcessor()):
         self.portfolio = Portfolio()
         self.processor = processor
 
@@ -41,10 +41,10 @@ class HRPOptimizer:
     def optimize(self):
         self.optimizer.optimize()
         self.portfolio.composition = self.optimizer.clean_weights()
-        self.portfolio.update_statistics(self.optimizer.portfolio_performance())
+        self.portfolio.construct(self.processor.meta_data_loc)
 
 class CLAOptimizer:
-    def __init__(self, processor=PortfolioProcessor('data/NSE')):
+    def __init__(self, processor=IndexProcessor()):
         self.portfolio = Portfolio()
         self.processor = processor
 
@@ -56,11 +56,11 @@ class CLAOptimizer:
 
     def optimize_max_sharpe(self):
         self.portfolio.composition = self.optimizer.max_sharpe()
-        self.portfolio.update_statistics(self.optimizer.portfolio_performance())
+        self.portfolio.construct(self.processor.meta_data_loc)
 
     def optimize_min_volatility(self):
         self.portfolio.composition = self.optimizer.min_volatility()
-        self.portfolio.update_statistics(self.optimizer.portfolio_performance())
+        self.portfolio.construct(self.processor.meta_data_loc)
 
 class DeepDowOptimizer:
     pass
