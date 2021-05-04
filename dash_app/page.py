@@ -17,7 +17,7 @@ class MainPage:
         df = self.data_processor.process_ohlc()
         page_content.append(dcc.Graph(figure=px.scatter(df, x='Date', y='Close')))
 
-    def render_data(self, meta_data):
+    def render_data(self, metadata):
         data_dump = self.data_processor.process_metadata()
 
         page_content.append()

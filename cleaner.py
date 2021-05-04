@@ -39,7 +39,7 @@ class Nifty500Cleaner(Cleaner):
         metadata2 = pd.read_csv('{}/nifty_500_metadata.csv'.format(self.metadata_raw)).to_dict(orient='records')
 
         for entry in metadata1: 
-            entry2 = find_in_json(metadata2, 'symbol', entry['Symbol'])
+            entry2 = find_in_json(metadata2, 'symbol', entry['Symbol'].replace('&', '&amp;'))
 
             if(entry2 is not None):
                 metadata_json.append({

@@ -215,13 +215,13 @@ class Nifty500Fetcher(IndexFetcher):
 
         num_tickers = len(self.ticker_list)
         progress = 0
-        meta_data = []
+        metadata = []
         exception_tickers = []
 
         for c in self.ticker_list:
             try:
                 data = self.fetcher.get_quote(c)
-                meta_data.append(data)
+                metadata.append(data)
             
             except Exception as e:
                 print("Exception {} occured for ticker: {}".format(e, c))
@@ -232,7 +232,7 @@ class Nifty500Fetcher(IndexFetcher):
             print("Progress: {}% Last ticker: {}".format(progress_perc, c))
             time.sleep(timeout)
 
-        pd.DataFrame.from_dict(meta_data, orient='columns').to_csv("{}/nifty_500_metadata.csv".format(self.metadata_dir))
+        pd.DataFrame.from_dict(metadata, orient='columns').to_csv("{}/nifty_500_metadata.csv".format(self.metadata_dir))
 
     def fetch_data(self, start_date=date(1980, 1, 1), end_date=date.today(), timeout=5):
         """Fetches OHLC data and stores as static CSVs
