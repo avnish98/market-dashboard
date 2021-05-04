@@ -1,4 +1,5 @@
 import json
+import pandas as pd
 
 def find_in_json(json_data, key, value):
     entry = None
@@ -17,3 +18,6 @@ def read_json(json_file):
 def write_json(json_data, json_file):
     with open(json_file, 'w') as outfile:
         json.dump(json_data, outfile, indent=4)
+
+def write_csv(df, csv_loc):
+    df.to_csv(csv_loc)
