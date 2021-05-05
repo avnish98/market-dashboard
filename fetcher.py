@@ -4,7 +4,7 @@ This script contains fetcher functions for metadata and OHLC data.
 
 It contains following classes
     * IndexFetcher: Base IndexFetcher Class
-    * Nifty500: Derived IndexFetcher Class for Nifty 500 Index
+    * Nifty500Fetcher: Derived IndexFetcher Class for Nifty 500 Index
 """
 
 import time
@@ -35,6 +35,8 @@ class IndexFetcher:
     
     Methods
     -------
+    make_dirs(): void
+        Creates prerequisite directories if not present already
     read_list(): void
         Reads static CSV containing tickers into ticker_list, updates if specified
     fetch_metadata(timeout=int): void
@@ -58,6 +60,9 @@ class IndexFetcher:
         self.metadata_dir = ''
     
     def make_dirs(self):
+        """Creates prerequisite directories if not present already
+        """
+
         if not os.path.exists('data'):
             os.makedirs('data')
         
@@ -72,6 +77,15 @@ class IndexFetcher:
 
         if not os.path.exists('data/cleaned/Metadata'):
             os.makedirs('data/cleaned/Metadata')
+        
+        if not os.path.exists('data/processed'):
+            os.makedirs('data/processed')
+        
+        if not os.path.exists('data/processed/OHLC'):
+            os.makedirs('data/processed/OHLC')
+
+        if not os.path.exists('data/processed/Metadata'):
+            os.makedirs('data/processed/Metadata')
 
     def read_list(self, url='', update=False):
         """Reads static CSV containing tickers
@@ -302,7 +316,7 @@ class Nifty500Fetcher(IndexFetcher):
             except Exception as e:
                 print("Exception: {} for ticker {}".format(e, ticker))
         
-        print("Total outdated tickers: {}".format(len(outdated)))
+        print("Total outdated tickers: {}\n".format(len(outdated)))
         
         return outdated
 

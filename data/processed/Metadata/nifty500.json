@@ -9,7 +9,8 @@
         "Ex Date": "19-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/3MINDIA.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/3MINDIA.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "ABB",
@@ -21,7 +22,8 @@
         "Ex Date": "19-APR-21",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 5 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/ABB.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/ABB.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "POWERINDIA",
@@ -33,7 +35,8 @@
         "Ex Date": "19-MAY-21",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS  2 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/POWERINDIA.csv"
+        "OHLC Data Location": null,
+        "OHLC Data Available": false
     },
     {
         "Ticker": "ACC",
@@ -45,7 +48,8 @@
         "Ex Date": "30-MAR-21",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 14 PER SHARE",
         "Record Date": "31-MAR-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/ACC.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/ACC.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "AIAENG",
@@ -57,7 +61,8 @@
         "Ex Date": "17-MAR-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 27 PER SHARE",
         "Record Date": "18-MAR-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/AIAENG.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/AIAENG.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "APLAPOLLO",
@@ -69,7 +74,8 @@
         "Ex Date": "15-DEC-20",
         "Purpose of Last Meeting": "FACE VALUE SPLIT (SUB-DIVISION) - FROM RS 10/- PER SHARE TO RS 2/- PER SHARE",
         "Record Date": "16-DEC-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/APLAPOLLO.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/APLAPOLLO.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "AUBANK",
@@ -81,7 +87,8 @@
         "Ex Date": "18-JUL-19",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 0.75 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/AUBANK.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/AUBANK.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "AARTIDRUGS",
@@ -93,7 +100,8 @@
         "Ex Date": "30-MAR-21",
         "Purpose of Last Meeting": "BUYBACK",
         "Record Date": "01-APR-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/AARTIDRUGS.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/AARTIDRUGS.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "AARTIIND",
@@ -105,7 +113,8 @@
         "Ex Date": "19-NOV-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 1.50 PER SHARE",
         "Record Date": "20-NOV-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/AARTIIND.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/AARTIIND.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "AAVAS",
@@ -117,7 +126,8 @@
         "Ex Date": NaN,
         "Purpose of Last Meeting": NaN,
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/AAVAS.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/AAVAS.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "ABBOTINDIA",
@@ -129,7 +139,8 @@
         "Ex Date": "28-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 107 PER SHARE AND SPECIAL DIVIDEND - RS 143 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/ABBOTINDIA.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/ABBOTINDIA.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "ADANIENT",
@@ -141,7 +152,8 @@
         "Ex Date": "17-JUN-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/ADANIENT.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/ADANIENT.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "ADANIGREEN",
@@ -153,7 +165,8 @@
         "Ex Date": "16-JUN-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/ADANIGREEN.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/ADANIGREEN.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "ADANIPORTS",
@@ -165,7 +178,8 @@
         "Ex Date": "17-JUN-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/ADANIPORTS.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/ADANIPORTS.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "ATGL",
@@ -177,7 +191,8 @@
         "Ex Date": "17-JUN-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/ATGL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/ATGL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "ADANITRANS",
@@ -189,7 +204,8 @@
         "Ex Date": "16-JUN-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/ADANITRANS.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/ADANITRANS.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "ABCAPITAL",
@@ -201,7 +217,8 @@
         "Ex Date": "16-AUG-18",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/ABCAPITAL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/ABCAPITAL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "ABFRL",
@@ -213,7 +230,8 @@
         "Ex Date": "30-JUN-20",
         "Purpose of Last Meeting": "RIGHTS 9:77 PARTLY PAID @ PREMIUM RS 100/-",
         "Record Date": "01-JUL-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/ABFRL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/ABFRL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "ADVENZYMES",
@@ -225,7 +243,8 @@
         "Ex Date": "09-JUL-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 0.60 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/ADVENZYMES.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/ADVENZYMES.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "AEGISCHEM",
@@ -237,7 +256,8 @@
         "Ex Date": "14-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 1.20 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/AEGISCHEM.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/AEGISCHEM.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "AFFLE",
@@ -249,7 +269,8 @@
         "Ex Date": NaN,
         "Purpose of Last Meeting": NaN,
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/AFFLE.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/AFFLE.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "AJANTPHARM",
@@ -261,7 +282,8 @@
         "Ex Date": "12-NOV-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 9.50 PER SHARE",
         "Record Date": "13-NOV-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/AJANTPHARM.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/AJANTPHARM.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "AKZOINDIA",
@@ -273,7 +295,8 @@
         "Ex Date": "17-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 20 PER SHARE",
         "Record Date": "19-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/AKZOINDIA.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/AKZOINDIA.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "ALEMBICLTD",
@@ -285,7 +308,8 @@
         "Ex Date": "29-JUL-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 0.60 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/ALEMBICLTD.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/ALEMBICLTD.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "APLLTD",
@@ -297,7 +321,8 @@
         "Ex Date": "16-MAR-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 7 PER SHARE SPECIAL DIVIDEND - RS 3 PER SHARE",
         "Record Date": "17-MAR-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/APLLTD.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/APLLTD.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "ALKEM",
@@ -309,7 +334,8 @@
         "Ex Date": "11-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 25 PER SHARE",
         "Record Date": "13-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/ALKEM.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/ALKEM.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "ALKYLAMINE",
@@ -321,7 +347,8 @@
         "Ex Date": "11-MAY-21",
         "Purpose of Last Meeting": "FACE VALUE SPLIT (SUB-DIVISION) - FROM RS 5/- PER SHARE TO RS 2/- PER SHARE",
         "Record Date": "12-MAY-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/ALKYLAMINE.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/ALKYLAMINE.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "ALOKINDS",
@@ -333,7 +360,8 @@
         "Ex Date": NaN,
         "Purpose of Last Meeting": NaN,
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/ALOKINDS.csv"
+        "OHLC Data Location": null,
+        "OHLC Data Available": false
     },
     {
         "Ticker": "AMARAJABAT",
@@ -345,7 +373,8 @@
         "Ex Date": "25-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 5 PER SHARE",
         "Record Date": "26-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/AMARAJABAT.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/AMARAJABAT.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "AMBER",
@@ -357,7 +386,8 @@
         "Ex Date": "27-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/AMBER.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/AMBER.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "AMBUJACEM",
@@ -369,7 +399,8 @@
         "Ex Date": "19-MAR-21",
         "Purpose of Last Meeting": "DIVIDEND - RE 1 PER SHARE",
         "Record Date": "22-MAR-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/AMBUJACEM.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/AMBUJACEM.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "APOLLOHOSP",
@@ -381,7 +412,8 @@
         "Ex Date": "17-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 2.75 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/APOLLOHOSP.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/APOLLOHOSP.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "APOLLOTYRE",
@@ -393,7 +425,8 @@
         "Ex Date": "12-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/APOLLOTYRE.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/APOLLOTYRE.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "ASHOKLEY",
@@ -405,7 +438,8 @@
         "Ex Date": "28-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/ASHOKLEY.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/ASHOKLEY.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "ASHOKA",
@@ -417,7 +451,8 @@
         "Ex Date": "31-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/ASHOKA.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/ASHOKA.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "ASIANPAINT",
@@ -429,7 +464,8 @@
         "Ex Date": "28-OCT-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 3.35 PER SHARE",
         "Record Date": "30-OCT-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/ASIANPAINT.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/ASIANPAINT.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "ASTERDM",
@@ -441,7 +477,8 @@
         "Ex Date": "23-JAN-20",
         "Purpose of Last Meeting": "BUY BACK",
         "Record Date": "24-JAN-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/ASTERDM.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/ASTERDM.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "ASTRAZEN",
@@ -453,7 +490,8 @@
         "Ex Date": "20-AUG-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 2 PER SHARE",
         "Record Date": "21-AUG-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/ASTRAZEN.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/ASTRAZEN.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "ASTRAL",
@@ -465,7 +503,8 @@
         "Ex Date": "18-MAR-21",
         "Purpose of Last Meeting": "BONUS 1:3",
         "Record Date": "19-MAR-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/ASTRAL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/ASTRAL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "ATUL",
@@ -477,7 +516,8 @@
         "Ex Date": "18-MAR-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 15 PER SHARE",
         "Record Date": "19-MAR-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/ATUL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/ATUL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "AUROPHARMA",
@@ -489,7 +529,8 @@
         "Ex Date": "22-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 1.50 PER SHARE",
         "Record Date": "23-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/AUROPHARMA.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/AUROPHARMA.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "AVANTIFEED",
@@ -501,7 +542,8 @@
         "Ex Date": "20-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 0.10 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/AVANTIFEED.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/AVANTIFEED.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "DMART",
@@ -513,7 +555,8 @@
         "Ex Date": "24-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/DMART.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/DMART.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "AXISBANK",
@@ -525,7 +568,8 @@
         "Ex Date": "04-JUL-19",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/ DIVIDEND - RE 1 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/AXISBANK.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/AXISBANK.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "BASF",
@@ -537,7 +581,8 @@
         "Ex Date": "22-JUL-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 3 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/BASF.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/BASF.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "BEML",
@@ -549,7 +594,8 @@
         "Ex Date": "17-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 4.80 PER SHARE",
         "Record Date": "19-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/BEML.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/BEML.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "BSE",
@@ -561,7 +607,8 @@
         "Ex Date": "22-JUL-20",
         "Purpose of Last Meeting": "DIVIDEND - RS 17 PER SHARE",
         "Record Date": "23-JUL-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/BSE.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/BSE.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "BAJAJ-AUTO",
@@ -573,7 +620,8 @@
         "Ex Date": "03-MAR-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 120 PER SHARE",
         "Record Date": "04-MAR-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/BAJAJ-AUTO.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/BAJAJ-AUTO.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "BAJAJCON",
@@ -585,7 +633,8 @@
         "Ex Date": "11-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 6 PER SHARE",
         "Record Date": "13-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/BAJAJCON.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/BAJAJCON.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "BAJAJELEC",
@@ -597,7 +646,8 @@
         "Ex Date": "05-FEB-20",
         "Purpose of Last Meeting": "RIGHTS 13:118 @ PREMIUM RS 308/-",
         "Record Date": "06-FEB-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/BAJAJELEC.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/BAJAJELEC.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "BAJFINANCE",
@@ -609,7 +659,8 @@
         "Ex Date": "03-MAR-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 10 PER SHARE",
         "Record Date": "04-MAR-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/BAJFINANCE.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/BAJFINANCE.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "BAJAJFINSV",
@@ -621,7 +672,8 @@
         "Ex Date": "03-MAR-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 5 PER SHARE",
         "Record Date": "04-MAR-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/BAJAJFINSV.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/BAJAJFINSV.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "BAJAJHLDNG",
@@ -633,7 +685,8 @@
         "Ex Date": "03-MAR-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 40 PER SHARE",
         "Record Date": "04-MAR-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/BAJAJHLDNG.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/BAJAJHLDNG.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "BALKRISIND",
@@ -645,7 +698,8 @@
         "Ex Date": "15-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 5 PER SHARE",
         "Record Date": "16-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/BALKRISIND.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/BALKRISIND.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "BALMLAWRIE",
@@ -657,7 +711,8 @@
         "Ex Date": "17-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 7.50 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/BALMLAWRIE.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/BALMLAWRIE.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "BALRAMCHIN",
@@ -669,7 +724,8 @@
         "Ex Date": "11-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 2.50 PER SHARE",
         "Record Date": "12-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/BALRAMCHIN.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/BALRAMCHIN.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "BANDHANBNK",
@@ -681,7 +737,8 @@
         "Ex Date": "13-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/BANDHANBNK.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/BANDHANBNK.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "BANKBARODA",
@@ -693,7 +750,8 @@
         "Ex Date": "22-JUL-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/BANKBARODA.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/BANKBARODA.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "BANKINDIA",
@@ -705,7 +763,8 @@
         "Ex Date": "03-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/BANKINDIA.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/BANKINDIA.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "MAHABANK",
@@ -717,7 +776,8 @@
         "Ex Date": "03-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/MAHABANK.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/MAHABANK.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "BATAINDIA",
@@ -729,7 +789,8 @@
         "Ex Date": "29-JUL-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 4 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/BATAINDIA.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/BATAINDIA.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "BAYERCROP",
@@ -741,7 +802,8 @@
         "Ex Date": "27-JUL-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 25 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/BAYERCROP.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/BAYERCROP.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "BERGEPAINT",
@@ -753,7 +815,8 @@
         "Ex Date": "17-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 0.30 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/BERGEPAINT.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/BERGEPAINT.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "BDL",
@@ -765,7 +828,8 @@
         "Ex Date": "18-MAR-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 6.70 PER SHARE",
         "Record Date": "20-MAR-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/BDL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/BDL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "BEL",
@@ -777,7 +841,8 @@
         "Ex Date": "23-MAR-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 1.40  PER SHARE",
         "Record Date": "24-MAR-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/BEL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/BEL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "BHARATFORG",
@@ -789,7 +854,8 @@
         "Ex Date": "03-MAR-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 2 PER SHARE",
         "Record Date": "04-MAR-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/BHARATFORG.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/BHARATFORG.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "BHEL",
@@ -801,7 +867,8 @@
         "Ex Date": "18-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": "21-SEP-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/BHEL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/BHEL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "BPCL",
@@ -813,7 +880,8 @@
         "Ex Date": "25-MAR-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 5 PER SHARE",
         "Record Date": "27-MAR-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/BPCL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/BPCL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "BHARATRAS",
@@ -825,7 +893,8 @@
         "Ex Date": "04-MAR-21",
         "Purpose of Last Meeting": "BUY BACK",
         "Record Date": "05-MAR-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/BHARATRAS.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/BHARATRAS.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "BHARTIARTL",
@@ -837,7 +906,8 @@
         "Ex Date": "06-AUG-20",
         "Purpose of Last Meeting": "DIVIDEND - RS 2 PER SHARE",
         "Record Date": "07-AUG-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/BHARTIARTL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/BHARTIARTL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "BIOCON",
@@ -849,7 +919,8 @@
         "Ex Date": "18-JUL-19",
         "Purpose of Last Meeting": "DIVIDEND - RS 0.50 PER SHARE",
         "Record Date": "19-JUL-19",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/BIOCON.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/BIOCON.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "BIRLACORPN",
@@ -861,7 +932,8 @@
         "Ex Date": "17-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETINGDIVIDEND - RS 7.5 PER SH",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/BIRLACORPN.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/BIRLACORPN.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "BSOFT",
@@ -873,7 +945,8 @@
         "Ex Date": "12-NOV-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RE 1 PER SHARE",
         "Record Date": "13-NOV-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/BSOFT.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/BSOFT.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "BLISSGVS",
@@ -885,7 +958,8 @@
         "Ex Date": "17-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 0.50 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/BLISSGVS.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/BLISSGVS.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "BLUEDART",
@@ -897,7 +971,8 @@
         "Ex Date": "22-JUL-19",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/ DIVIDEND - 12.50 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/BLUEDART.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/BLUEDART.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "BLUESTARCO",
@@ -909,7 +984,8 @@
         "Ex Date": "19-MAR-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 10 PER SHARE",
         "Record Date": "20-MAR-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/BLUESTARCO.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/BLUESTARCO.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "BBTC",
@@ -921,7 +997,8 @@
         "Ex Date": "16-JUL-20",
         "Purpose of Last Meeting": "DIVIDEND - RS 1.20 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/BBTC.csv"
+        "OHLC Data Location": null,
+        "OHLC Data Available": false
     },
     {
         "Ticker": "BOMDYEING",
@@ -933,7 +1010,8 @@
         "Ex Date": "18-JUN-21",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/BOMDYEING.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/BOMDYEING.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "BOSCHLTD",
@@ -945,7 +1023,8 @@
         "Ex Date": "03-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 105 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/BOSCHLTD.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/BOSCHLTD.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "BRIGADE",
@@ -957,7 +1036,8 @@
         "Ex Date": "23-MAR-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RE 1 PER SHARE",
         "Record Date": "24-MAR-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/BRIGADE.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/BRIGADE.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "BRITANNIA",
@@ -969,7 +1049,8 @@
         "Ex Date": "08-APR-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 62 PER SHARE",
         "Record Date": "10-APR-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/BRITANNIA.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/BRITANNIA.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "CARERATING",
@@ -981,7 +1062,8 @@
         "Ex Date": "17-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 3 PER SHARE",
         "Record Date": "19-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/CARERATING.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/CARERATING.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "CCL",
@@ -993,7 +1075,8 @@
         "Ex Date": "28-OCT-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 2 PER SHARE",
         "Record Date": "30-OCT-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/CCL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/CCL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "CESC",
@@ -1005,7 +1088,8 @@
         "Ex Date": "22-JAN-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 45 PER SHARE",
         "Record Date": "25-JAN-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/CESC.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/CESC.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "CRISIL",
@@ -1017,7 +1101,8 @@
         "Ex Date": "05-MAY-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 7 PER SHARE",
         "Record Date": "06-MAY-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/CRISIL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/CRISIL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "CSBBANK",
@@ -1029,7 +1114,8 @@
         "Ex Date": "10-JUL-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/CSBBANK.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/CSBBANK.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "CADILAHC",
@@ -1041,7 +1127,8 @@
         "Ex Date": "12-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/CADILAHC.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/CADILAHC.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "CANFINHOME",
@@ -1053,7 +1140,8 @@
         "Ex Date": "18-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 2 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/CANFINHOME.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/CANFINHOME.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "CANBK",
@@ -1065,7 +1153,8 @@
         "Ex Date": "31-JUL-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/CANBK.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/CANBK.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "CAPLIPOINT",
@@ -1077,7 +1166,8 @@
         "Ex Date": "21-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 0.40 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/CAPLIPOINT.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/CAPLIPOINT.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "CGCL",
@@ -1089,7 +1179,8 @@
         "Ex Date": "23-JUL-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 0.20 PER SH",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/CGCL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/CGCL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "CARBORUNIV",
@@ -1101,7 +1192,8 @@
         "Ex Date": "11-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 1.50 PER SHARE",
         "Record Date": "12-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/CARBORUNIV.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/CARBORUNIV.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "CASTROLIND",
@@ -1113,7 +1205,8 @@
         "Ex Date": "22-APR-21",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 3 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/CASTROLIND.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/CASTROLIND.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "CEATLTD",
@@ -1125,7 +1218,8 @@
         "Ex Date": "19-MAR-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 12 PER SHARE",
         "Record Date": "20-MAR-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/CEATLTD.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/CEATLTD.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "CENTRALBK",
@@ -1137,7 +1231,8 @@
         "Ex Date": "31-JUL-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/CENTRALBK.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/CENTRALBK.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "CDSL",
@@ -1149,7 +1244,8 @@
         "Ex Date": "07-SEP-20",
         "Purpose of Last Meeting": "DIVIDEND - RS 4.50 PER SHARE",
         "Record Date": "08-SEP-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/CDSL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/CDSL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "CENTURYPLY",
@@ -1161,7 +1257,8 @@
         "Ex Date": "01-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/CENTURYPLY.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/CENTURYPLY.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "CENTURYTEX",
@@ -1173,7 +1270,8 @@
         "Ex Date": "14-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 3 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/CENTURYTEX.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/CENTURYTEX.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "CERA",
@@ -1185,7 +1283,8 @@
         "Ex Date": "26-FEB-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND-RS 13 PER SHARE",
         "Record Date": "27-FEB-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/CERA.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/CERA.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "CHALET",
@@ -1197,7 +1296,8 @@
         "Ex Date": "04-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/CHALET.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/CHALET.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "CHAMBLFERT",
@@ -1209,7 +1309,8 @@
         "Ex Date": "12-NOV-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 3 PER SHARE",
         "Record Date": "13-NOV-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/CHAMBLFERT.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/CHAMBLFERT.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "CHENNPETRO",
@@ -1221,7 +1322,8 @@
         "Ex Date": "03-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/CHENNPETRO.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/CHENNPETRO.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "CHOLAHLDNG",
@@ -1233,7 +1335,8 @@
         "Ex Date": "05-MAR-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RE 0.65 PER SH",
         "Record Date": "06-MAR-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/CHOLAHLDNG.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/CHOLAHLDNG.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "CHOLAFIN",
@@ -1245,7 +1348,8 @@
         "Ex Date": "09-FEB-21",
         "Purpose of Last Meeting": "INTERIMDIVIDEND - RS 1.30  PER SHARE",
         "Record Date": "10-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/CHOLAFIN.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/CHOLAFIN.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "CIPLA",
@@ -1257,7 +1361,8 @@
         "Ex Date": "11-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/CIPLA.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/CIPLA.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "CUB",
@@ -1269,7 +1374,8 @@
         "Ex Date": "26-MAR-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 0.50 PER SHARE",
         "Record Date": "27-MAR-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/CUB.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/CUB.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "COALINDIA",
@@ -1281,7 +1387,8 @@
         "Ex Date": "15-MAR-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 5 PER SHARE",
         "Record Date": "16-MAR-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/COALINDIA.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/COALINDIA.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "COCHINSHIP",
@@ -1293,7 +1400,8 @@
         "Ex Date": "23-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 4 PER SHARE",
         "Record Date": "24-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/COCHINSHIP.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/COCHINSHIP.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "COFORGE",
@@ -1305,7 +1413,8 @@
         "Ex Date": "14-MAY-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 11 PER SHARE",
         "Record Date": "15-MAY-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/COFORGE.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/COFORGE.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "COLPAL",
@@ -1317,7 +1426,8 @@
         "Ex Date": "30-MAR-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 20 PER SHARE",
         "Record Date": "31-MAR-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/COLPAL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/COLPAL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "CONCOR",
@@ -1329,7 +1439,8 @@
         "Ex Date": "18-NOV-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 3 PER SHARE",
         "Record Date": "19-NOV-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/CONCOR.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/CONCOR.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "COROMANDEL",
@@ -1341,7 +1452,8 @@
         "Ex Date": "10-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 6 PER SHARE",
         "Record Date": "11-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/COROMANDEL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/COROMANDEL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "CREDITACC",
@@ -1353,7 +1465,8 @@
         "Ex Date": "06-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/CREDITACC.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/CREDITACC.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "CROMPTON",
@@ -1365,7 +1478,8 @@
         "Ex Date": "03-NOV-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND-RS 3 PER SH",
         "Record Date": "04-NOV-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/CROMPTON.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/CROMPTON.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "CUMMINSIND",
@@ -1377,7 +1491,8 @@
         "Ex Date": "09-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 7 PER SHARE",
         "Record Date": "10-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/CUMMINSIND.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/CUMMINSIND.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "CYIENT",
@@ -1389,7 +1504,8 @@
         "Ex Date": "24-JUL-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/CYIENT.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/CYIENT.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "DBCORP",
@@ -1401,7 +1517,8 @@
         "Ex Date": "16-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/DBCORP.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/DBCORP.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "DCBBANK",
@@ -1413,7 +1530,8 @@
         "Ex Date": "02-JUL-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": "04-JUL-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/DCBBANK.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/DCBBANK.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "DCMSHRIRAM",
@@ -1425,7 +1543,8 @@
         "Ex Date": "27-JAN-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 5.50 PER SHARE",
         "Record Date": "28-JAN-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/DCMSHRIRAM.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/DCMSHRIRAM.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "DLF",
@@ -1437,7 +1556,8 @@
         "Ex Date": "15-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 0.80 PER SHARE",
         "Record Date": "16-SEP-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/DLF.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/DLF.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "DABUR",
@@ -1449,7 +1569,8 @@
         "Ex Date": "11-NOV-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 1.75 PER SHARE",
         "Record Date": "12-NOV-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/DABUR.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/DABUR.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "DALBHARAT",
@@ -1461,7 +1582,8 @@
         "Ex Date": "22-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/DALBHARAT.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/DALBHARAT.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "DEEPAKNTR",
@@ -1473,7 +1595,8 @@
         "Ex Date": "29-JUL-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/DEEPAKNTR.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/DEEPAKNTR.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "DELTACORP",
@@ -1485,7 +1608,8 @@
         "Ex Date": "07-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/DELTACORP.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/DELTACORP.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "DHANI",
@@ -1497,7 +1621,8 @@
         "Ex Date": "21-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/DHANI.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/DHANI.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "DHANUKA",
@@ -1509,7 +1634,8 @@
         "Ex Date": "25-SEP-20",
         "Purpose of Last Meeting": "BUYBACK",
         "Record Date": "28-SEP-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/DHANUKA.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/DHANUKA.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "DBL",
@@ -1521,7 +1647,8 @@
         "Ex Date": "18-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RE 1 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/DBL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/DBL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "DISHTV",
@@ -1533,7 +1660,8 @@
         "Ex Date": "05-NOV-18",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RE 0.50 PER SHARE",
         "Record Date": "06-NOV-18",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/DISHTV.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/DISHTV.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "DCAL",
@@ -1545,7 +1673,8 @@
         "Ex Date": "12-SEP-19",
         "Purpose of Last Meeting": "DIVIDEND - RS 0.20 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/DCAL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/DCAL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "DIVISLAB",
@@ -1557,7 +1686,8 @@
         "Ex Date": "04-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/DIVISLAB.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/DIVISLAB.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "DIXON",
@@ -1569,7 +1699,8 @@
         "Ex Date": "18-MAR-21",
         "Purpose of Last Meeting": "FACE VALUE SPLIT (SUB-DIVISION) - FROM RS 10/- PER SHARE TO RS 2/- PER SHARE",
         "Record Date": "19-MAR-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/DIXON.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/DIXON.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "LALPATHLAB",
@@ -1581,7 +1712,8 @@
         "Ex Date": "09-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS  6.00 PER SHARE",
         "Record Date": "10-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/LALPATHLAB.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/LALPATHLAB.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "DRREDDY",
@@ -1593,7 +1725,8 @@
         "Ex Date": "13-JUL-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 25 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/DRREDDY.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/DRREDDY.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "EIDPARRY",
@@ -1605,7 +1738,8 @@
         "Ex Date": "27-JUL-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/EIDPARRY.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/EIDPARRY.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "EIHOTEL",
@@ -1617,7 +1751,8 @@
         "Ex Date": "22-SEP-20",
         "Purpose of Last Meeting": "RIGHTS 8:85 @ PREMIUM RS 63/-",
         "Record Date": "23-SEP-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/EIHOTEL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/EIHOTEL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "EPL",
@@ -1629,7 +1764,8 @@
         "Ex Date": "20-NOV-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 2.05 PER SHARE",
         "Record Date": "23-NOV-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/EPL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/EPL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "ESABINDIA",
@@ -1641,7 +1777,8 @@
         "Ex Date": "17-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 19 PER SHARE",
         "Record Date": "18-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/ESABINDIA.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/ESABINDIA.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "EDELWEISS",
@@ -1653,7 +1790,8 @@
         "Ex Date": "07-APR-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 0.90 PER SHARE",
         "Record Date": "08-APR-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/EDELWEISS.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/EDELWEISS.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "EICHERMOT",
@@ -1665,7 +1803,8 @@
         "Ex Date": "24-AUG-20",
         "Purpose of Last Meeting": "FACE VALUE SPLIT (SUB-DIVISION) - FROM RS 10/- PER SHARE TO RE 1/- PER SHARE",
         "Record Date": "25-AUG-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/EICHERMOT.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/EICHERMOT.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "ELGIEQUIP",
@@ -1677,7 +1816,8 @@
         "Ex Date": "24-SEP-20",
         "Purpose of Last Meeting": "BONUS 1:1",
         "Record Date": "26-SEP-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/ELGIEQUIP.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/ELGIEQUIP.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "EMAMILTD",
@@ -1689,7 +1829,8 @@
         "Ex Date": "04-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS  4.00 PER SHARE",
         "Record Date": "05-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/EMAMILTD.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/EMAMILTD.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "ENDURANCE",
@@ -1701,7 +1842,8 @@
         "Ex Date": "11-MAR-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 5.50 PER SHARE",
         "Record Date": "12-MAR-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/ENDURANCE.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/ENDURANCE.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "ENGINERSIN",
@@ -1713,7 +1855,8 @@
         "Ex Date": "18-MAR-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 1.40 PER SHARE",
         "Record Date": "19-MAR-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/ENGINERSIN.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/ENGINERSIN.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "EQUITAS",
@@ -1725,7 +1868,8 @@
         "Ex Date": "11-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 2 PER SHARE",
         "Record Date": "13-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/EQUITAS.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/EQUITAS.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "ERIS",
@@ -1737,7 +1881,8 @@
         "Ex Date": "18-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/ERIS.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/ERIS.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "ESCORTS",
@@ -1749,7 +1894,8 @@
         "Ex Date": "13-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 2.5 PER SH",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/ESCORTS.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/ESCORTS.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "EXIDEIND",
@@ -1761,7 +1907,8 @@
         "Ex Date": "04-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS  2.00 PER SHARE",
         "Record Date": "06-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/EXIDEIND.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/EXIDEIND.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "FDC",
@@ -1773,7 +1920,8 @@
         "Ex Date": "22-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/FDC.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/FDC.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "FEDERALBNK",
@@ -1785,7 +1933,8 @@
         "Ex Date": "09-JUL-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/FEDERALBNK.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/FEDERALBNK.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "FINEORG",
@@ -1797,7 +1946,8 @@
         "Ex Date": "10-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 3 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/FINEORG.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/FINEORG.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "FINCABLES",
@@ -1809,7 +1959,8 @@
         "Ex Date": "17-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 5.50 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/FINCABLES.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/FINCABLES.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "FINPIPE",
@@ -1821,7 +1972,8 @@
         "Ex Date": "15-APR-21",
         "Purpose of Last Meeting": "FACE VALUE SPLIT (SUB-DIVISION) - FROM RS 10/- PER SHARE TO RS 2/- PER SHARE",
         "Record Date": "16-APR-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/FINPIPE.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/FINPIPE.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "FSL",
@@ -1833,7 +1985,8 @@
         "Ex Date": "17-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 3 PER SHARE",
         "Record Date": "19-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/FSL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/FSL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "FORTIS",
@@ -1845,7 +1998,8 @@
         "Ex Date": "16-SEP-16",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/FORTIS.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/FORTIS.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "FCONSUMER",
@@ -1857,7 +2011,8 @@
         "Ex Date": "20-AUG-18",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/FCONSUMER.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/FCONSUMER.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "FRETAIL",
@@ -1869,7 +2024,8 @@
         "Ex Date": "20-AUG-18",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": "22-AUG-18",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/FRETAIL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/FRETAIL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "GAIL",
@@ -1881,7 +2037,8 @@
         "Ex Date": "22-MAR-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 2.5 PER SHARE",
         "Record Date": "23-MAR-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/GAIL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/GAIL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "GEPIL",
@@ -1893,7 +2050,8 @@
         "Ex Date": "02-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS  2 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/GEPIL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/GEPIL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "GHCL",
@@ -1905,7 +2063,8 @@
         "Ex Date": "26-JUN-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": "29-JUN-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/GHCL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/GHCL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "GMMPFAUDLR",
@@ -1917,7 +2076,8 @@
         "Ex Date": "28-JAN-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RE 1 PER SHARE",
         "Record Date": "29-JAN-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/GMMPFAUDLR.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/GMMPFAUDLR.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "GMRINFRA",
@@ -1929,7 +2089,8 @@
         "Ex Date": "10-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/GMRINFRA.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/GMRINFRA.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "GALAXYSURF",
@@ -1941,7 +2102,8 @@
         "Ex Date": "15-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 14 PER SHARE",
         "Record Date": "16-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/GALAXYSURF.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/GALAXYSURF.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "GRSE",
@@ -1953,7 +2115,8 @@
         "Ex Date": "17-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 3.85 PER SHARE",
         "Record Date": "18-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/GRSE.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/GRSE.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "GARFIBRES",
@@ -1965,7 +2128,8 @@
         "Ex Date": "10-DEC-20",
         "Purpose of Last Meeting": "BUYBACK",
         "Record Date": "11-DEC-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/GARFIBRES.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/GARFIBRES.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "GICRE",
@@ -1977,7 +2141,8 @@
         "Ex Date": "19-JUL-19",
         "Purpose of Last Meeting": "DIVIDEND RS 6.75 PER SHARE",
         "Record Date": "22-JUL-19",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/GICRE.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/GICRE.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "GILLETTE",
@@ -1989,7 +2154,8 @@
         "Ex Date": "12-MAY-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND",
         "Record Date": "14-MAY-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/GILLETTE.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/GILLETTE.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "GLAXO",
@@ -2001,7 +2167,8 @@
         "Ex Date": "17-JUL-20",
         "Purpose of Last Meeting": "DIVIDEND - RS 20 AND SPECIAL DIVIDEND - RS 20 PER SHARE",
         "Record Date": "20-JUL-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/GLAXO.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/GLAXO.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "GLENMARK",
@@ -2013,7 +2180,8 @@
         "Ex Date": "17-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 2.50 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/GLENMARK.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/GLENMARK.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "GODFRYPHLP",
@@ -2025,7 +2193,8 @@
         "Ex Date": "24-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/GODFRYPHLP.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/GODFRYPHLP.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "GODREJAGRO",
@@ -2037,7 +2206,8 @@
         "Ex Date": "22-JUL-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 5.50 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/GODREJAGRO.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/GODREJAGRO.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "GODREJCP",
@@ -2049,7 +2219,8 @@
         "Ex Date": "05-FEB-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 2 PER SHARE",
         "Record Date": "06-FEB-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/GODREJCP.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/GODREJCP.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "GODREJIND",
@@ -2061,7 +2232,8 @@
         "Ex Date": "04-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/GODREJIND.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/GODREJIND.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "GODREJPROP",
@@ -2073,7 +2245,8 @@
         "Ex Date": "27-JUL-15",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND -  RS 2/- PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/GODREJPROP.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/GODREJPROP.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "GRANULES",
@@ -2085,7 +2258,8 @@
         "Ex Date": "08-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 0.25  PER SHARE",
         "Record Date": "09-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/GRANULES.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/GRANULES.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "GRAPHITE",
@@ -2097,7 +2271,8 @@
         "Ex Date": "20-JUL-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/GRAPHITE.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/GRAPHITE.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "GRASIM",
@@ -2109,7 +2284,8 @@
         "Ex Date": "26-AUG-20",
         "Purpose of Last Meeting": "DIVIDEND - RS 4 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/GRASIM.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/GRASIM.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "GESHIP",
@@ -2121,7 +2297,8 @@
         "Ex Date": "22-JUL-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/GESHIP.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/GESHIP.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "GREAVESCOT",
@@ -2133,7 +2310,8 @@
         "Ex Date": "05-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/GREAVESCOT.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/GREAVESCOT.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "GRINDWELL",
@@ -2145,7 +2323,8 @@
         "Ex Date": "16-JUL-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETINGDIVIDEND - RS 7.50 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/GRINDWELL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/GRINDWELL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "GUJALKALI",
@@ -2157,7 +2336,8 @@
         "Ex Date": "17-SEP-20",
         "Purpose of Last Meeting": "DIVIDEND - RS 8 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/GUJALKALI.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/GUJALKALI.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "GAEL",
@@ -2169,7 +2349,8 @@
         "Ex Date": "01-OCT-20",
         "Purpose of Last Meeting": "FACE VALUE SPLIT (SUB-DIVISION) - FROM RS 2/- PER SHARE TO RE 1/- PER SHARE",
         "Record Date": "05-OCT-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/GAEL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/GAEL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "FLUOROCHEM",
@@ -2181,7 +2362,8 @@
         "Ex Date": NaN,
         "Purpose of Last Meeting": NaN,
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/FLUOROCHEM.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/FLUOROCHEM.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "GUJGASLTD",
@@ -2193,7 +2375,8 @@
         "Ex Date": "09-SEP-20",
         "Purpose of Last Meeting": "DIVIDEND - RS 1.25 PER SHARE",
         "Record Date": "10-SEP-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/GUJGASLTD.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/GUJGASLTD.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "GMDCLTD",
@@ -2205,7 +2388,8 @@
         "Ex Date": "22-DEC-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 2 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/GMDCLTD.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/GMDCLTD.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "GNFC",
@@ -2217,7 +2401,8 @@
         "Ex Date": "20-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 5 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/GNFC.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/GNFC.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "GPPL",
@@ -2229,7 +2414,8 @@
         "Ex Date": "24-NOV-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 2.1 PER SHARE",
         "Record Date": "25-NOV-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/GPPL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/GPPL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "GSFC",
@@ -2241,7 +2427,8 @@
         "Ex Date": "14-SEP-20",
         "Purpose of Last Meeting": "DIVIDEND - RS 1.20 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/GSFC.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/GSFC.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "GSPL",
@@ -2253,7 +2440,8 @@
         "Ex Date": "09-SEP-20",
         "Purpose of Last Meeting": "DIVIDEND - RS 2 PER SHARE",
         "Record Date": "10-SEP-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/GSPL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/GSPL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "GULFOILLUB",
@@ -2265,7 +2453,8 @@
         "Ex Date": "16-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 7 PER SHARE",
         "Record Date": "17-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/GULFOILLUB.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/GULFOILLUB.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "HEG",
@@ -2277,7 +2466,8 @@
         "Ex Date": "03-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/HEG.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/HEG.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "HCLTECH",
@@ -2289,7 +2479,8 @@
         "Ex Date": "29-APR-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 6 PER SHARE SPECIAL INTERIM DIVIDEND - RS 10 PER SHARE",
         "Record Date": "01-MAY-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/HCLTECH.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/HCLTECH.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "HDFCAMC",
@@ -2301,7 +2492,8 @@
         "Ex Date": "09-JUL-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 28 PER SH",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/HDFCAMC.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/HDFCAMC.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "HDFCBANK",
@@ -2313,7 +2505,8 @@
         "Ex Date": "19-SEP-19",
         "Purpose of Last Meeting": "FACE VALUE SPLIT (SUB-DIVISION) - FROM RS 2 PER SHARE TO RS 1 PER SHARE",
         "Record Date": "20-SEP-19",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/HDFCBANK.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/HDFCBANK.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "HDFCLIFE",
@@ -2325,7 +2518,8 @@
         "Ex Date": "11-JUL-19",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/HDFCLIFE.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/HDFCLIFE.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "HFCL",
@@ -2337,7 +2531,8 @@
         "Ex Date": "18-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/HFCL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/HFCL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "HATHWAY",
@@ -2349,7 +2544,8 @@
         "Ex Date": "11-AUG-16",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/HATHWAY.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/HATHWAY.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "HATSUN",
@@ -2361,7 +2557,8 @@
         "Ex Date": "09-DEC-20",
         "Purpose of Last Meeting": "BONUS 1:3",
         "Record Date": "10-DEC-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/HATSUN.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/HATSUN.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "HAVELLS",
@@ -2373,7 +2570,8 @@
         "Ex Date": "28-JAN-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 3 PER SHARE",
         "Record Date": "29-JAN-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/HAVELLS.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/HAVELLS.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "HEIDELBERG",
@@ -2385,7 +2583,8 @@
         "Ex Date": "10-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 6 PER SHARE",
         "Record Date": "11-SEP-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/HEIDELBERG.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/HEIDELBERG.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "HERITGFOOD",
@@ -2397,7 +2596,8 @@
         "Ex Date": "19-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 2.50 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/HERITGFOOD.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/HERITGFOOD.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "HEROMOTOCO",
@@ -2409,7 +2609,8 @@
         "Ex Date": "15-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 65 PER SHARE SPECIAL DIVIDEND - RS 5 PER SHARE",
         "Record Date": "16-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/HEROMOTOCO.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/HEROMOTOCO.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "HSCL",
@@ -2421,7 +2622,8 @@
         "Ex Date": "18-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 0.15 PER SHAREE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/HSCL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/HSCL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "HINDALCO",
@@ -2433,7 +2635,8 @@
         "Ex Date": "03-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RE 1 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/HINDALCO.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/HINDALCO.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "HAL",
@@ -2445,7 +2648,8 @@
         "Ex Date": "05-MAR-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 15 PER SHARE",
         "Record Date": "08-MAR-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/HAL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/HAL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "HINDCOPPER",
@@ -2457,7 +2661,8 @@
         "Ex Date": "21-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/HINDCOPPER.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/HINDCOPPER.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "HINDPETRO",
@@ -2469,7 +2674,8 @@
         "Ex Date": "02-JUL-20",
         "Purpose of Last Meeting": "DIVIDEND - RS 9.75 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/HINDPETRO.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/HINDPETRO.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "HINDUNILVR",
@@ -2481,7 +2687,8 @@
         "Ex Date": "14-JUN-21",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 17  PER SH",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/HINDUNILVR.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/HINDUNILVR.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "HINDZINC",
@@ -2493,7 +2700,8 @@
         "Ex Date": "27-OCT-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS  21.30 PER SHARE",
         "Record Date": "28-OCT-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/HINDZINC.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/HINDZINC.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "HONAUT",
@@ -2505,7 +2713,8 @@
         "Ex Date": "10-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 75 PER SHARE",
         "Record Date": "11-AUG-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/HONAUT.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/HONAUT.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "HUDCO",
@@ -2517,7 +2726,8 @@
         "Ex Date": "25-MAR-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 0.75 PER SHARE",
         "Record Date": "26-MAR-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/HUDCO.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/HUDCO.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "HDFC",
@@ -2529,7 +2739,8 @@
         "Ex Date": "09-JUL-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 21 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/HDFC.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/HDFC.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "HUHTAMAKI",
@@ -2541,7 +2752,8 @@
         "Ex Date": "11-JUN-20",
         "Purpose of Last Meeting": "DIVIDEND - RS 3 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/HUHTAMAKI.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/HUHTAMAKI.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "ICICIBANK",
@@ -2553,7 +2765,8 @@
         "Ex Date": "22-JUL-19",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RE 1 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/ICICIBANK.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/ICICIBANK.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "ICICIGI",
@@ -2565,7 +2778,8 @@
         "Ex Date": "18-MAR-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 4 PER SHARE",
         "Record Date": "19-MAR-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/ICICIGI.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/ICICIGI.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "ICICIPRULI",
@@ -2577,7 +2791,8 @@
         "Ex Date": "31-OCT-19",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RE 0.80 PER SH",
         "Record Date": "01-NOV-19",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/ICICIPRULI.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/ICICIPRULI.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "ISEC",
@@ -2589,7 +2804,8 @@
         "Ex Date": "05-NOV-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 8 PER SHARE",
         "Record Date": "06-NOV-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/ISEC.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/ISEC.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "ICRA",
@@ -2601,7 +2817,8 @@
         "Ex Date": "16-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 27 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/ICRA.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/ICRA.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "IDBI",
@@ -2613,7 +2830,8 @@
         "Ex Date": "07-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/IDBI.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/IDBI.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "IDFCFIRSTB",
@@ -2625,7 +2843,8 @@
         "Ex Date": "23-JUL-18",
         "Purpose of Last Meeting": "DIVIDEND RE 0.75 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/IDFCFIRSTB.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/IDFCFIRSTB.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "IDFC",
@@ -2637,7 +2856,8 @@
         "Ex Date": "21-NOV-19",
         "Purpose of Last Meeting": "INTERIM DIVIDEND- RS 0.65 PER SHARE",
         "Record Date": "22-NOV-19",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/IDFC.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/IDFC.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "IFBIND",
@@ -2649,7 +2869,8 @@
         "Ex Date": "27-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/IFBIND.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/IFBIND.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "IIFL",
@@ -2661,7 +2882,8 @@
         "Ex Date": "04-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS  3.00 PER SHARE",
         "Record Date": "06-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/IIFL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/IIFL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "IIFLWAM",
@@ -2673,7 +2895,8 @@
         "Ex Date": "11-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 30 PER SHARE",
         "Record Date": "12-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/IIFLWAM.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/IIFLWAM.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "IOLCP",
@@ -2685,7 +2908,8 @@
         "Ex Date": "17-NOV-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 4 PER SHARE",
         "Record Date": "18-NOV-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/IOLCP.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/IOLCP.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "IRB",
@@ -2697,7 +2921,8 @@
         "Ex Date": "16-JUL-20",
         "Purpose of Last Meeting": "DIVIDEND - RS 5 PER SHARE",
         "Record Date": "17-JUL-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/IRB.csv"
+        "OHLC Data Location": null,
+        "OHLC Data Available": false
     },
     {
         "Ticker": "IRCON",
@@ -2709,7 +2934,8 @@
         "Ex Date": "23-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 1.30 PER SHARE",
         "Record Date": "24-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/IRCON.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/IRCON.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "ITC",
@@ -2721,7 +2947,8 @@
         "Ex Date": "22-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 5 PER SHARE",
         "Record Date": "23-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/ITC.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/ITC.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "ITI",
@@ -2733,7 +2960,8 @@
         "Ex Date": "26-NOV-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/ITI.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/ITI.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "INDIACEM",
@@ -2745,7 +2973,8 @@
         "Ex Date": "18-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 0.60 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/INDIACEM.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/INDIACEM.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "IBULHSGFIN",
@@ -2757,7 +2986,8 @@
         "Ex Date": "03-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/IBULHSGFIN.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/IBULHSGFIN.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "IBREALEST",
@@ -2769,7 +2999,8 @@
         "Ex Date": "24-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/IBREALEST.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/IBREALEST.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "INDIAMART",
@@ -2781,7 +3012,8 @@
         "Ex Date": "12-MAR-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 10 PER SHARE",
         "Record Date": "13-MAR-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/INDIAMART.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/INDIAMART.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "INDIANB",
@@ -2793,7 +3025,8 @@
         "Ex Date": "31-JUL-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/INDIANB.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/INDIANB.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "IEX",
@@ -2805,7 +3038,8 @@
         "Ex Date": "28-JAN-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 2.50 PER SHARE",
         "Record Date": "30-JAN-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/IEX.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/IEX.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "INDHOTEL",
@@ -2817,7 +3051,8 @@
         "Ex Date": "17-JUL-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 0.50 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/INDHOTEL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/INDHOTEL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "IOC",
@@ -2829,7 +3064,8 @@
         "Ex Date": "23-MAR-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 3 PER SHARE",
         "Record Date": "24-MAR-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/IOC.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/IOC.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "IOB",
@@ -2841,7 +3077,8 @@
         "Ex Date": "14-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/IOB.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/IOB.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "IRCTC",
@@ -2853,7 +3090,8 @@
         "Ex Date": "19-OCT-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/IRCTC.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/IRCTC.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "INDOCO",
@@ -2865,7 +3103,8 @@
         "Ex Date": "18-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RE 0.30 PER SH",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/INDOCO.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/INDOCO.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "IGL",
@@ -2877,7 +3116,8 @@
         "Ex Date": "17-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 2.80 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/IGL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/IGL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "INDUSTOWER",
@@ -2889,7 +3129,8 @@
         "Ex Date": "08-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 17.82 PER SHARE",
         "Record Date": "09-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/INDUSTOWER.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/INDUSTOWER.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "INDUSINDBK",
@@ -2901,7 +3142,8 @@
         "Ex Date": "08-AUG-19",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 7.50 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/INDUSINDBK.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/INDUSINDBK.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "NAUKRI",
@@ -2913,7 +3155,8 @@
         "Ex Date": "14-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/NAUKRI.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/NAUKRI.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "INFY",
@@ -2925,7 +3168,8 @@
         "Ex Date": "31-MAY-21",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 15 PER SHARE",
         "Record Date": "01-JUN-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/INFY.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/INFY.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "INGERRAND",
@@ -2937,7 +3181,8 @@
         "Ex Date": "04-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/INGERRAND.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/INGERRAND.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "INOXLEISUR",
@@ -2949,7 +3194,8 @@
         "Ex Date": "04-NOV-19",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RE 1 PER SH",
         "Record Date": "05-NOV-19",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/INOXLEISUR.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/INOXLEISUR.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "INDIGO",
@@ -2961,7 +3207,8 @@
         "Ex Date": "27-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/INDIGO.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/INDIGO.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "IPCALAB",
@@ -2973,7 +3220,8 @@
         "Ex Date": "13-NOV-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 8 PER SHARE",
         "Record Date": "17-NOV-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/IPCALAB.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/IPCALAB.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "JBCHEPHARM",
@@ -2985,7 +3233,8 @@
         "Ex Date": "18-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS. 8.50 PER SHARE",
         "Record Date": "22-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/JBCHEPHARM.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/JBCHEPHARM.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "JKCEMENT",
@@ -2997,7 +3246,8 @@
         "Ex Date": "03-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/JKCEMENT.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/JKCEMENT.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "JKLAKSHMI",
@@ -3009,7 +3259,8 @@
         "Ex Date": "20-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/JKLAKSHMI.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/JKLAKSHMI.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "JKPAPER",
@@ -3021,7 +3272,8 @@
         "Ex Date": "03-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/JKPAPER.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/JKPAPER.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "JKTYRE",
@@ -3033,7 +3285,8 @@
         "Ex Date": "14-SEP-20",
         "Purpose of Last Meeting": "DIVIDEND - RS 0 .70 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/JKTYRE.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/JKTYRE.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "JMFINANCIL",
@@ -3045,7 +3298,8 @@
         "Ex Date": "15-MAY-20",
         "Purpose of Last Meeting": "DIVIDEND - RS 0.20 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/JMFINANCIL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/JMFINANCIL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "JSWENERGY",
@@ -3057,7 +3311,8 @@
         "Ex Date": "04-AUG-20",
         "Purpose of Last Meeting": "DIVIDEND - RE 1 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/JSWENERGY.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/JSWENERGY.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "JSWSTEEL",
@@ -3069,7 +3324,8 @@
         "Ex Date": "06-JUL-20",
         "Purpose of Last Meeting": "DIVIDEND - RS 2 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/JSWSTEEL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/JSWSTEEL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "JTEKTINDIA",
@@ -3081,7 +3337,8 @@
         "Ex Date": "15-SEP-20",
         "Purpose of Last Meeting": "DIVIDEND - RS 0.35 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/JTEKTINDIA.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/JTEKTINDIA.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "JAGRAN",
@@ -3093,7 +3350,8 @@
         "Ex Date": "10-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/JAGRAN.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/JAGRAN.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "JAICORPLTD",
@@ -3105,7 +3363,8 @@
         "Ex Date": "18-DEC-20",
         "Purpose of Last Meeting": "DIVIDEND - RS 0.50 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/JAICORPLTD.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/JAICORPLTD.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "J&KBANK",
@@ -3117,7 +3376,8 @@
         "Ex Date": "11-JUL-16",
         "Purpose of Last Meeting": "DIVIDEND - RS 1.75/- PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/J&KBANK.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/J&KBANK.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "JAMNAAUTO",
@@ -3129,7 +3389,8 @@
         "Ex Date": "17-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 0.25 PER SHARE",
         "Record Date": "18-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/JAMNAAUTO.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/JAMNAAUTO.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "JINDALSAW",
@@ -3141,7 +3402,8 @@
         "Ex Date": "17-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 2 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/JINDALSAW.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/JINDALSAW.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "JSLHISAR",
@@ -3153,7 +3415,8 @@
         "Ex Date": "13-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/JSLHISAR.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/JSLHISAR.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "JSL",
@@ -3165,7 +3428,8 @@
         "Ex Date": "13-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/JSL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/JSL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "JINDALSTEL",
@@ -3177,7 +3441,8 @@
         "Ex Date": "23-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/JINDALSTEL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/JINDALSTEL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "JCHAC",
@@ -3189,7 +3454,8 @@
         "Ex Date": "08-AUG-19",
         "Purpose of Last Meeting": "DIVIDEND - RS 1.50 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/JCHAC.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/JCHAC.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "JUBLFOOD",
@@ -3201,7 +3467,8 @@
         "Ex Date": "09-MAR-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 6 PER SHARE",
         "Record Date": "11-MAR-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/JUBLFOOD.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/JUBLFOOD.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "JUSTDIAL",
@@ -3213,7 +3480,8 @@
         "Ex Date": "02-JUL-20",
         "Purpose of Last Meeting": "BUYBACK",
         "Record Date": "03-JUL-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/JUSTDIAL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/JUSTDIAL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "JYOTHYLAB",
@@ -3225,7 +3493,8 @@
         "Ex Date": "29-JUL-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/JYOTHYLAB.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/JYOTHYLAB.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "KEI",
@@ -3237,7 +3506,8 @@
         "Ex Date": "09-MAR-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 2 PER SHARE",
         "Record Date": "10-MAR-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/KEI.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/KEI.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "KNRCON",
@@ -3249,7 +3519,8 @@
         "Ex Date": "03-FEB-21",
         "Purpose of Last Meeting": "BONUS 1:1",
         "Record Date": "04-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/KNRCON.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/KNRCON.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "KRBL",
@@ -3261,7 +3532,8 @@
         "Ex Date": "21-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/KRBL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/KRBL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "KSB",
@@ -3273,7 +3545,8 @@
         "Ex Date": "15-APR-21",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 8.5 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/KSB.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/KSB.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "KAJARIACER",
@@ -3285,7 +3558,8 @@
         "Ex Date": "02-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 10 PER SHARE",
         "Record Date": "03-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/KAJARIACER.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/KAJARIACER.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "KALPATPOWR",
@@ -3297,7 +3571,8 @@
         "Ex Date": "17-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 8.50 PER SHARE",
         "Record Date": "20-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/KALPATPOWR.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/KALPATPOWR.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "KANSAINER",
@@ -3309,7 +3584,8 @@
         "Ex Date": "12-NOV-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 1.25 PER SHARE",
         "Record Date": "13-NOV-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/KANSAINER.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/KANSAINER.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "KTKBANK",
@@ -3321,7 +3597,8 @@
         "Ex Date": "17-MAR-20",
         "Purpose of Last Meeting": "BONUS 1:10",
         "Record Date": "18-MAR-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/KTKBANK.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/KTKBANK.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "KARURVYSYA",
@@ -3333,7 +3610,8 @@
         "Ex Date": "15-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/KARURVYSYA.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/KARURVYSYA.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "KSCL",
@@ -3345,7 +3623,8 @@
         "Ex Date": "18-NOV-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 4 PER SHARE",
         "Record Date": "19-NOV-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/KSCL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/KSCL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "KEC",
@@ -3357,7 +3636,8 @@
         "Ex Date": "13-FEB-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 3.4 PER SHARE",
         "Record Date": "15-FEB-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/KEC.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/KEC.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "KOLTEPATIL",
@@ -3369,7 +3649,8 @@
         "Ex Date": "12-SEP-19",
         "Purpose of Last Meeting": "DIVIDEND - RS 1 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/KOLTEPATIL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/KOLTEPATIL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "KOTAKBANK",
@@ -3381,7 +3662,8 @@
         "Ex Date": "12-JUL-19",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND RS 0.80 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/KOTAKBANK.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/KOTAKBANK.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "L&TFH",
@@ -3393,7 +3675,8 @@
         "Ex Date": "21-JAN-21",
         "Purpose of Last Meeting": "RIGHTS 17:74@ PREMIUM RS 55 PER SHARE",
         "Record Date": "22-JAN-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/L&TFH.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/L&TFH.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "LTTS",
@@ -3405,7 +3688,8 @@
         "Ex Date": "26-OCT-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 7.50 PER SHARE",
         "Record Date": "27-OCT-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/LTTS.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/LTTS.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "LICHSGFIN",
@@ -3417,7 +3701,8 @@
         "Ex Date": "17-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 8 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/LICHSGFIN.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/LICHSGFIN.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "LAOPALA",
@@ -3429,7 +3714,8 @@
         "Ex Date": "26-FEB-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 1.20 PER SHARE",
         "Record Date": "27-FEB-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/LAOPALA.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/LAOPALA.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "LAXMIMACH",
@@ -3441,7 +3727,8 @@
         "Ex Date": "16-JUL-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 10 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/LAXMIMACH.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/LAXMIMACH.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "LTI",
@@ -3453,7 +3740,8 @@
         "Ex Date": "27-OCT-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND -RS 15 PER SHARE",
         "Record Date": "28-OCT-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/LTI.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/LTI.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "LT",
@@ -3465,7 +3753,8 @@
         "Ex Date": "04-NOV-20",
         "Purpose of Last Meeting": "SPECIAL DIVIDEND - RS 18 PER SHARE",
         "Record Date": "05-NOV-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/LT.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/LT.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "LAURUSLABS",
@@ -3477,7 +3766,8 @@
         "Ex Date": "11-MAY-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RE 0.80  PER SHARE",
         "Record Date": "12-MAY-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/LAURUSLABS.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/LAURUSLABS.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "LEMONTREE",
@@ -3489,7 +3779,8 @@
         "Ex Date": NaN,
         "Purpose of Last Meeting": NaN,
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/LEMONTREE.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/LEMONTREE.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "LINDEINDIA",
@@ -3501,7 +3792,8 @@
         "Ex Date": "16-JUN-21",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 3 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/LINDEINDIA.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/LINDEINDIA.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "LUPIN",
@@ -3513,7 +3805,8 @@
         "Ex Date": "03-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS  6 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/LUPIN.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/LUPIN.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "LUXIND",
@@ -3525,7 +3818,8 @@
         "Ex Date": "16-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 2.50 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/LUXIND.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/LUXIND.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "MASFIN",
@@ -3537,7 +3831,8 @@
         "Ex Date": "01-DEC-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/MASFIN.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/MASFIN.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "MMTC",
@@ -3549,7 +3844,8 @@
         "Ex Date": "15-DEC-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/MMTC.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/MMTC.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "MOIL",
@@ -3561,7 +3857,8 @@
         "Ex Date": "17-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 2.50 PER SHARE",
         "Record Date": "20-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/MOIL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/MOIL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "MRF",
@@ -3573,7 +3870,8 @@
         "Ex Date": "17-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 3 PER SHARE",
         "Record Date": "19-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/MRF.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/MRF.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "MGL",
@@ -3585,7 +3883,8 @@
         "Ex Date": "18-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 9 PER SHARE",
         "Record Date": "22-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/MGL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/MGL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "MAHSCOOTER",
@@ -3597,7 +3896,8 @@
         "Ex Date": "03-MAR-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 50 PER SHARE",
         "Record Date": "04-MAR-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/MAHSCOOTER.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/MAHSCOOTER.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "MAHSEAMLES",
@@ -3609,7 +3909,8 @@
         "Ex Date": "14-SEP-20",
         "Purpose of Last Meeting": "DIVIDEND - RS 2.50 PER SHARE",
         "Record Date": "15-SEP-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/MAHSEAMLES.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/MAHSEAMLES.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "M&MFIN",
@@ -3621,7 +3922,8 @@
         "Ex Date": "22-JUL-20",
         "Purpose of Last Meeting": "RIGHTS 1:1 @ PREMIUM RS 48/-",
         "Record Date": "23-JUL-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/M&MFIN.csv"
+        "OHLC Data Location": null,
+        "OHLC Data Available": false
     },
     {
         "Ticker": "M&M",
@@ -3633,7 +3935,8 @@
         "Ex Date": "16-JUL-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 2.35 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/M&M.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/M&M.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "MAHINDCIE",
@@ -3645,7 +3948,8 @@
         "Ex Date": "20-APR-21",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/MAHINDCIE.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/MAHINDCIE.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "MHRIL",
@@ -3657,7 +3961,8 @@
         "Ex Date": "23-JUL-19",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/MHRIL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/MHRIL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "MAHLOG",
@@ -3669,7 +3974,8 @@
         "Ex Date": "23-JUL-20",
         "Purpose of Last Meeting": "DIVIDEND - RS 1.50 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/MAHLOG.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/MAHLOG.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "MANAPPURAM",
@@ -3681,7 +3987,8 @@
         "Ex Date": "10-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 0.65 PER SHARE",
         "Record Date": "11-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/MANAPPURAM.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/MANAPPURAM.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "MRPL",
@@ -3693,7 +4000,8 @@
         "Ex Date": "10-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/MRPL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/MRPL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "MARICO",
@@ -3705,7 +4013,8 @@
         "Ex Date": "10-MAR-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 4.50 PER SHARE",
         "Record Date": "12-MAR-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/MARICO.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/MARICO.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "MARUTI",
@@ -3717,7 +4026,8 @@
         "Ex Date": "13-AUG-20",
         "Purpose of Last Meeting": "DIVIDEND - RS 60 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/MARUTI.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/MARUTI.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "MFSL",
@@ -3729,7 +4039,8 @@
         "Ex Date": "22-DEC-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/MFSL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/MFSL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "METROPOLIS",
@@ -3741,7 +4052,8 @@
         "Ex Date": "17-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 8 PER SHARE",
         "Record Date": "19-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/METROPOLIS.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/METROPOLIS.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "MINDTREE",
@@ -3753,7 +4065,8 @@
         "Ex Date": "26-OCT-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 7.50 PER SHARE",
         "Record Date": "27-OCT-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/MINDTREE.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/MINDTREE.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "MINDACORP",
@@ -3765,7 +4078,8 @@
         "Ex Date": "15-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 0.30 PER SH",
         "Record Date": "16-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/MINDACORP.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/MINDACORP.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "MINDAIND",
@@ -3777,7 +4091,8 @@
         "Ex Date": "15-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 0.35 PER SHARE",
         "Record Date": "16-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/MINDAIND.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/MINDAIND.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "MIDHANI",
@@ -3789,7 +4104,8 @@
         "Ex Date": "22-MAR-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 1.20 PER SHARE",
         "Record Date": "23-MAR-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/MIDHANI.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/MIDHANI.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "MOTHERSUMI",
@@ -3801,7 +4117,8 @@
         "Ex Date": "23-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/MOTHERSUMI.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/MOTHERSUMI.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "MOTILALOFS",
@@ -3813,7 +4130,8 @@
         "Ex Date": "08-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 5 PER SHARE",
         "Record Date": "09-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/MOTILALOFS.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/MOTILALOFS.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "MPHASIS",
@@ -3825,7 +4143,8 @@
         "Ex Date": "02-JUL-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 35 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/MPHASIS.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/MPHASIS.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "MCX",
@@ -3837,7 +4156,8 @@
         "Ex Date": "21-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 30 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/MCX.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/MCX.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "MUTHOOTFIN",
@@ -3849,7 +4169,8 @@
         "Ex Date": "22-APR-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 20 PER SHARE",
         "Record Date": "23-APR-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/MUTHOOTFIN.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/MUTHOOTFIN.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "NATCOPHARM",
@@ -3861,7 +4182,8 @@
         "Ex Date": "22-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RE 1  PER SHARE",
         "Record Date": "23-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/NATCOPHARM.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/NATCOPHARM.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "NBCC",
@@ -3873,7 +4195,8 @@
         "Ex Date": "26-NOV-20",
         "Purpose of Last Meeting": "DIVIDEND - RS 0.135  PER SHARE",
         "Record Date": "27-NOV-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/NBCC.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/NBCC.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "NCC",
@@ -3885,7 +4208,8 @@
         "Ex Date": "07-SEP-20",
         "Purpose of Last Meeting": "DIVIDEND - RS 0.20 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/NCC.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/NCC.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "NESCO",
@@ -3897,7 +4221,8 @@
         "Ex Date": "05-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/NESCO.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/NESCO.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "NHPC",
@@ -3909,7 +4234,8 @@
         "Ex Date": "22-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 1.25 PER SHARE",
         "Record Date": "23-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/NHPC.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/NHPC.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "NLCINDIA",
@@ -3921,7 +4247,8 @@
         "Ex Date": "17-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RE 1 PER SHARE",
         "Record Date": "19-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/NLCINDIA.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/NLCINDIA.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "NMDC",
@@ -3933,7 +4260,8 @@
         "Ex Date": "22-MAR-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 7.76  PER SHARE",
         "Record Date": "23-MAR-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/NMDC.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/NMDC.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "NOCIL",
@@ -3945,7 +4273,8 @@
         "Ex Date": "19-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/NOCIL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/NOCIL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "NTPC",
@@ -3957,7 +4286,8 @@
         "Ex Date": "11-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 3 PER SHARE",
         "Record Date": "12-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/NTPC.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/NTPC.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "NH",
@@ -3969,7 +4299,8 @@
         "Ex Date": "11-MAR-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RE 1 PER SHARE",
         "Record Date": "12-MAR-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/NH.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/NH.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "NATIONALUM",
@@ -3981,7 +4312,8 @@
         "Ex Date": "22-MAR-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 2 PER SHARE",
         "Record Date": "23-MAR-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/NATIONALUM.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/NATIONALUM.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "NFL",
@@ -3993,7 +4325,8 @@
         "Ex Date": "09-DEC-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/NFL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/NFL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "NAVINFLUOR",
@@ -4005,7 +4338,8 @@
         "Ex Date": "10-NOV-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS  5 PER SHARE",
         "Record Date": "11-NOV-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/NAVINFLUOR.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/NAVINFLUOR.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "NAVNETEDUL",
@@ -4017,7 +4351,8 @@
         "Ex Date": "21-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/NAVNETEDUL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/NAVNETEDUL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "NESTLEIND",
@@ -4029,7 +4364,8 @@
         "Ex Date": "29-APR-21",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 65 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/NESTLEIND.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/NESTLEIND.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "NETWORK18",
@@ -4041,7 +4377,8 @@
         "Ex Date": "10-AUG-18",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/NETWORK18.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/NETWORK18.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "NILKAMAL",
@@ -4053,7 +4390,8 @@
         "Ex Date": "16-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 5 PER SHARE",
         "Record Date": "17-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/NILKAMAL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/NILKAMAL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "NAM-INDIA",
@@ -4065,7 +4403,8 @@
         "Ex Date": "10-JUN-21",
         "Purpose of Last Meeting": "DIVIDEND - RS 5  PER SHARE",
         "Record Date": "11-JUN-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/NAM-INDIA.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/NAM-INDIA.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "OBEROIRLTY",
@@ -4077,7 +4416,8 @@
         "Ex Date": "14-AUG-19",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 2 PER SHARE",
         "Record Date": "16-AUG-19",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/OBEROIRLTY.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/OBEROIRLTY.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "ONGC",
@@ -4089,7 +4429,8 @@
         "Ex Date": "17-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 1.75 PER SHARE",
         "Record Date": "20-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/ONGC.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/ONGC.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "OIL",
@@ -4101,7 +4442,8 @@
         "Ex Date": "23-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 3.50 PER SHARE",
         "Record Date": "24-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/OIL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/OIL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "OMAXE",
@@ -4113,7 +4455,8 @@
         "Ex Date": "17-DEC-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/OMAXE.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/OMAXE.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "OFSS",
@@ -4125,7 +4468,8 @@
         "Ex Date": "10-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/OFSS.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/OFSS.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "ORIENTCEM",
@@ -4137,7 +4481,8 @@
         "Ex Date": "08-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 0.50  PER SHARE",
         "Record Date": "09-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/ORIENTCEM.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/ORIENTCEM.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "ORIENTELEC",
@@ -4149,7 +4494,8 @@
         "Ex Date": "09-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 0.75 PER SH",
         "Record Date": "10-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/ORIENTELEC.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/ORIENTELEC.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "ORIENTREF",
@@ -4161,7 +4507,8 @@
         "Ex Date": "07-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 2.50 PER SH",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/ORIENTREF.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/ORIENTREF.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "PIIND",
@@ -4173,7 +4520,8 @@
         "Ex Date": "11-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 3 PER SHARE",
         "Record Date": "12-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/PIIND.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/PIIND.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "PNBHOUSING",
@@ -4185,7 +4533,8 @@
         "Ex Date": "28-JUL-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/PNBHOUSING.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/PNBHOUSING.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "PNCINFRA",
@@ -4197,7 +4546,8 @@
         "Ex Date": "22-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/PNCINFRA.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/PNCINFRA.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "PSPPROJECT",
@@ -4209,7 +4559,8 @@
         "Ex Date": "19-MAR-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 5 PER SHARE",
         "Record Date": "21-MAR-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/PSPPROJECT.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/PSPPROJECT.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "PTC",
@@ -4221,7 +4572,8 @@
         "Ex Date": "19-NOV-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 2 PER SHARE",
         "Record Date": "20-NOV-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/PTC.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/PTC.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "PVR",
@@ -4233,7 +4585,8 @@
         "Ex Date": "09-JUL-20",
         "Purpose of Last Meeting": "RIGHTS 7:94 @ PREMIUM RS 774/-",
         "Record Date": "10-JUL-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/PVR.csv"
+        "OHLC Data Location": null,
+        "OHLC Data Available": false
     },
     {
         "Ticker": "PAGEIND",
@@ -4245,7 +4598,8 @@
         "Ex Date": "17-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 150 PER SHARE",
         "Record Date": "19-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/PAGEIND.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/PAGEIND.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "PERSISTENT",
@@ -4257,7 +4611,8 @@
         "Ex Date": "09-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 14 PER SHARE",
         "Record Date": "10-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/PERSISTENT.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/PERSISTENT.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "PETRONET",
@@ -4269,7 +4624,8 @@
         "Ex Date": "23-NOV-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 8 PER SHARE",
         "Record Date": "24-NOV-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/PETRONET.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/PETRONET.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "PFIZER",
@@ -4281,7 +4637,8 @@
         "Ex Date": "27-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 10 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/PFIZER.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/PFIZER.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "PHILIPCARB",
@@ -4293,7 +4650,8 @@
         "Ex Date": "01-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 7 PER SHARE",
         "Record Date": "02-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/PHILIPCARB.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/PHILIPCARB.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "PHOENIXLTD",
@@ -4305,7 +4663,8 @@
         "Ex Date": "17-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/PHOENIXLTD.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/PHOENIXLTD.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "PIDILITIND",
@@ -4317,7 +4676,8 @@
         "Ex Date": "02-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/PIDILITIND.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/PIDILITIND.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "PEL",
@@ -4329,7 +4689,8 @@
         "Ex Date": "16-JUL-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 14 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/PEL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/PEL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "POLYMED",
@@ -4341,7 +4702,8 @@
         "Ex Date": "21-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/POLYMED.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/POLYMED.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "POLYCAB",
@@ -4353,7 +4715,8 @@
         "Ex Date": "13-JUL-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/POLYCAB.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/POLYCAB.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "POLYPLEX",
@@ -4365,7 +4728,8 @@
         "Ex Date": "17-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 100 PER SHARE",
         "Record Date": "19-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/POLYPLEX.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/POLYPLEX.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "PFC",
@@ -4377,7 +4741,8 @@
         "Ex Date": "19-MAR-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 8 PER SHARE",
         "Record Date": "22-MAR-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/PFC.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/PFC.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "POWERGRID",
@@ -4389,7 +4754,8 @@
         "Ex Date": "08-MAR-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 4 PER SHARE",
         "Record Date": "09-MAR-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/POWERGRID.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/POWERGRID.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "PRAJIND",
@@ -4401,7 +4767,8 @@
         "Ex Date": "10-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/PRAJIND.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/PRAJIND.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "PRESTIGE",
@@ -4413,7 +4780,8 @@
         "Ex Date": "19-MAR-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 1.50 PER SHARE",
         "Record Date": "21-MAR-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/PRESTIGE.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/PRESTIGE.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "PRSMJOHNSN",
@@ -4425,7 +4793,8 @@
         "Ex Date": "06-AUG-19",
         "Purpose of Last Meeting": "INTERIM DIVIDEND RE 1 PER SHARE",
         "Record Date": "07-AUG-19",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/PRSMJOHNSN.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/PRSMJOHNSN.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "PGHL",
@@ -4437,7 +4806,8 @@
         "Ex Date": "18-NOV-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 42 PER SHARE SPECIAL DIVIDEND - RS 188 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/PGHL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/PGHL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "PGHH",
@@ -4449,7 +4819,8 @@
         "Ex Date": "11-MAY-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND",
         "Record Date": "12-MAY-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/PGHH.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/PGHH.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "PNB",
@@ -4461,7 +4832,8 @@
         "Ex Date": "27-JUL-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/PNB.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/PNB.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "QUESS",
@@ -4473,7 +4845,8 @@
         "Ex Date": "11-MAY-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND",
         "Record Date": "13-MAY-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/QUESS.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/QUESS.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "RBLBANK",
@@ -4485,7 +4858,8 @@
         "Ex Date": "09-JUL-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/RBLBANK.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/RBLBANK.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "RECLTD",
@@ -4497,7 +4871,8 @@
         "Ex Date": "18-MAR-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 5 PER SHARE",
         "Record Date": "19-MAR-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/RECLTD.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/RECLTD.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "RITES",
@@ -4509,7 +4884,8 @@
         "Ex Date": "18-MAR-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 4 PER SHARE",
         "Record Date": "20-MAR-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/RITES.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/RITES.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "RADICO",
@@ -4521,7 +4897,8 @@
         "Ex Date": "21-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 2 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/RADICO.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/RADICO.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "RVNL",
@@ -4533,7 +4910,8 @@
         "Ex Date": "08-APR-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 1.14 PER SHARE",
         "Record Date": "09-APR-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/RVNL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/RVNL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "RAIN",
@@ -4545,7 +4923,8 @@
         "Ex Date": "30-APR-21",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/RAIN.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/RAIN.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "RAJESHEXPO",
@@ -4557,7 +4936,8 @@
         "Ex Date": "23-DEC-20",
         "Purpose of Last Meeting": "DIVIDEND - RE 1 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/RAJESHEXPO.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/RAJESHEXPO.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "RALLIS",
@@ -4569,7 +4949,8 @@
         "Ex Date": "09-JUN-21",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 3 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/RALLIS.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/RALLIS.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "RCF",
@@ -4581,7 +4962,8 @@
         "Ex Date": "17-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 1.20 PER SHARE",
         "Record Date": "19-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/RCF.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/RCF.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "RATNAMANI",
@@ -4593,7 +4975,8 @@
         "Ex Date": "19-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/RATNAMANI.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/RATNAMANI.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "RAYMOND",
@@ -4605,7 +4988,8 @@
         "Ex Date": "30-JUL-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/RAYMOND.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/RAYMOND.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "REDINGTON",
@@ -4617,7 +5001,8 @@
         "Ex Date": "04-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/REDINGTON.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/REDINGTON.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "RELAXO",
@@ -4629,7 +5014,8 @@
         "Ex Date": "16-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/RELAXO.csv"
+        "OHLC Data Location": null,
+        "OHLC Data Available": false
     },
     {
         "Ticker": "RELIANCE",
@@ -4641,7 +5027,8 @@
         "Ex Date": "02-JUL-20",
         "Purpose of Last Meeting": "DIVIDEND - RS 6.50  PER SHARE",
         "Record Date": "03-JUL-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/RELIANCE.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/RELIANCE.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "SBICARD",
@@ -4653,7 +5040,8 @@
         "Ex Date": "15-MAY-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RE 1 PER SHARE",
         "Record Date": "18-MAY-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/SBICARD.csv"
+        "OHLC Data Location": null,
+        "OHLC Data Available": false
     },
     {
         "Ticker": "SBILIFE",
@@ -4665,7 +5053,8 @@
         "Ex Date": "05-APR-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 2.5 PER SHARE",
         "Record Date": "06-APR-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/SBILIFE.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/SBILIFE.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "SIS",
@@ -4677,7 +5066,8 @@
         "Ex Date": "08-APR-21",
         "Purpose of Last Meeting": "BUYBACK",
         "Record Date": "09-APR-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/SIS.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/SIS.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "SJVN",
@@ -4689,7 +5079,8 @@
         "Ex Date": "23-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 1.80 PER SHARE",
         "Record Date": "24-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/SJVN.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/SJVN.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "SKFINDIA",
@@ -4701,7 +5092,8 @@
         "Ex Date": "14-JUL-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING / DIVIDEND - RS 130 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/SKFINDIA.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/SKFINDIA.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "SRF",
@@ -4713,7 +5105,8 @@
         "Ex Date": "29-JAN-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 19 PER SHARE",
         "Record Date": "01-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/SRF.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/SRF.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "SANOFI",
@@ -4725,7 +5118,8 @@
         "Ex Date": "19-APR-21",
         "Purpose of Last Meeting": "DIVIDEND - RS 125 PER SHARE SPECIAL DIVIDEND 240 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/SANOFI.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/SANOFI.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "SCHAEFFLER",
@@ -4737,7 +5131,8 @@
         "Ex Date": "19-APR-21",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 38 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/SCHAEFFLER.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/SCHAEFFLER.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "SCHNEIDER",
@@ -4749,7 +5144,8 @@
         "Ex Date": "31-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/SCHNEIDER.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/SCHNEIDER.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "SEQUENT",
@@ -4761,7 +5157,8 @@
         "Ex Date": "21-AUG-19",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 0.20 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/SEQUENT.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/SEQUENT.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "SFL",
@@ -4773,7 +5170,8 @@
         "Ex Date": "05-JUL-19",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/SFL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/SFL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "SHILPAMED",
@@ -4785,7 +5183,8 @@
         "Ex Date": "16-MAR-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 1.10 PER SHARE",
         "Record Date": "17-MAR-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/SHILPAMED.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/SHILPAMED.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "SCI",
@@ -4797,7 +5196,8 @@
         "Ex Date": "09-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 0.75 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/SCI.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/SCI.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "SHOPERSTOP",
@@ -4809,7 +5209,8 @@
         "Ex Date": "19-NOV-20",
         "Purpose of Last Meeting": "RIGHTS 17:70 @ PREMIUM RS 135/-",
         "Record Date": "20-NOV-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/SHOPERSTOP.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/SHOPERSTOP.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "SHREECEM",
@@ -4821,7 +5222,8 @@
         "Ex Date": "24-FEB-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 110 PER SHARE",
         "Record Date": "25-FEB-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/SHREECEM.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/SHREECEM.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "SHRIRAMCIT",
@@ -4833,7 +5235,8 @@
         "Ex Date": "06-APR-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 10 PER SHARE",
         "Record Date": "07-APR-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/SHRIRAMCIT.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/SHRIRAMCIT.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "SRTRANSFIN",
@@ -4845,7 +5248,8 @@
         "Ex Date": "16-JUN-21",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 6 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/SRTRANSFIN.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/SRTRANSFIN.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "SIEMENS",
@@ -4857,7 +5261,8 @@
         "Ex Date": "27-JAN-21",
         "Purpose of Last Meeting": "DIVIDEND - RS 7 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/SIEMENS.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/SIEMENS.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "SOBHA",
@@ -4869,7 +5274,8 @@
         "Ex Date": "23-JUL-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 7 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/SOBHA.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/SOBHA.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "SOLARINDS",
@@ -4881,7 +5287,8 @@
         "Ex Date": "03-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 6 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/SOLARINDS.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/SOLARINDS.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "SOLARA",
@@ -4893,7 +5300,8 @@
         "Ex Date": "19-NOV-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS  4 PER SHARE",
         "Record Date": "20-NOV-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/SOLARA.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/SOLARA.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "SONATSOFTW",
@@ -4905,7 +5313,8 @@
         "Ex Date": "18-NOV-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS  4 PER SHARE",
         "Record Date": "19-NOV-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/SONATSOFTW.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/SONATSOFTW.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "SOUTHBANK",
@@ -4917,7 +5326,8 @@
         "Ex Date": "15-MAR-21",
         "Purpose of Last Meeting": "EXTRA ORDINARY GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/SOUTHBANK.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/SOUTHBANK.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "SPICEJET",
@@ -4929,7 +5339,8 @@
         "Ex Date": "16-DEC-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/SPICEJET.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/SPICEJET.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "STARCEMENT",
@@ -4941,7 +5352,8 @@
         "Ex Date": "21-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/STARCEMENT.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/STARCEMENT.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "SBIN",
@@ -4953,7 +5365,8 @@
         "Ex Date": "15-JUN-18",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/ CHANGE IN REGISTRAR AND TRANSFER AGENT",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/SBIN.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/SBIN.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "SAIL",
@@ -4965,7 +5378,8 @@
         "Ex Date": "04-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS  1.00 PER SHARE",
         "Record Date": "06-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/SAIL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/SAIL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "SWSOLAR",
@@ -4977,7 +5391,8 @@
         "Ex Date": "24-FEB-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 6 PER SHARE",
         "Record Date": "25-FEB-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/SWSOLAR.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/SWSOLAR.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "STLTECH",
@@ -4989,7 +5404,8 @@
         "Ex Date": "27-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 3.50 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/STLTECH.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/STLTECH.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "STAR",
@@ -5001,7 +5417,8 @@
         "Ex Date": "24-JUL-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 2 PER SHARE",
         "Record Date": "27-JUL-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/STAR.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/STAR.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "SUDARSCHEM",
@@ -5013,7 +5430,8 @@
         "Ex Date": "27-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/SUDARSCHEM.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/SUDARSCHEM.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "SUMICHEM",
@@ -5025,7 +5443,8 @@
         "Ex Date": "02-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 0.55 PER SHARE",
         "Record Date": "03-SEP-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/SUMICHEM.csv"
+        "OHLC Data Location": null,
+        "OHLC Data Available": false
     },
     {
         "Ticker": "SPARC",
@@ -5037,7 +5456,8 @@
         "Ex Date": "22-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/SPARC.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/SPARC.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "SUNPHARMA",
@@ -5049,7 +5469,8 @@
         "Ex Date": "09-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 5.50 PER SHARE",
         "Record Date": "10-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/SUNPHARMA.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/SUNPHARMA.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "SUNTV",
@@ -5061,7 +5482,8 @@
         "Ex Date": "17-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 5 PER SHARE",
         "Record Date": "19-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/SUNTV.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/SUNTV.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "SUNDARMFIN",
@@ -5073,7 +5495,8 @@
         "Ex Date": "02-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 12 PER SHARE",
         "Record Date": "03-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/SUNDARMFIN.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/SUNDARMFIN.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "SUNDRMFAST",
@@ -5085,7 +5508,8 @@
         "Ex Date": "12-NOV-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 1.30 PER SHARE",
         "Record Date": "14-NOV-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/SUNDRMFAST.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/SUNDRMFAST.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "SUNTECK",
@@ -5097,7 +5521,8 @@
         "Ex Date": "21-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 1.50 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/SUNTECK.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/SUNTECK.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "SUPRAJIT",
@@ -5109,7 +5534,8 @@
         "Ex Date": "18-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 0.75 PER SHARE",
         "Record Date": "22-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/SUPRAJIT.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/SUPRAJIT.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "SUPREMEIND",
@@ -5121,7 +5547,8 @@
         "Ex Date": "05-NOV-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 5 PER SHARE",
         "Record Date": "06-NOV-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/SUPREMEIND.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/SUPREMEIND.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "SUPPETRO",
@@ -5133,7 +5560,8 @@
         "Ex Date": "25-JUN-21",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 12.50 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/SUPPETRO.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/SUPPETRO.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "SUVENPHAR",
@@ -5145,7 +5573,8 @@
         "Ex Date": "17-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RE 1  PER SHARE",
         "Record Date": "18-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/SUVENPHAR.csv"
+        "OHLC Data Location": null,
+        "OHLC Data Available": false
     },
     {
         "Ticker": "SUZLON",
@@ -5157,7 +5586,8 @@
         "Ex Date": "17-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/SUZLON.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/SUZLON.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "SWANENERGY",
@@ -5169,7 +5599,8 @@
         "Ex Date": "18-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 0.10 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/SWANENERGY.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/SWANENERGY.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "SWARAJENG",
@@ -5181,7 +5612,8 @@
         "Ex Date": "02-JUL-20",
         "Purpose of Last Meeting": "DIVIDEND - RS 25 PER SHARE SPECIAL DIVIDEND - RS 15 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/SWARAJENG.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/SWARAJENG.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "SYMPHONY",
@@ -5193,7 +5625,8 @@
         "Ex Date": "01-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RE 1 PER SHARE",
         "Record Date": "02-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/SYMPHONY.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/SYMPHONY.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "SYNGENE",
@@ -5205,7 +5638,8 @@
         "Ex Date": "16-JUL-19",
         "Purpose of Last Meeting": "DIVIDEND - RS 0.50 PER SHARE",
         "Record Date": "17-JUL-19",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/SYNGENE.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/SYNGENE.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "TCIEXP",
@@ -5217,7 +5651,8 @@
         "Ex Date": "16-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 2 PER SHARE",
         "Record Date": "17-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/TCIEXP.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/TCIEXP.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "TCNSBRANDS",
@@ -5229,7 +5664,8 @@
         "Ex Date": "16-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/TCNSBRANDS.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/TCNSBRANDS.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "TTKPRESTIG",
@@ -5241,7 +5677,8 @@
         "Ex Date": "19-NOV-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 20  PER SHARE",
         "Record Date": "20-NOV-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/TTKPRESTIG.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/TTKPRESTIG.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "TVTODAY",
@@ -5253,7 +5690,8 @@
         "Ex Date": "02-SEP-20",
         "Purpose of Last Meeting": "DIVIDEND - RS 2.25 PER SHARE",
         "Record Date": "03-SEP-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/TVTODAY.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/TVTODAY.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "TV18BRDCST",
@@ -5265,7 +5703,8 @@
         "Ex Date": "10-AUG-18",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/TV18BRDCST.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/TV18BRDCST.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "TVSMOTOR",
@@ -5277,7 +5716,8 @@
         "Ex Date": "30-MAR-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 1.40 PER SHARE",
         "Record Date": "02-APR-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/TVSMOTOR.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/TVSMOTOR.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "TASTYBITE",
@@ -5289,7 +5729,8 @@
         "Ex Date": "16-JUL-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 2 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/TASTYBITE.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/TASTYBITE.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "TATACHEM",
@@ -5301,7 +5742,8 @@
         "Ex Date": "22-JUN-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 11 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/TATACHEM.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/TATACHEM.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "TATACOFFEE",
@@ -5313,7 +5755,8 @@
         "Ex Date": "12-JUN-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 1.50 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/TATACOFFEE.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/TATACOFFEE.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "TATACOMM",
@@ -5325,7 +5768,8 @@
         "Ex Date": "20-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 4 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/TATACOMM.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/TATACOMM.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "TCS",
@@ -5337,7 +5781,8 @@
         "Ex Date": "14-JAN-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 6 PER SHARE",
         "Record Date": "16-JAN-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/TCS.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/TCS.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "TATACONSUM",
@@ -5349,7 +5794,8 @@
         "Ex Date": "18-JUN-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND -RS 2.70 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/TATACONSUM.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/TATACONSUM.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "TATAELXSI",
@@ -5361,7 +5807,8 @@
         "Ex Date": "13-JUL-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 16.50 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/TATAELXSI.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/TATAELXSI.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "TATAINVEST",
@@ -5373,7 +5820,8 @@
         "Ex Date": "01-JUL-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 18 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/TATAINVEST.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/TATAINVEST.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "TATAMTRDVR",
@@ -5385,7 +5833,8 @@
         "Ex Date": "18-JUL-16",
         "Purpose of Last Meeting": "DIVIDEND - RE 0.30/- PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/TATAMTRDVR.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/TATAMTRDVR.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "TATAMOTORS",
@@ -5397,7 +5846,8 @@
         "Ex Date": "18-JUL-16",
         "Purpose of Last Meeting": "DIVIDEND - RE 0.20/- PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/TATAMOTORS.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/TATAMOTORS.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "TATAPOWER",
@@ -5409,7 +5859,8 @@
         "Ex Date": "14-JUL-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 1.55 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/TATAPOWER.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/TATAPOWER.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "TATASTLBSL",
@@ -5421,7 +5872,8 @@
         "Ex Date": "11-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/TATASTLBSL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/TATASTLBSL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "TATASTEEL",
@@ -5433,7 +5885,8 @@
         "Ex Date": "06-AUG-20",
         "Purpose of Last Meeting": "DIVIDEND - RS 10 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/TATASTEEL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/TATASTEEL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "TEAMLEASE",
@@ -5445,7 +5898,8 @@
         "Ex Date": "29-JUN-17",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/TEAMLEASE.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/TEAMLEASE.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "TECHM",
@@ -5457,7 +5911,8 @@
         "Ex Date": "29-OCT-20",
         "Purpose of Last Meeting": "SPECIAL DIVIDEND - RS 15 PER SHARE",
         "Record Date": "02-NOV-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/TECHM.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/TECHM.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "NIACL",
@@ -5469,7 +5924,8 @@
         "Ex Date": "18-JUL-19",
         "Purpose of Last Meeting": "DIVIDEND - RS 1.50 PER SHARE",
         "Record Date": "19-JUL-19",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/NIACL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/NIACL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "RAMCOCEM",
@@ -5481,7 +5937,8 @@
         "Ex Date": "22-MAR-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS  3 PER SHARE",
         "Record Date": "23-MAR-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/RAMCOCEM.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/RAMCOCEM.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "THERMAX",
@@ -5493,7 +5950,8 @@
         "Ex Date": "20-MAR-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 7 PER SHARE",
         "Record Date": "23-MAR-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/THERMAX.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/THERMAX.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "THYROCARE",
@@ -5505,7 +5963,8 @@
         "Ex Date": "12-NOV-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 10 PER SHARE",
         "Record Date": "13-NOV-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/THYROCARE.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/THYROCARE.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "TIMKEN",
@@ -5517,7 +5976,8 @@
         "Ex Date": "23-JUL-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 50 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/TIMKEN.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/TIMKEN.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "TITAN",
@@ -5529,7 +5989,8 @@
         "Ex Date": "03-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 4 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/TITAN.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/TITAN.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "TORNTPHARM",
@@ -5541,7 +6002,8 @@
         "Ex Date": "15-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 20 PER SHARE",
         "Record Date": "16-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/TORNTPHARM.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/TORNTPHARM.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "TORNTPOWER",
@@ -5553,7 +6015,8 @@
         "Ex Date": "16-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 5.50 PER SHARE",
         "Record Date": "17-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/TORNTPOWER.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/TORNTPOWER.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "TRENT",
@@ -5565,7 +6028,8 @@
         "Ex Date": "24-JUL-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RE 1 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/TRENT.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/TRENT.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "TRIDENT",
@@ -5577,7 +6041,8 @@
         "Ex Date": "30-JUN-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/TRIDENT.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/TRIDENT.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "TIINDIA",
@@ -5589,7 +6054,8 @@
         "Ex Date": "22-FEB-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 2 PER SHARE",
         "Record Date": "23-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/TIINDIA.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/TIINDIA.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "UCOBANK",
@@ -5601,7 +6067,8 @@
         "Ex Date": "30-JUL-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/UCOBANK.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/UCOBANK.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "UFLEX",
@@ -5613,7 +6080,8 @@
         "Ex Date": "09-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 2 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/UFLEX.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/UFLEX.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "UPL",
@@ -5625,7 +6093,8 @@
         "Ex Date": "19-AUG-20",
         "Purpose of Last Meeting": "DIVIDEND - RS 6 PER SH",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/UPL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/UPL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "UJJIVAN",
@@ -5637,7 +6106,8 @@
         "Ex Date": "03-SEP-20",
         "Purpose of Last Meeting": "DIVIDEND - RS 0.80 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/UJJIVAN.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/UJJIVAN.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "UJJIVANSFB",
@@ -5649,7 +6119,8 @@
         "Ex Date": NaN,
         "Purpose of Last Meeting": NaN,
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/UJJIVANSFB.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/UJJIVANSFB.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "ULTRACEMCO",
@@ -5661,7 +6132,8 @@
         "Ex Date": "29-JUL-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 13 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/ULTRACEMCO.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/ULTRACEMCO.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "UNIONBANK",
@@ -5673,7 +6145,8 @@
         "Ex Date": "27-JUL-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/UNIONBANK.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/UNIONBANK.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "UBL",
@@ -5685,7 +6158,8 @@
         "Ex Date": "18-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 2.50 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/UBL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/UBL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "MCDOWELL-N",
@@ -5697,7 +6171,8 @@
         "Ex Date": "13-AUG-19",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/MCDOWELL-N.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/MCDOWELL-N.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "VGUARD",
@@ -5709,7 +6184,8 @@
         "Ex Date": "26-FEB-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RE 0.90 PER SHARE",
         "Record Date": "27-FEB-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/VGUARD.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/VGUARD.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "VMART",
@@ -5721,7 +6197,8 @@
         "Ex Date": "22-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/VMART.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/VMART.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "VIPIND",
@@ -5733,7 +6210,8 @@
         "Ex Date": "27-JUL-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/VIPIND.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/VIPIND.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "VRLLOG",
@@ -5745,7 +6223,8 @@
         "Ex Date": "18-FEB-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 3 PER SHARE",
         "Record Date": "21-FEB-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/VRLLOG.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/VRLLOG.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "VSTIND",
@@ -5757,7 +6236,8 @@
         "Ex Date": "20-JUL-20",
         "Purpose of Last Meeting": "DIVIDEND - RS 103 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/VSTIND.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/VSTIND.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "VAIBHAVGBL",
@@ -5769,7 +6249,8 @@
         "Ex Date": "07-MAY-21",
         "Purpose of Last Meeting": "FACE VALUE SPLIT (SUB-DIVISION) - FROM RS 10/- PER SHARE TO RS 2/- PER SHARE",
         "Record Date": "10-MAY-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/VAIBHAVGBL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/VAIBHAVGBL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "VAKRANGEE",
@@ -5781,7 +6262,8 @@
         "Ex Date": "24-SEP-20",
         "Purpose of Last Meeting": "DIVIDEND - RS 0.25 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/VAKRANGEE.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/VAKRANGEE.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "VTL",
@@ -5793,7 +6275,8 @@
         "Ex Date": "16-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/VTL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/VTL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "VARROC",
@@ -5805,7 +6288,8 @@
         "Ex Date": "25-FEB-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 3 PER SHARE",
         "Record Date": "26-FEB-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/VARROC.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/VARROC.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "VBL",
@@ -5817,7 +6301,8 @@
         "Ex Date": "26-MAR-21",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/VBL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/VBL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "VENKEYS",
@@ -5829,7 +6314,8 @@
         "Ex Date": "19-SEP-19",
         "Purpose of Last Meeting": "DIVIDEND - RS 8 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/VENKEYS.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/VENKEYS.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "VINATIORGA",
@@ -5841,7 +6327,8 @@
         "Ex Date": "17-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 0.50 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/VINATIORGA.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/VINATIORGA.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "IDEA",
@@ -5853,7 +6340,8 @@
         "Ex Date": "21-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/IDEA.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/IDEA.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "VOLTAS",
@@ -5865,7 +6353,8 @@
         "Ex Date": "05-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 4 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/VOLTAS.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/VOLTAS.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "WABCOINDIA",
@@ -5877,7 +6366,8 @@
         "Ex Date": "26-MAR-20",
         "Purpose of Last Meeting": "INTERIM DIVIDEND-  RS 10 PER SHARE",
         "Record Date": "27-MAR-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/WABCOINDIA.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/WABCOINDIA.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "WELCORP",
@@ -5889,7 +6379,8 @@
         "Ex Date": "06-AUG-20",
         "Purpose of Last Meeting": "DIVIDEND - RS 0.50 PER SHARE",
         "Record Date": "07-AUG-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/WELCORP.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/WELCORP.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "WELSPUNIND",
@@ -5901,7 +6392,8 @@
         "Ex Date": "15-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/WELSPUNIND.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/WELSPUNIND.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "WESTLIFE",
@@ -5913,7 +6405,8 @@
         "Ex Date": NaN,
         "Purpose of Last Meeting": NaN,
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/WESTLIFE.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/WESTLIFE.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "WHIRLPOOL",
@@ -5925,7 +6418,8 @@
         "Ex Date": "06-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 5 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/WHIRLPOOL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/WHIRLPOOL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "WIPRO",
@@ -5937,7 +6431,8 @@
         "Ex Date": "22-JAN-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RE 1 PER SHARE",
         "Record Date": "25-JAN-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/WIPRO.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/WIPRO.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "WOCKPHARMA",
@@ -5949,7 +6444,8 @@
         "Ex Date": "24-JUL-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/WOCKPHARMA.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/WOCKPHARMA.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "YESBANK",
@@ -5961,7 +6457,8 @@
         "Ex Date": "03-JUN-19",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/ DIVIDEND - RS 2 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/YESBANK.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/YESBANK.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "ZEEL",
@@ -5973,7 +6470,8 @@
         "Ex Date": "10-SEP-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING/DIVIDEND - RS 0.30 PER SHARE",
         "Record Date": "11-SEP-20",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/ZEEL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/ZEEL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "ZENSARTECH",
@@ -5985,7 +6483,8 @@
         "Ex Date": "29-JAN-21",
         "Purpose of Last Meeting": "INTERIM DIVIDEND - RS 1.20 PER SHARE",
         "Record Date": "01-FEB-21",
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/ZENSARTECH.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/ZENSARTECH.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "ZYDUSWELL",
@@ -5997,7 +6496,8 @@
         "Ex Date": "12-AUG-20",
         "Purpose of Last Meeting": "ANNUAL GENERAL MEETING",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/ZYDUSWELL.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/ZYDUSWELL.csv",
+        "OHLC Data Available": true
     },
     {
         "Ticker": "ECLERX",
@@ -6009,6 +6509,7 @@
         "Ex Date": "16-SEP-20",
         "Purpose of Last Meeting": "DIVIDEND - RE 1 PER SHARE",
         "Record Date": NaN,
-        "OHLC Data Location": "data/cleaned/OHLC/Nifty500/ECLERX.csv"
+        "OHLC Data Location": "data/processed/OHLC/Nifty500/ECLERX.csv",
+        "OHLC Data Available": true
     }
 ]
