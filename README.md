@@ -1,5 +1,20 @@
 # Market Dashboard
-## Techstack (Development)
+
+## Modules
+* Fetcher (fetcher.py)
+* Cleaner (cleaner.py)
+* Processor (processor.py)
+* Optimizer (optimizer.py)
+* Utils (utils.py)
+* Simulation [**WORK IN PROGRESS**]
+
+## Flowchart of Simulation
+<img src='diagrams/flowchart.png'>
+
+## Class Diagram
+<img src='diagrams/class-diagram.png'>
+
+<!-- ## Techstack (Development)
 * PostgresDB
 * Python (Scikit-learn, Pandas, Dash(Django+Plotly))
 
@@ -38,4 +53,4 @@ Runs optimizer to create best portfolio using strategies in pyportfolioopt
 
 ## User Dashboard
 Stores data of stocks owned by user.
-Displays metrics like Stop loss and profit exit (dynamic).
+Displays metrics like Stop loss and profit exit (dynamic). -->
