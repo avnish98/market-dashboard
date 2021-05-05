@@ -1,12 +1,12 @@
 # Market Dashboard
 
 ## Modules
-* Fetcher (fetcher.py)
-* Cleaner (cleaner.py)
-* Processor (processor.py)
-* Optimizer (optimizer.py)
-* Utils (utils.py)
-* Simulation [**WORK IN PROGRESS**]
+* [Fetcher](fetcher.py)
+* [Cleaner](cleaner.py)
+* [Processor](processor.py)
+* [Optimizer](optimizer.py)
+* [Utils](utils.py)
+* [Simulation][**WORK IN PROGRESS**]
 
 ## Flowchart of Simulation
 <img src='diagrams/flowchart.png'>
