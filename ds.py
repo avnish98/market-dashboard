@@ -20,7 +20,6 @@ class Stock:
 class Portfolio:
     def __init__(self):
         self.stocks = []
-        self.cash = None
         self.composition = {}
         self.discrete_composition = {}
         self.cash_left = None

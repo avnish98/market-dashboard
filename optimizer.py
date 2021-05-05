@@ -7,13 +7,22 @@ import pandas as pd
 from ds import Portfolio
 from processor import IndexProcessor
 
-class EffOptimizer:
+class Optimizer:
     def __init__(self, processor=None):
         self.portfolio = Portfolio()
         self.processor = processor
+        self.optimizer = None
+    
+    def optimize(self):
+        pass
+
+class EffOptimizer:
+    def __init__(self, processor=None):
+        super().__init__()
+        self.processor = processor
         self.mu = expected_returns.capm_return(processor.close_matrix)
         self.s = risk_models.CovarianceShrinkage(processor.close_matrix).ledoit_wolf()
-        self.optimizer = ''
+        self.optimizer = None
 
     def optimize_max_sharpe(self):
         self.s = risk_models.sample_cov(self.processor.close_matrix)
@@ -35,7 +44,7 @@ class EffOptimizer:
 
 class HRPOptimizer:
     def __init__(self, processor=None):
-        self.portfolio = Portfolio()
+        super().__init__()
         self.processor = processor
 
         self.processor.process_close()
@@ -51,7 +60,7 @@ class HRPOptimizer:
 
 class CLAOptimizer:
     def __init__(self, processor=None):
-        self.portfolio = Portfolio()
+        super().__init__()
         self.processor = processor
 
         self.processor.process_close()
