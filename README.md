@@ -27,7 +27,7 @@ Updates every business day with close price of last day.
 None
 
 ### Outputs
-Database of OHLC data
+Database of OHLC and metadata
 
 ### Constraints
 1. Storage constraints for DB on local systems
