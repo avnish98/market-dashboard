@@ -1,3 +1,5 @@
+from datetime import date, datetime
+
 from processor import IndexProcessor
 from ds import Portfolio
 
@@ -13,10 +15,12 @@ class Agent:
     def __init__(self, optimizer, **kwargs):
         self.portfolio = Portfolio()
         self.optimizer = optimizer
-        self.optimizer_params = kwargs
+        self.optimizer_type = kwargs["optimizer_type"]
     
     def initialize_portfolio(self, lookback_data):
-        if self.optimizer_params["optimizer_type"] != None:
+        self.optimizer.close_matrix = lookback_data
+        if self.optimizer_params != None:
+            self.optimizer.optimizer_type = self.optimizer_params["optimizer_type"]
             self.optimizer.optimize()
     
     def execute_buy(self, quantity):
@@ -31,10 +35,12 @@ class Agent:
     def log(self):       
         pass
 
-class Backtest:
-    def __init__(self, start_date, end_date, bband_margins, bband_ma, 
-                bband_std_mul, upper_margin, lower_margin, lookback_period,
-                 rebalance_period, proc_ohlc_loc, proc_metadata_loc, agents):
+class Backtesting:
+    def __init__(self, start_date=date(1980, 1, 1), end_date=date.today(), 
+                bband_margins=True, bband_ma=20, bband_std_mul=2, 
+                upper_margin=0.05, lower_margin=0.05, lookback_period=30,
+                rebalance_period=30, proc_ohlc_loc=None, proc_metadata_loc=None,
+                agents=[]):
                  
         self.start_date = start_date
         self.end_date = end_date
@@ -56,4 +62,6 @@ class Backtest:
         self.env = Environment(self.processor.close_matrix, self.lookback_period)
 
     def backtest(self):
-        
+        for a in agents:
+            a.initialize_portfolio(self.env.lookback_data)
+        return a
