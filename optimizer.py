@@ -70,6 +70,8 @@ class EffOptimizer:
         IndexProcessor object to collect input data
     optimizer : EfficientFrontier()
         EfficientFrontier object used for calculations
+    optimizer_type: str
+        Specifies type of optimizer (max_sharpe or min_vol)
     mu: pd.DataFrame
         Stock Returns Matrix
     s: pd.DataFrame
@@ -77,7 +79,7 @@ class EffOptimizer:
     
     Methods
     -------
-    optimize(str): void
+    optimize(): void
         Executes optimize methods based on optimizer type specified
     optimize_max_sharpe(): void
         Performs portfolio optimization (aiming for maximum sharpe ratio value)
@@ -93,18 +95,15 @@ class EffOptimizer:
         self.mu = expected_returns.capm_return(processor.close_matrix)
         self.s = risk_models.CovarianceShrinkage(processor.close_matrix).ledoit_wolf()
         self.optimizer = None
+        self.optimizer_type = "max_sharpe"
     
-    def optimize(self, optimizer_type="max_sharpe"):
+    def optimize(self):
         """Executes optimize methods based on optimizer type specified
-
-        Parameters
-        ----------
-        optimizer_type: str ("max_sharpe" or "min_vol")
-            Parameter to indicate optimizer type
         """
-        if(optimizer_type == "max_sharpe"):
+
+        if(self.optimizer_type == "max_sharpe"):
             self.optimize_max_sharpe()
-        elif(optimizer_type=="min_vol"):
+        elif(self.optimizer_type=="min_vol"):
             self.optimize_min_volatility()
 
     def optimize_max_sharpe(self):
@@ -192,6 +191,8 @@ class CLAOptimizer:
         IndexProcessor object to collect input data
     optimizer : CLA()
         CLA object used for calculations
+    optimizer_type: str
+        Specifies type of optimizer (max_sharpe or min_vol)
     mu: pd.DataFrame
         Stock Returns Matrix
     s: pd.DataFrame
@@ -199,7 +200,7 @@ class CLAOptimizer:
     
     Methods
     -------
-    optimize(str): void
+    optimize(): void
         Executes optimize methods based on optimizer type specified
     optimize_max_sharpe(): void
         Performs portfolio optimization (aiming for maximum sharpe ratio value)
@@ -219,18 +220,15 @@ class CLAOptimizer:
         self.s = risk_models.CovarianceShrinkage(processor.close_matrix).ledoit_wolf()
 
         self.optimizer = CLA(self.mu, self.s)
+        self.optimizer_type = "max_sharpe"
 
-    def optimize(self, optimizer_type="max_sharpe"):
+    def optimize(self):
         """Executes optimize methods based on optimizer type specified
-
-        Parameters
-        ----------
-        optimizer_type: str ("max_sharpe" or "min_vol")
-            Parameter to indicate optimizer type
         """
-        if(optimizer_type == "max_sharpe"):
+
+        if(self.optimizer_type == "max_sharpe"):
             self.optimize_max_sharpe()
-        elif(optimizer_type=="min_vol"):
+        elif(self.optimizer_type=="min_vol"):
             self.optimize_min_volatility()
             
     def optimize_max_sharpe(self):
