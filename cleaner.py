@@ -1,3 +1,12 @@
+"""Cleaner module
+
+This script contains cleaner classes for metadata and OHLC data.
+
+It contains following classes
+    * Cleaner: Base Cleaner Class
+    * Nifty500Cleaner: Derived Cleaner Class for Nifty 500 Index
+"""
+
 import os
 import json
 
@@ -5,7 +14,32 @@ import pandas as pd
 
 from utils import find_in_json, write_json
 
+
 class Cleaner:
+    """
+    Base class to represent a Cleaner
+
+    ...
+
+    Attributes
+    ----------
+    ohlc_raw_data : str
+        Location of OHLC Raw data, collected from fetcher
+    ohlc_clean_data : str
+        Location of OHLC Cleaned data, to be processed by cleaner
+    metadata_raw : str
+        Location of Raw Metadata, collected from fetcher
+    metadata_clean : str
+        Location of Clean Metadata, to be processed by cleaner
+    
+    Methods
+    -------
+    clean_ohlc_data(): void
+        Cleanes OHLC data and stores as static CSVs in ohlc_clean_data directory
+    clean_metadata(): void
+        Cleans metadata and stores as static CSVs in metadata_clean directory
+    """
+
     def __init__(self):
         self.ohlc_raw_data = 'data/raw/'
         self.ohlc_clean_data = 'data/cleaned/OHLC/'
@@ -13,18 +47,52 @@ class Cleaner:
         self.metadata_clean = 'data/cleaned/Metadata'
     
     def clean_ohlc_data(self):
+        """Cleanes OHLC data and stores as static CSVs in ohlc_clean_data directory
+        """
+        
         pass
     
     def clean_metadata(self):
+        """Cleans metadata and stores as static CSVs in metadata_clean directory
+        """
+
         pass
 
+
 class Nifty500Cleaner(Cleaner):
+    """
+    Derived class to represent a Nifty500 Data Cleaner
+
+    ...
+
+    Attributes
+    ----------
+    ohlc_raw_data : str
+        Location of OHLC Raw data, collected from fetcher
+    ohlc_clean_data : str
+        Location of OHLC Cleaned data, to be processed by cleaner
+    metadata_raw : str
+        Location of Raw Metadata, collected from fetcher
+    metadata_clean : str
+        Location of Clean Metadata, to be processed by cleaner
+    
+    Methods
+    -------
+    clean_ohlc_data(): void
+        Cleanes OHLC data and stores as static CSVs in ohlc_clean_data directory
+    clean_metadata(): void
+        Cleans metadata and stores as static CSVs in metadata_clean directory
+    """
+
     def __init__(self):
         super().__init__()
         self.ohlc_raw_data = 'data/raw/Nifty500'
         self.ohlc_clean_data = 'data/cleaned/OHLC/Nifty500'
     
     def clean_ohlc_data(self):
+        """Cleanes OHLC data and stores as static CSVs in ohlc_clean_data directory
+        """
+        
         for file in os.listdir(self.ohlc_raw_data):
             try:
                 temp_df = pd.read_csv("{}/{}".format(self.ohlc_raw_data,file))
@@ -34,6 +102,9 @@ class Nifty500Cleaner(Cleaner):
                 print("Exception {} occured for file: {}".format(e, file))
     
     def clean_metadata(self):
+        """Cleans metadata and stores as static CSVs in metadata_clean directory
+        """
+
         metadata_json = []
         metadata1 = pd.read_csv('{}/nifty_500_list.csv'.format(self.metadata_raw)).to_dict(orient='records')
         metadata2 = pd.read_csv('{}/nifty_500_metadata.csv'.format(self.metadata_raw)).to_dict(orient='records')
