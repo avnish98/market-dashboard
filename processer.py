@@ -11,6 +11,7 @@ It contains following classes
 """
 
 import os
+from datetime import date, datetime
 
 import pandas as pd
 
@@ -77,9 +78,19 @@ class StockProcessor(Processor):
     
     def process_metrics(self, upper_margin=0.05, lower_margin=0.05, bband_ma=20,
                         bband_std=2):
-        """Calculates required metrics and stores them in CSV format for OHLC 
-           data. 
-           Updates location and availability data for OHLC in metadata
+        """Calculates required metrics and stores them in CSV format for OHLC data 
+        Updates location and availability data for OHLC in metadata
+
+        Parameters
+        ----------
+        upper_margin: float (0.05)
+            Profit Exit in Percentage
+        lower_margin: float (0.05)
+            Stop Loss in Percentage
+        bband_ma: int (20)
+            Number of days for Moving Average for Bollinger Bands
+        bband_std: int (2)
+            Multiplier for Standard Deviation for Bollinger Bands
         """
 
         try:
@@ -132,7 +143,7 @@ class IndexProcessor(Processor):
     -------
     process_metrics(): void
         Processes metrics for each stock individually
-    process_close(time_period=int): void
+    process_close(start_date=datetime.date, end_date=datetime.date): void
         Processes close price matrix out of OHLC data
     """
 
@@ -150,8 +161,20 @@ class IndexProcessor(Processor):
                 os.makedirs(self.ohlc_location.replace('cleaned', 'processed'))
 
     
-    def process_metrics(self):
+    def process_metrics(self, upper_margin=0.05, lower_margin=0.05, bband_ma=20,
+                        bband_std=2):
         """Processes metrics for each stock individually
+
+        Parameters
+        ----------
+        upper_margin: float (0.05)
+            Profit Exit in Percentage
+        lower_margin: float (0.05)
+            Stop Loss in Percentage
+        bband_ma: int (20)
+            Number of days for Moving Average for Bollinger Bands
+        bband_std: int (2)
+            Multiplier for Standard Deviation for Bollinger Bands
         """
 
         new_meta_json = []
@@ -163,13 +186,15 @@ class IndexProcessor(Processor):
             new_meta_json.append(sp.stock.metadata)
         write_json(new_meta_json, self.proc_metadata_loc)
         
-    def process_close(self, time_period=250):
+    def process_close(self, start_date=date(1980, 1, 1), end_date=date.today()):
         """Processes close price matrix out of OHLC data
 
         Parameters
         ----------
-        time_period: int
-            Number of rows in close_matrix
+        start_date: datetime.date (1/1/1980)
+            Starting date of data
+        end_date: datetime.date (Today)
+            Ending date of data
         """
 
         files = os.listdir(self.ohlc_location)
@@ -177,7 +202,7 @@ class IndexProcessor(Processor):
         for f in files:
             temp_df = pd.read_csv("{}/{}".format(self.ohlc_location,f))
             temp_df.set_index('Date', inplace=True)
-            temp_df = temp_df.tail(time_period)
+            temp_df = temp_df[temp_df.index >= start_date][temp_df.index <= end_date]
             if (temp_df.shape[0] != 0):
                 cpd[f.replace('.csv', '')] = temp_df['Close'].values
         self.close_matrix = pd.DataFrame.from_dict(cpd)
@@ -190,7 +215,7 @@ class IndexProcessor(Processor):
     #     if(self.close_matrix.shape[0] != 0):
     #         self.cov_matrix = self.close_matrix.cov()
 
-    
+
 class PortfolioProcessor(Processor):
     """
     Derived class to represent a Portfolio Processor
