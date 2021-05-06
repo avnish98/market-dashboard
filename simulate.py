@@ -2,18 +2,22 @@ from processor import IndexProcessor
 from ds import Portfolio
 
 class Environment:
-    def __init__(self, data):
+    def __init__(self, data, lookback_period):
         self.data = data
-    
-    def initialize(self, lookback_period):
-        pass
-    
+        self.lookback_data = data.head(lookback_period)
+
     def load_next_day(self):
         pass
 
 class Agent:
-    def __init__(self):
+    def __init__(self, optimizer, **kwargs):
         self.portfolio = Portfolio()
+        self.optimizer = optimizer
+        self.optimizer_params = kwargs
+    
+    def initialize_portfolio(self, lookback_data):
+        if self.optimizer_params["optimizer_type"] != None:
+            self.optimizer.optimize()
     
     def execute_buy(self, quantity):
         pass
@@ -30,7 +34,7 @@ class Agent:
 class Backtest:
     def __init__(self, start_date, end_date, bband_margins, bband_ma, 
                 bband_std_mul, upper_margin, lower_margin, lookback_period,
-                 rebalance_period, proc_ohlc_loc, proc_metadata_loc):
+                 rebalance_period, proc_ohlc_loc, proc_metadata_loc, agents):
                  
         self.start_date = start_date
         self.end_date = end_date
@@ -43,13 +47,13 @@ class Backtest:
         self.rebalance_period = rebalance_period
 
         self.processor = IndexProcessor(proc_ohlc_loc, proc_metadata_loc)
-        self.processor.process_metrics()
+        self.processor.process_metrics(upper_margin, lower_margin, bband_ma, 
+                                      bband_std_mul)
         self.processor.process_close(start_date, end_date)
 
-        self.agent = Agent()
+        self.agents = agents
 
-        self.env = Environment(self.processor.close_matrix)
-        self.env.initialize(self.lookback_period)
+        self.env = Environment(self.processor.close_matrix, self.lookback_period)
 
     def backtest(self):
-        pass
+        
