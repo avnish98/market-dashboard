@@ -77,6 +77,8 @@ class EffOptimizer:
     
     Methods
     -------
+    optimize(str): void
+        Executes optimize methods based on optimizer type specified
     optimize_max_sharpe(): void
         Performs portfolio optimization (aiming for maximum sharpe ratio value)
         and constructs portfolio to store data
@@ -91,6 +93,19 @@ class EffOptimizer:
         self.mu = expected_returns.capm_return(processor.close_matrix)
         self.s = risk_models.CovarianceShrinkage(processor.close_matrix).ledoit_wolf()
         self.optimizer = None
+    
+    def optimize(self, optimizer_type="max_sharpe"):
+        """Executes optimize methods based on optimizer type specified
+
+        Parameters
+        ----------
+        optimizer_type: str ("max_sharpe" or "min_vol")
+            Parameter to indicate optimizer type
+        """
+        if(optimizer_type == "max_sharpe"):
+            self.optimize_max_sharpe()
+        elif(optimizer_type=="min_vol"):
+            self.optimize_min_volatility()
 
     def optimize_max_sharpe(self):
         """Performs portfolio optimization (aiming for maximum sharpe ratio value)
@@ -184,6 +199,8 @@ class CLAOptimizer:
     
     Methods
     -------
+    optimize(str): void
+        Executes optimize methods based on optimizer type specified
     optimize_max_sharpe(): void
         Performs portfolio optimization (aiming for maximum sharpe ratio value)
         and constructs portfolio to store data
@@ -203,6 +220,19 @@ class CLAOptimizer:
 
         self.optimizer = CLA(self.mu, self.s)
 
+    def optimize(self, optimizer_type="max_sharpe"):
+        """Executes optimize methods based on optimizer type specified
+
+        Parameters
+        ----------
+        optimizer_type: str ("max_sharpe" or "min_vol")
+            Parameter to indicate optimizer type
+        """
+        if(optimizer_type == "max_sharpe"):
+            self.optimize_max_sharpe()
+        elif(optimizer_type=="min_vol"):
+            self.optimize_min_volatility()
+            
     def optimize_max_sharpe(self):
         """Performs portfolio optimization (aiming for maximum sharpe ratio value)
         and constructs portfolio to store data
