@@ -15,13 +15,12 @@ class Agent:
     def __init__(self, optimizer, **kwargs):
         self.portfolio = Portfolio()
         self.optimizer = optimizer
-        self.optimizer_type = kwargs["optimizer_type"]
+        self.optimizer.optimizer_type = kwargs["optimizer_type"]
+        self.optimizer.metadata_loc = kwargs["metadata_loc"]
     
     def initialize_portfolio(self, lookback_data):
-        self.optimizer.close_matrix = lookback_data
-        if self.optimizer_params != None:
-            self.optimizer.optimizer_type = self.optimizer_params["optimizer_type"]
-            self.optimizer.optimize()
+        self.optimizer.close_matrix = lookback_data.dropna(axis=1, how='all')
+        self.optimizer.optimize()
     
     def execute_buy(self, quantity):
         pass
@@ -53,8 +52,8 @@ class Backtesting:
         self.rebalance_period = rebalance_period
 
         self.processor = IndexProcessor(proc_ohlc_loc, proc_metadata_loc)
-        self.processor.process_metrics(upper_margin, lower_margin, bband_ma, 
-                                      bband_std_mul)
+        # self.processor.process_metrics(upper_margin, lower_margin, bband_ma, 
+        #                               bband_std_mul)
         self.processor.process_close(start_date, end_date)
 
         self.agents = agents
@@ -62,6 +61,6 @@ class Backtesting:
         self.env = Environment(self.processor.close_matrix, self.lookback_period)
 
     def backtest(self):
-        for a in agents:
+        for a in self.agents:
             a.initialize_portfolio(self.env.lookback_data)
         return a
