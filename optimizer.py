@@ -91,6 +91,7 @@ class EffOptimizer:
 
     def __init__(self, close_matrix=None, metadata_loc=None):
         super().__init__()
+        self.portfolio = Portfolio()
         self.close_matrix = close_matrix
         self.metadata_loc = metadata_loc
         self.optimizer = None
@@ -110,9 +111,9 @@ class EffOptimizer:
         and constructs portfolio to store data
         """
 
-        self.mu = expected_returns.capm_return(self.close_matrix)
-        #self.s = risk_models.CovarianceShrinkage(self.close_matrix).ledoit_wolf()
-        self.s = risk_models.sample_cov(self.close_matrix)
+        self.mu = expected_returns.mean_historical_return(self.close_matrix)
+        self.s = risk_models.CovarianceShrinkage(self.close_matrix).ledoit_wolf()
+        #self.s = risk_models.sample_cov(self.close_matrix)
         self.optimizer = EfficientFrontier(self.mu, self.s)
 
         self.optimizer.max_sharpe()
