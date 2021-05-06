@@ -16,7 +16,7 @@ from datetime import date, datetime
 import pandas as pd
 
 from ds import Portfolio, Stock
-from utils import read_json, find_in_json, write_json, write_csv
+from utils import read_json, find_in_json, write_json, write_csv, get_close_df
 
 
 class Processor:
@@ -197,17 +197,49 @@ class IndexProcessor(Processor):
             Ending date of data
         """
 
-        files = os.listdir(self.ohlc_location)
-        cpd = {}
-        for f in files:
-            temp_df = pd.read_csv("{}/{}".format(self.ohlc_location,f))
-            temp_df.set_index('Date', inplace=True)
-            temp_df = temp_df[temp_df.index >= start_date][temp_df.index <= end_date]
-            if (temp_df.shape[0] != 0):
-                cpd[f.replace('.csv', '')] = temp_df['Close'].values
-        self.close_matrix = pd.DataFrame.from_dict(cpd)
-        self.close_matrix.index = temp_df.index
-    
+        proc_loc = self.ohlc_location.replace('cleaned', 'processed')
+        files = os.listdir(proc_loc)
+        file_sizes = [os.path.getsize("{}/{}".format(proc_loc, f)) for f in files]
+
+        file_data = dict(zip(files, file_sizes))
+        file_data = {k: v for k, v in sorted(file_data.items(), key=lambda item: item[1], reverse=True)}
+        df_list = []
+        # temp_df = get_close_df(proc_loc, files[0], start_date, end_date, 
+        #                        series=False)
+        for f in list(file_data.keys()):
+            # if first_file:
+            #     temp_df = get_close_df(proc_loc, f, start_date, end_date)
+            #     first_file = False
+            # else:
+            # temp_df = pd.merge(temp_df, get_close_df(proc_loc, f, 
+            #                         start_date, end_date), left_index=True, 
+            #                         right_index=True)
+            try:
+                #temp_df[f.replace('.csv','')] = get_close_df(proc_loc, f, start_date, end_date)
+                # temp_df = temp_df.join(get_close_df(proc_loc, f, start_date, end_date, series=False),
+                #                         how='outer')
+                df_list.append(get_close_df(proc_loc, f, start_date, end_date))
+            except Exception as e:
+                print("Error {} for file {}".format(e, f))
+                continue
+                #temp_df = temp_df.join(get_close_df(proc_loc, f, 
+                #                       start_date, end_date))
+            print(f)
+                #left_on=temp_df.index,                   right_on=temp_df2.index)
+        #print("Minimum length:", min([len(i) for i in cpd.values()]))
+        # lowest_length = min([len(i) for i in cpd.values()])
+        # #cpd = [vals[:lowest_length] for ]
+
+        # for k, v in cpd.items():
+        #     cpd[k] = v[:lowest_length]
+
+        # self.close_matrix = pd.DataFrame.from_dict(cpd)
+        # self.close_matrix.index = temp_df.index
+        self.close_matrix = pd.concat(df_list, axis=1)
+        print(self.close_matrix.head())
+        print()
+        print(self.close_matrix.info())
+        #TODO: Make function that fetches oldest dataframe? or biggest?
     # def process_close_returns(self, time_period=250):
     #     self.returns_matrix = self.close_matrix.pct_change(time_period)
 

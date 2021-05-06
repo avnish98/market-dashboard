@@ -80,3 +80,22 @@ def write_csv(df, csv_loc):
     """
 
     df.to_csv(csv_loc)
+
+def get_close_df(csv_loc, file_name, start_date, end_date, series=True):
+    col_list = ['Date', 'Close']
+    temp_df = pd.read_csv("{}/{}".format(csv_loc,file_name), usecols=col_list)
+    temp_df['Date'] = pd.to_datetime(temp_df['Date']).dt.date
+    mask = (temp_df['Date'] > start_date) & (temp_df['Date'] <= end_date)
+    temp_df = temp_df.loc[mask]
+    temp_df.set_index('Date', inplace=True)
+    # col_list = temp_df.columns
+    # col_list.remove('Close')
+    # temp_df.drop(, axis=1, inplace=True)
+    temp_df.rename(columns={'Close':file_name.replace('.csv', '')}, inplace=True)
+    temp_df = temp_df.loc[~temp_df.index.duplicated(keep='first')]
+    # if(series):
+    #     temp_df = temp_df[file_name.replace('.csv', '')].values
+    # else:
+    #     temp_df = temp_df[[file_name.replace('.csv', '')]]
+
+    return temp_df

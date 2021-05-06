@@ -89,11 +89,10 @@ class EffOptimizer:
         and constructs portfolio to store data
     """
 
-    def __init__(self, processor=None):
+    def __init__(self, close_matrix=None, metadata_loc=None):
         super().__init__()
-        self.processor = processor
-        self.mu = expected_returns.capm_return(processor.close_matrix)
-        self.s = risk_models.CovarianceShrinkage(processor.close_matrix).ledoit_wolf()
+        self.close_matrix = close_matrix
+        self.metadata_loc = metadata_loc
         self.optimizer = None
         self.optimizer_type = "max_sharpe"
     
@@ -111,12 +110,14 @@ class EffOptimizer:
         and constructs portfolio to store data
         """
 
-        self.s = risk_models.sample_cov(self.processor.close_matrix)
+        self.mu = expected_returns.capm_return(self.close_matrix)
+        #self.s = risk_models.CovarianceShrinkage(self.close_matrix).ledoit_wolf()
+        self.s = risk_models.sample_cov(self.close_matrix)
         self.optimizer = EfficientFrontier(self.mu, self.s)
 
         self.optimizer.max_sharpe()
         self.portfolio.composition = self.optimizer.clean_weights()
-        self.portfolio.construct(self.processor.metadata_loc, 
+        self.portfolio.construct(self.metadata_loc, 
                                  self.optimizer.portfolio_performance())
 
     def optimize_min_volatility(self):
