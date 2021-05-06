@@ -154,8 +154,6 @@ class IndexProcessor(Processor):
         self.metadata_loc = metadata_loc
         self.proc_metadata_loc = metadata_loc.replace('cleaned', 'processed')
         self.close_matrix = pd.DataFrame
-        # self.returns_matrix = pd.DataFrame
-        # self.cov_matrix = pd.DataFrame
         
         if not os.path.exists(self.ohlc_location.replace('cleaned', 'processed')):
                 os.makedirs(self.ohlc_location.replace('cleaned', 'processed'))
@@ -204,48 +202,11 @@ class IndexProcessor(Processor):
         file_data = dict(zip(files, file_sizes))
         file_data = {k: v for k, v in sorted(file_data.items(), key=lambda item: item[1], reverse=True)}
         df_list = []
-        # temp_df = get_close_df(proc_loc, files[0], start_date, end_date, 
-        #                        series=False)
+
         for f in list(file_data.keys()):
-            # if first_file:
-            #     temp_df = get_close_df(proc_loc, f, start_date, end_date)
-            #     first_file = False
-            # else:
-            # temp_df = pd.merge(temp_df, get_close_df(proc_loc, f, 
-            #                         start_date, end_date), left_index=True, 
-            #                         right_index=True)
-            try:
-                #temp_df[f.replace('.csv','')] = get_close_df(proc_loc, f, start_date, end_date)
-                # temp_df = temp_df.join(get_close_df(proc_loc, f, start_date, end_date, series=False),
-                #                         how='outer')
-                df_list.append(get_close_df(proc_loc, f, start_date, end_date))
-            except Exception as e:
-                print("Error {} for file {}".format(e, f))
-                continue
-                #temp_df = temp_df.join(get_close_df(proc_loc, f, 
-                #                       start_date, end_date))
-            print(f)
-                #left_on=temp_df.index,                   right_on=temp_df2.index)
-        #print("Minimum length:", min([len(i) for i in cpd.values()]))
-        # lowest_length = min([len(i) for i in cpd.values()])
-        # #cpd = [vals[:lowest_length] for ]
+            df_list.append(get_close_df(proc_loc, f, start_date, end_date))
 
-        # for k, v in cpd.items():
-        #     cpd[k] = v[:lowest_length]
-
-        # self.close_matrix = pd.DataFrame.from_dict(cpd)
-        # self.close_matrix.index = temp_df.index
-        self.close_matrix = pd.concat(df_list, axis=1)
-        print(self.close_matrix.head())
-        print()
-        print(self.close_matrix.info())
-        #TODO: Make function that fetches oldest dataframe? or biggest?
-    # def process_close_returns(self, time_period=250):
-    #     self.returns_matrix = self.close_matrix.pct_change(time_period)
-
-    # def process_cov(self):
-    #     if(self.close_matrix.shape[0] != 0):
-    #         self.cov_matrix = self.close_matrix.cov()
+        self.close_matrix = pd.concat(df_list, axis=1, join='outer')
 
 
 class PortfolioProcessor(Processor):
