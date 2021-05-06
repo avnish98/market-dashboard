@@ -1,6 +1,6 @@
 """Fetcher module
 
-This script contains fetcher functions for metadata and OHLC data.
+This script contains fetcher classes for metadata and OHLC data.
 
 It contains following classes
     * IndexFetcher: Base IndexFetcher Class
@@ -15,6 +15,7 @@ import pandas as pd
 import numpy as np
 from nsetools import Nse
 from nsepy import get_history
+
 
 class IndexFetcher:
     """
@@ -148,6 +149,7 @@ class IndexFetcher:
 
         pass
 
+
 class Nifty500Fetcher(IndexFetcher):
     """
     Derived class to represent an Nifty 500 Index
@@ -196,7 +198,6 @@ class Nifty500Fetcher(IndexFetcher):
         self.metadata_dir = nifty500_metadata_dir
         self.ohlc_dir = nifty500_ohlc_dir
 
-     
     def read_list(self, 
                   url = 'https://www1.nseindia.com/content/indices/ind_nifty500list.csv', 
                   update=False):
