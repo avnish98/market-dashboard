@@ -92,8 +92,9 @@ class Portfolio:
         optimizer and portfolio's value
     """
 
-    def __init__(self):
+    def __init__(self, value=100000):
         self.stocks = []
+        self.portfolio_value = value
         self.composition = {}
         self.discrete_composition = {}
         self.cash_left = None
@@ -159,7 +160,7 @@ class Portfolio:
         temp_dict['Sharpe Ratio'] = None if stats[2]==None else round(stats[2], 2)
         self.statistics = temp_dict
     
-    def update_discrete_composition(self, portfolio_value=10000):
+    def update_discrete_composition(self):
         """Calculates Portfolio's discrete composition using weights provided by
         optimizer and portfolio's value
 
@@ -174,5 +175,5 @@ class Portfolio:
             price_dict[s.ticker] = s.price
         latest_price = pd.Series(price_dict)
 
-        da = DiscreteAllocation(self.composition, latest_price, portfolio_value)
-        self.discrete_composition, self.cash_left = da.greedy_portfolio() #Clean by including cash in composition
+        da = DiscreteAllocation(self.composition, latest_price, self.portfolio_value)
+        self.discrete_composition, self.cash_left = da.greedy_portfolio() 

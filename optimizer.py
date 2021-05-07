@@ -126,12 +126,14 @@ class EffOptimizer:
         and constructs portfolio to store data
         """
 
+        self.mu = expected_returns.mean_historical_return(self.close_matrix)
+        self.s = risk_models.CovarianceShrinkage(self.close_matrix).ledoit_wolf()
         #self.s = risk_models.sample_cov(self.processor.close_matrix)
         self.optimizer = EfficientFrontier(None, self.s)
 
         self.optimizer.min_volatility()
         self.portfolio.composition = self.optimizer.clean_weights()
-        self.portfolio.construct(self.processor.metadata_loc, 
+        self.portfolio.construct(self.metadata_loc, 
                                  self.optimizer.portfolio_performance())
 
 
@@ -159,23 +161,23 @@ class HRPOptimizer:
         and constructs portfolio to store data
     """
 
-    def __init__(self, processor=None):
+    def __init__(self, close_matrix=None, metadata_loc=None):
         super().__init__()
-        self.processor = processor
-
-        self.processor.process_close()
-        self.mu = expected_returns.returns_from_prices(processor.close_matrix)
-
-        self.optimizer = HRPOpt(self.mu)
+        self.portfolio = Portfolio()
+        self.close_matrix = close_matrix
+        self.metadata_loc = metadata_loc
+        self.optimizer = None
 
     def optimize(self):
         """Performs portfolio optimization (aiming for most diverse portfolio)
         and constructs portfolio to store data
         """
 
+        self.mu = expected_returns.returns_from_prices(self.close_matrix)
+        self.optimizer = HRPOpt(self.mu)
         self.optimizer.optimize()
         self.portfolio.composition = self.optimizer.clean_weights()
-        self.portfolio.construct(self.processor.metadata_loc, 
+        self.portfolio.construct(self.metadata_loc, 
                                  self.optimizer.portfolio_performance())
 
 
@@ -212,16 +214,12 @@ class CLAOptimizer:
         and constructs portfolio to store data
     """
 
-    def __init__(self, processor=None):
+    def __init__(self, close_matrix=None, metadata_loc=None):
         super().__init__()
-        self.processor = processor
-
-        self.processor.process_close()
-        self.mu = expected_returns.capm_return(processor.close_matrix)
-        #self.s = risk_models.sample_cov(processor.close_matrix)
-        self.s = risk_models.CovarianceShrinkage(processor.close_matrix).ledoit_wolf()
-
-        self.optimizer = CLA(self.mu, self.s)
+        self.portfolio = Portfolio()
+        self.close_matrix = close_matrix
+        self.metadata_loc = metadata_loc
+        self.optimizer = None
         self.optimizer_type = "max_sharpe"
 
     def optimize(self):
@@ -238,8 +236,17 @@ class CLAOptimizer:
         and constructs portfolio to store data
         """
 
+        total_mean = self.close_matrix.mean(axis=0).mean()
+        self.close_matrix = self.close_matrix[self.close_matrix.columns[
+                                    self.close_matrix.mean(axis=0) > total_mean]]
+        self.mu = expected_returns.mean_historical_return(self.close_matrix)
+        #self.s = risk_models.sample_cov(processor.close_matrix)
+        self.s = risk_models.CovarianceShrinkage(self.close_matrix).ledoit_wolf()
+
+        self.optimizer = CLA(self.mu, self.s)
+        self.optimizer_type = "max_sharpe"
         self.portfolio.composition = self.optimizer.max_sharpe()
-        self.portfolio.construct(self.processor.metadata_loc, 
+        self.portfolio.construct(self.metadata_loc, 
                                  self.optimizer.portfolio_performance())
 
     def optimize_min_volatility(self):
