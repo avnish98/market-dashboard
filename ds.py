@@ -199,5 +199,10 @@ class Portfolio:
             if ticker == stock.ticker:
                 stock.metadata['Portfolio Allocation'] = stock.metadata['Portfolio Allocation'] + disc_alloc
                 stock.metadata['Value'] = stock.metadata['Portfolio Allocation']*new_price
-                print("Allocation Update for {} by {}".format(ticker, disc_alloc))
                 break
+    
+    def total_portfolio_value(self):
+        total_val = self.cash_left
+        for s in self.stocks:
+            total_val += s.price
+        return total_val

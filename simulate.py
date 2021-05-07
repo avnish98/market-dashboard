@@ -4,8 +4,9 @@ import pandas as pd
 import numpy as np
 
 from processor import IndexProcessor
+from optimizer import Optimizer
 from ds import Portfolio, Stock
-from utils import find_in_json, read_json
+from utils import find_in_json, read_json, sort_dict, slice_dict
 
 class Environment:
     def __init__(self, data, lookback_period):
@@ -22,10 +23,13 @@ class Environment:
 
 
 class Agent:
-    def __init__(self, optimizer, portfolio_value, **kwargs):
-        self.portfolio = Portfolio(portfolio_value)
+    def __init__(self, optimizer=Optimizer(), portfolio_value=100000, 
+                single_day_cash=0.60, **kwargs):
+        self.portfolio = Portfolio(single_day_cash*portfolio_value)
         self.optimizer = optimizer
-        self.optimizer.portfolio.portfolio_value = portfolio_value
+        self.total_cash = portfolio_value
+        #self.optimizer.portfolio.portfolio_value = portfolio_value
+        self.single_day_cash = single_day_cash
         self.orders = {}
         self.order_log = []
 
@@ -37,6 +41,9 @@ class Agent:
         self.optimizer.metadata_loc = kwargs["metadata_loc"] 
     
     def allocate_portfolio(self, lookback_data):
+        self.optimizer.portfolio.cash_left += self.single_day_cash * self.total_cash
+        self.portfolio.cash_left += self.single_day_cash * self.total_cash
+        self.total_cash -= self.single_day_cash * self.total_cash
         self.optimizer.close_matrix = lookback_data.dropna(axis=1, how='all')
         self.optimizer.optimize()
         #self.initialize()
@@ -48,7 +55,7 @@ class Agent:
     def compute_orders(self, dayend_prices=None):
         portfolio_comp = self.portfolio.discrete_composition
         optimizer_comp = self.optimizer.portfolio.discrete_composition
-
+        #optimizer_comp = sort_dict(optimizer_comp, reverse=True)
         self.orders = {}
         if len(self.portfolio.stocks) == 0:
             self.orders = optimizer_comp
@@ -58,9 +65,13 @@ class Agent:
                     if v != portfolio_comp[k]:
                         self.orders[k] = v - portfolio_comp[k]
                 self.orders[k] = v
+        
+        # if(self.num_stocks>0):
+        #     self.orders = slice_dict(self.orders, self.num_stocks)
 
     def execute_orders(self, dayend_prices=None):
         self.order_log = []
+        #self.orders = sort_dict(self.orders, True)
         for ticker, shares in self.orders.items():
             if shares > 0:
                 self.execute_buy(ticker, shares, dayend_prices[ticker])
@@ -69,9 +80,7 @@ class Agent:
     
     def execute_buy(self, ticker, quantity, price):
 
-        if self.portfolio.cash_left > (quantity*price):
-            # stock.metadata['Portfolio Allocation'] = quantity
-            # stock.metadata['Value'] = quantity*price
+        if (self.portfolio.cash_left) > (quantity*price):
 
             if(self.portfolio.stock_in_portfolio(ticker)):
                 self.portfolio.update_allocation(ticker, quantity, price)
@@ -84,7 +93,8 @@ class Agent:
                 stock.price = price
                 stock.metadata['Value'] = quantity*price
                 self.portfolio.stocks.append(stock)
-                #self.portfolio.cash_left -= quantity*price 
+
+            self.portfolio.cash_left -= quantity*price
             self.order_log.append("Bought {} shares of {} at {}".format(quantity, ticker, quantity*price))
     
     def execute_sell(self, quantity):
@@ -111,7 +121,7 @@ class Backtesting:
                 upper_margin=0.05, lower_margin=0.05, lookback_period=30,
                 rebalance_period=30, proc_ohlc_loc=None, proc_metadata_loc=None,
                 agents=[], benchmark=pd.DataFrame, benchmark_name="", 
-                portfolio_value=1000000, process_metrics=False):
+                portfolio_value=1000000, process_metrics=False,):
                  
         self.start_date = start_date
         self.end_date = end_date
@@ -139,7 +149,7 @@ class Backtesting:
 
     def backtest(self):
         for a in self.agents:
-            for i in range(2):
+            for i in range(5):
                 a.allocate_portfolio(self.env.lookback_data[i])
                 a.compute_orders()
                 a.execute_orders(self.env.load_next_day())

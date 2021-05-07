@@ -10,6 +10,7 @@ It contains following functions
 """
 
 import json
+import itertools
 import pandas as pd
 
 def find_in_json(json_data, key, value):
@@ -99,3 +100,10 @@ def get_close_df(csv_loc, file_name, start_date, end_date, series=True):
     #     temp_df = temp_df[[file_name.replace('.csv', '')]]
 
     return temp_df
+
+def sort_dict(x, reverse):
+    return {k: v for k, v in sorted(x.items(), 
+                                key=lambda item: item[1], reverse=reverse)}
+
+def slice_dict(x, K):
+    return dict(itertools.islice(x.items(), K))
