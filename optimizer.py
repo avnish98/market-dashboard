@@ -118,8 +118,12 @@ class EffOptimizer:
 
         self.optimizer.max_sharpe()
         self.portfolio.composition = self.optimizer.clean_weights()
-        self.portfolio.construct(self.metadata_loc, 
-                                 self.optimizer.portfolio_performance())
+        latest_price = self.close_matrix.tail(1)
+        latest_price = latest_price.dropna(axis=1)
+        latest_price = pd.Series(list(latest_price.T.to_dict().values())[0])
+        self.portfolio.construct( latest_price, self.metadata_loc, 
+                                    self.optimizer.portfolio_performance())
+
 
     def optimize_min_volatility(self):
         """Performs portfolio optimization (aiming for minimum volatility)
@@ -133,8 +137,11 @@ class EffOptimizer:
 
         self.optimizer.min_volatility()
         self.portfolio.composition = self.optimizer.clean_weights()
-        self.portfolio.construct(self.metadata_loc, 
-                                 self.optimizer.portfolio_performance())
+        latest_price = self.close_matrix.tail(1)
+        latest_price = latest_price.dropna(axis=1)
+        latest_price = pd.Series(list(latest_price.T.to_dict().values())[0])
+        self.portfolio.construct( latest_price, self.metadata_loc, 
+                                    self.optimizer.portfolio_performance())
 
 
 class HRPOptimizer:
@@ -177,8 +184,12 @@ class HRPOptimizer:
         self.optimizer = HRPOpt(self.mu)
         self.optimizer.optimize()
         self.portfolio.composition = self.optimizer.clean_weights()
-        self.portfolio.construct(self.metadata_loc, 
-                                 self.optimizer.portfolio_performance())
+        latest_price = self.close_matrix.tail(1)
+        latest_price = latest_price.dropna(axis=1)
+        latest_price = pd.Series(list(latest_price.T.to_dict().values())[0])
+        self.portfolio.construct( latest_price, self.metadata_loc, 
+                                    self.optimizer.portfolio_performance())
+
 
 
 class CLAOptimizer:
@@ -245,8 +256,12 @@ class CLAOptimizer:
 
         self.optimizer = CLA(self.mu, self.s)
         self.portfolio.composition = self.optimizer.max_sharpe()
-        self.portfolio.construct(self.metadata_loc, 
-                                 self.optimizer.portfolio_performance())
+        latest_price = self.close_matrix.tail(1)
+        latest_price = latest_price.dropna(axis=1)
+        latest_price = pd.Series(list(latest_price.T.to_dict().values())[0])
+        self.portfolio.construct( latest_price, self.metadata_loc, 
+                                    self.optimizer.portfolio_performance())
+
 
     def optimize_min_volatility(self):
         """Performs portfolio optimization (aiming for minimum volatility)
@@ -262,8 +277,11 @@ class CLAOptimizer:
 
         self.optimizer = CLA(self.mu, self.s)
         self.portfolio.composition = self.optimizer.min_volatility()
-        self.portfolio.construct(self.metadata_loc, 
-                                 self.optimizer.portfolio_performance())
+        latest_price = self.close_matrix.tail(1)
+        latest_price = latest_price.dropna(axis=1)
+        latest_price = pd.Series(list(latest_price.T.to_dict().values())[0])
+        self.portfolio.construct( latest_price, self.metadata_loc, 
+                                    self.optimizer.portfolio_performance())
 
 
 class DeepDowOptimizer:

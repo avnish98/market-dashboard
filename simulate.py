@@ -8,10 +8,16 @@ from ds import Portfolio
 class Environment:
     def __init__(self, data, lookback_period):
         self.data = data
+        self.dates = list(data.index)[lookback_period:]
+        self.current_date = 0
         self.lookback_data = data.head(lookback_period)
 
     def load_next_day(self):
-        pass
+        dayend_prices = self.data[self.data.index == self.dates[self.current_date]]
+        dayend_prices = dayend_prices.to_dict(orient='records')[0]
+        self.current_date += 1
+        return dayend_prices
+
 
 class Agent:
     def __init__(self, optimizer, portfolio_value, **kwargs):
@@ -26,21 +32,30 @@ class Agent:
 
         self.optimizer.metadata_loc = kwargs["metadata_loc"] 
     
-    def initialize_portfolio(self, lookback_data):
-        #lookback_data = lookback_data.dropna(axis=1, how='all')
-        #lookback_data = lookback_data[lookback_data.columns[lookback_data.mean(axis=0) > 962.54]]
+    def allocate_portfolio(self, lookback_data):
         self.optimizer.close_matrix = lookback_data.dropna(axis=1, how='all')
-        
-        #self.optimizer.close_matrix = self.optimizer.close_matrix.loc[:,self.optimizer.close_matrix.mean(axis=0) > 962.54]
         self.optimizer.optimize()
+        self.initialize()
+    
+    def initialize(self):
+        if(self.portfolio.stocks == []):
+            self.portfolio = self.optimizer.portfolio
+    
+    def compute_orders(self, dayend_prices):
+        portfolio_comp = self.portfolio.discrete_composition
+        optimizer_comp = self.optimizer.portfolio.discrete_composition
+
+        orders = {}
+        if portfolio_comp == {}:
+            orders = optimizer_comp
+
+    def execute_orders(self, orders):
+        pass
     
     def execute_buy(self, quantity):
         pass
     
     def execute_sell(self, quantity):
-        pass
-    
-    def rebalance_portfolio(self):
         pass
     
     def log(self):       
@@ -67,8 +82,8 @@ class Backtesting:
         self.benchmark_name = benchmark_name
 
         self.processor = IndexProcessor(proc_ohlc_loc, proc_metadata_loc)
-        # self.processor.process_metrics(upper_margin, lower_margin, bband_ma, 
-        #                               bband_std_mul)
+        self.processor.process_metrics(upper_margin, lower_margin, bband_ma, 
+                                      bband_std_mul)
         self.processor.process_close(start_date, end_date)
 
         self.agents = agents
@@ -77,5 +92,5 @@ class Backtesting:
 
     def backtest(self):
         for a in self.agents:
-            a.initialize_portfolio(self.env.lookback_data)
-        return a
+            a.allocate_portfolio(self.env.lookback_data)
+        

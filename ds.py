@@ -100,7 +100,7 @@ class Portfolio:
         self.cash_left = None
         self.statistics = {}
 
-    def construct(self, metadata_loc, stats):
+    def construct(self, latest_price, metadata_loc, stats):
         """Constructs portfolio by: updating stock objects, calculating discrete
         allocation, and updating statistics of portfolio
 
@@ -112,29 +112,29 @@ class Portfolio:
             List of metrics: Expected annual returns, Volatility, Sharpe Ratio
         """
 
-        self.update_stocks(metadata_loc, list(self.composition.keys()))
-        self.update_discrete_composition()
+        #self.update_stocks(metadata_loc, list(self.composition.keys()))
+        self.update_discrete_composition(latest_price, metadata_loc)
         self.update_statistics(stats)
 
-    def update_stocks(self, metadata_loc, stock_dict):
-        """Updates Stock objects in stocks list using metadata and composition data
-        provided by optimizer
+    # def update_stocks(self, metadata_loc, stock_list):
+    #     """Updates Stock objects in stocks list using metadata and composition data
+    #     provided by optimizer
 
-        Parameters
-        ----------
-        metadata_loc : str
-            Location of metadata
-        stock_dict: dict
-            Weights dictionary provided by Optimizer
-        """
+    #     Parameters
+    #     ----------
+    #     metadata_loc : str
+    #         Location of metadata
+    #     stock_list: list
+    #         List of stocks provided by Optimizer
+    #     """
 
-        meta_json = read_json(metadata_loc)
-        for stock_ticker in stock_dict:
-            stock_data = find_in_json(meta_json, 'Ticker', stock_ticker)
-            stock_data['Portfolio Allocation'] = self.composition[stock_ticker]
-            stock = Stock()
-            stock.load(stock_data)
-            self.stocks.append(stock)
+    #     meta_json = read_json(metadata_loc)
+    #     for stock_ticker in stock_list:
+    #         stock_data = find_in_json(meta_json, 'Ticker', stock_ticker)
+    #         #stock_data['Portfolio Allocation'] = self.composition[stock_ticker]
+    #         stock = Stock()
+    #         stock.load(stock_data)
+    #         self.stocks.append(stock)
      
     # def update_stocks(self, close_matrix):
     #     latest_price = close_matrix.tail(1).T.reset_index()
@@ -160,7 +160,7 @@ class Portfolio:
         temp_dict['Sharpe Ratio'] = None if stats[2]==None else round(stats[2], 2)
         self.statistics = temp_dict
     
-    def update_discrete_composition(self):
+    def update_discrete_composition(self, latest_price, metadata_loc):
         """Calculates Portfolio's discrete composition using weights provided by
         optimizer and portfolio's value
 
@@ -170,10 +170,19 @@ class Portfolio:
             Total valuation of portfolio
         """
 
-        price_dict = {}
-        for s in self.stocks:
-            price_dict[s.ticker] = s.price
-        latest_price = pd.Series(price_dict)
+        # price_dict = {}
+        # for s in self.stocks:
+        #     price_dict[s.ticker] = s.price
+        # latest_price = pd.Series(price_dict)
 
         da = DiscreteAllocation(self.composition, latest_price, self.portfolio_value)
         self.discrete_composition, self.cash_left = da.greedy_portfolio() 
+
+        meta_json = read_json(metadata_loc)
+        for stock_ticker in list(self.discrete_composition.keys()):
+            stock = Stock()
+            stock_data = find_in_json(meta_json, 'Ticker', stock_ticker)
+            stock_data['Portfolio Allocation'] = self.discrete_composition[stock_ticker]
+            stock_data['Value'] = self.discrete_composition[stock_ticker] * stock_data['Price']
+            stock.load(stock_data)
+            self.stocks.append(stock)
