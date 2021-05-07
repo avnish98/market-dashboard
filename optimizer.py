@@ -244,7 +244,6 @@ class CLAOptimizer:
         self.s = risk_models.CovarianceShrinkage(self.close_matrix).ledoit_wolf()
 
         self.optimizer = CLA(self.mu, self.s)
-        self.optimizer_type = "max_sharpe"
         self.portfolio.composition = self.optimizer.max_sharpe()
         self.portfolio.construct(self.metadata_loc, 
                                  self.optimizer.portfolio_performance())
@@ -254,8 +253,16 @@ class CLAOptimizer:
         and constructs portfolio to store data
         """
 
+        total_mean = self.close_matrix.mean(axis=0).mean()
+        self.close_matrix = self.close_matrix[self.close_matrix.columns[
+                                    self.close_matrix.mean(axis=0) > total_mean]]
+        self.mu = expected_returns.mean_historical_return(self.close_matrix)
+        #self.s = risk_models.sample_cov(processor.close_matrix)
+        self.s = risk_models.CovarianceShrinkage(self.close_matrix).ledoit_wolf()
+
+        self.optimizer = CLA(self.mu, self.s)
         self.portfolio.composition = self.optimizer.min_volatility()
-        self.portfolio.construct(self.processor.metadata_loc, 
+        self.portfolio.construct(self.metadata_loc, 
                                  self.optimizer.portfolio_performance())
 
 
