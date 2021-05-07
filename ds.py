@@ -97,7 +97,7 @@ class Portfolio:
         self.portfolio_value = value
         self.composition = {}
         self.discrete_composition = {}
-        self.cash_left = None
+        self.cash_left = value
         self.statistics = {}
 
     def construct(self, latest_price, metadata_loc, stats):
@@ -186,3 +186,18 @@ class Portfolio:
             stock_data['Value'] = self.discrete_composition[stock_ticker] * stock_data['Price']
             stock.load(stock_data)
             self.stocks.append(stock)
+    
+    def stock_in_portfolio(self, ticker):
+        flag = False
+        for stock in self.stocks:
+            if ticker == stock.ticker:
+                flag = True
+        return flag
+    
+    def update_allocation(self, ticker, disc_alloc, new_price):
+        for stock in self.stocks:
+            if ticker == stock.ticker:
+                stock.metadata['Portfolio Allocation'] = stock.metadata['Portfolio Allocation'] + disc_alloc
+                stock.metadata['Value'] = stock.metadata['Portfolio Allocation']*new_price
+                print("Allocation Update for {} by {}".format(ticker, disc_alloc))
+                break
