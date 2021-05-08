@@ -200,7 +200,7 @@ class Portfolio:
                 stock.metadata['Portfolio Allocation'] = stock.metadata['Portfolio Allocation'] + disc_alloc
                 stock.metadata['Value'] = stock.metadata['Portfolio Allocation']*new_price
 
-                if(stock.metadata['Portfolio Allocation'] + disc_alloc == 0):
+                if(stock.metadata['Portfolio Allocation']==0):
                     self.stocks.remove(stock)
                 
                 break
