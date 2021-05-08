@@ -107,3 +107,9 @@ def sort_dict(x, reverse):
 
 def slice_dict(x, K):
     return dict(itertools.islice(x.items(), K))
+
+def return_latest_data(file, date):
+    df = pd.read_csv(file)
+    df['Date'] = pd.to_datetime(df['Date']).dt.date
+    df = df[df["Date"]==date]
+    return df

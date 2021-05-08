@@ -113,10 +113,10 @@ class StockProcessor(Processor):
             ohlc_data_latest = ohlc_data.tail(1).to_dict(orient='records')[0]
 
             self.stock.metadata['OHLC Data Available'] = True
-            self.stock.metadata['Profit Exit'] = ohlc_data_latest['Profit Exit']
-            self.stock.metadata['Stop Loss'] = ohlc_data_latest['Stop Loss']
-            self.stock.metadata['Bollinger Band Up'] = ohlc_data_latest['Bollinger Band Up']
-            self.stock.metadata['Bollinger Band Down'] = ohlc_data_latest['Bollinger Band Down']
+            # self.stock.metadata['Profit Exit'] = ohlc_data_latest['Profit Exit']
+            # self.stock.metadata['Stop Loss'] = ohlc_data_latest['Stop Loss']
+            # self.stock.metadata['Bollinger Band Up'] = ohlc_data_latest['Bollinger Band Up']
+            # self.stock.metadata['Bollinger Band Down'] = ohlc_data_latest['Bollinger Band Down']
 
             mp = self.stock.metadata['OHLC Data Location'].replace('cleaned', 'processed')
             self.stock.metadata['OHLC Data Location'] = mp
@@ -124,10 +124,10 @@ class StockProcessor(Processor):
             write_csv(ohlc_data, self.stock.ohlc.replace('cleaned', 'processed'))
 
         except FileNotFoundError as e:            
-            self.stock.metadata['Profit Exit'] = None
-            self.stock.metadata['Stop Loss'] = None
-            self.stock.metadata['Bollinger Band Up'] = None
-            self.stock.metadata['Bollinger Band Down'] = None
+            # self.stock.metadata['Profit Exit'] = None
+            # self.stock.metadata['Stop Loss'] = None
+            # self.stock.metadata['Bollinger Band Up'] = None
+            # self.stock.metadata['Bollinger Band Down'] = None
             self.stock.metadata['OHLC Data Available'] = False
             self.stock.metadata['OHLC Data Location'] = None
             print("File not present: {}".format(self.stock.ohlc))
