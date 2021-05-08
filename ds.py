@@ -199,6 +199,10 @@ class Portfolio:
             if ticker == stock.ticker:
                 stock.metadata['Portfolio Allocation'] = stock.metadata['Portfolio Allocation'] + disc_alloc
                 stock.metadata['Value'] = stock.metadata['Portfolio Allocation']*new_price
+
+                if(stock.metadata['Portfolio Allocation'] + disc_alloc == 0):
+                    self.stocks.remove(stock)
+                
                 break
     
     def total_portfolio_value(self):
