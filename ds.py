@@ -175,6 +175,10 @@ class Portfolio:
         #     price_dict[s.ticker] = s.price
         # latest_price = pd.Series(price_dict)
 
+        for k, v in dict(self.composition).items():
+            if k not in latest_price.index:
+                del self.composition[k]
+
         da = DiscreteAllocation(self.composition, latest_price, self.portfolio_value)
         self.discrete_composition, self.cash_left = da.greedy_portfolio() 
 
