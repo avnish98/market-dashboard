@@ -20,12 +20,14 @@ class Environment:
         dayend_prices = self.data[self.data.index == self.dates[self.current_date]]
         dayend_prices = dayend_prices.to_dict(orient='records')[0]
 
-        for s in agent.portfolio.stocks:
+        agent.orders = {}
+        agent.order_log = []
 
-            
+        for s in agent.portfolio.stocks:
+         
             s.price = dayend_prices[s.ticker]
             s.metadata['Price'] = dayend_prices[s.ticker]
-            
+
             try:
                 ohlc_data = pd.read_csv(s.metadata['OHLC Data Location'])
                 ohlc_data['Date'] = pd.to_datetime(ohlc_data['Date']).dt.date
@@ -92,15 +94,15 @@ class Agent:
     #         s.metadata['Price'] = dayend_prices[s.ticker]
     #         s.metadata['Price'] = dayend_prices[s.ticker]
     
-    def compute_daily_orders(self, dayend_prices=None):
-        portfolio_comp = self.portfolio.discrete_composition
-        self.orders = {}
+    # def compute_daily_orders(self, dayend_prices=None):
+    #     portfolio_comp = self.portfolio.discrete_composition
+    #     self.orders = {}
 
-        for stock in self.portfolio.stocks:
-            if(stock.price <= stock.metadata['Bollinger Band Down']):
-                self.orders[stock.ticker]= -stock.metadata['Portfolio Allocation']
-            elif(stock.price >= stock.metadata['Bollinger Band Up']):
-                self.orders[stock.ticker]= -stock.metadata['Portfolio Allocation']
+    #     for stock in self.portfolio.stocks:
+    #         if(stock.price <= stock.metadata['Bollinger Band Down']):
+    #             self.orders[stock.ticker]= -stock.metadata['Portfolio Allocation']
+    #         elif(stock.price >= stock.metadata['Bollinger Band Up']):
+    #             self.orders[stock.ticker]= -stock.metadata['Portfolio Allocation']
 
     def compute_allocation_orders(self):
         portfolio_comp = self.portfolio.discrete_composition
@@ -127,7 +129,7 @@ class Agent:
                 self.execute_buy(ticker, shares, dayend_prices[ticker])
             elif shares < 0:
                 self.execute_sell(ticker, shares, dayend_prices[ticker])
-        self.orders = []
+        #self.orders = []
     
     def execute_buy(self, ticker, quantity, price):
 
@@ -152,7 +154,7 @@ class Agent:
     def execute_sell(self, ticker, quantity, price):
 
         if(self.portfolio.stock_in_portfolio(ticker)):
-            self.portfolio.update_allocation(ticker, -quantity, price)
+            self.portfolio.update_allocation(ticker, quantity, price)
             
         # metadata = find_in_json(read_json(self.optimizer.metadata_loc), "Ticker", ticker)
         # stock = Stock()
@@ -237,6 +239,11 @@ class Backtesting:
                     #print(self.env.dates[i])
                     print(self.env.dates[i])
                     print(a.order_log)
+                    print()
+                    print(dict(zip([s.ticker for s in a.portfolio.stocks], [s.metadata['Portfolio Allocation'] for s in a.portfolio.stocks])))
+                    # for s in a.portfolio.stocks:
+                    #     s.ticker
+                    #     s.metadata['Portfolio Allocation']
                     print()
                 # except Exception as e:
                 #     print(e)
