@@ -1,4 +1,5 @@
 from datetime import date, datetime
+import json
 
 import pandas as pd
 import numpy as np
@@ -6,17 +7,17 @@ import numpy as np
 from processor import IndexProcessor
 from optimizer import Optimizer
 from ds import Portfolio, Stock
-from utils import find_in_json, read_json, sort_dict, slice_dict, return_latest_data
+from utils import find_in_json, read_json, write_json, sort_dict, slice_dict, return_latest_data
 
 class Environment:
     def __init__(self, data, metadata, lookback_period):
         self.data = data
         self.metadata = metadata
-        self.dates = list(data.index)#[lookback_period:]
+        self.dates = list(data.index)
         self.current_date =(-1)
         self.lookback_period = lookback_period
 
-    def load_next_day(self, agent):
+    def load_next_day(self, agent, bband_margins):
         dayend_prices = self.data[self.data.index == self.dates[self.current_date]]
         dayend_prices = dayend_prices.to_dict(orient='records')[0]
 
@@ -27,6 +28,7 @@ class Environment:
          
             s.price = dayend_prices[s.ticker]
             s.metadata['Price'] = dayend_prices[s.ticker]
+            s.metadata['Value'] = s.metadata['Portfolio Allocation']*s.metadata['Price']
 
             try:
                 ohlc_data = pd.read_csv(s.metadata['OHLC Data Location'])
@@ -34,18 +36,25 @@ class Environment:
                 ohlc_data = ohlc_data[ohlc_data['Date'] == self.dates[self.current_date]]
                 ohlc_data = ohlc_data.to_dict(orient='records')[0]
 
-                if((s.price <= ohlc_data['Bollinger Band Down']) or (s.price >= ohlc_data['Bollinger Band Up'])):
-                    agent.execute_sell(s.ticker, -s.metadata['Portfolio Allocation'], s.price)   
+                if(bband_margins):
+                    if((s.price <= ohlc_data['Bollinger Band Down']) or (s.price >= ohlc_data['Bollinger Band Up'])):
+                        agent.execute_sell(s.ticker, -s.metadata['Portfolio Allocation'], s.price)   
+                    elif((s.price <= ohlc_data['Stop Loss']) or (s.price >= ohlc_data['Profit Exit'])):
+                        agent.execute_sell(s.ticker, -s.metadata['Portfolio Allocation'], s.price) 
+
             except Exception as e:
                 print("Exception {} for ticker {} for date {}".format(e, s.ticker, self.dates[self.current_date]))
             
         self.current_date += 1
         return dayend_prices
     
-    def load_lookback_data(self):
+    def load_lookback_data(self, cumulative=True):
         start_cond = (self.data.index > self.dates[self.current_date - self.lookback_period])
         end_cond = (self.data.index <= self.dates[self.current_date])
-        allocation_data = self.data.loc[start_cond & end_cond]
+        if cumulative:
+            allocation_data = self.data.loc[end_cond]
+        else:
+            allocation_data = self.data.loc[start_cond & end_cond]
         return allocation_data
 
     def is_reallocation_day(self):
@@ -57,15 +66,18 @@ class Environment:
 
 
 class Agent:
-    def __init__(self, optimizer=Optimizer(), portfolio_value=100000, 
+    def __init__(self, name=None, optimizer=Optimizer(), portfolio_value=1000000, 
                 single_day_cash=0.60, **kwargs):
-        self.portfolio = Portfolio(single_day_cash*portfolio_value)
+        self.name = name
+        self.portfolio = Portfolio()
         self.optimizer = optimizer
+        self.optimizer.portfolio = Portfolio()
         self.total_cash = portfolio_value
-        #self.optimizer.portfolio.portfolio_value = portfolio_value
         self.single_day_cash = single_day_cash
         self.orders = {}
         self.order_log = []
+        self.portfolio_logs = []
+        self.init_portfolio = portfolio_value
 
         try:
             self.optimizer.optimizer_type = kwargs["optimizer_type"]
@@ -75,39 +87,17 @@ class Agent:
         self.optimizer.metadata_loc = kwargs["metadata_loc"] 
     
     def allocate_portfolio(self, lookback_data):
-        self.optimizer.portfolio.cash_left += self.single_day_cash * self.total_cash
-        self.portfolio.cash_left += self.single_day_cash * self.total_cash
-        self.total_cash -= self.single_day_cash * self.total_cash
+        self.optimizer.portfolio.portfolio_value = self.single_day_cash * self.total_cash
+        self.portfolio.portfolio_value = self.single_day_cash * self.total_cash
+        self.optimizer.portfolio.cash_left = self.single_day_cash * self.total_cash
+        self.portfolio.cash_left = self.single_day_cash * self.total_cash
+        self.total_cash -= self.portfolio.portfolio_value
         self.optimizer.close_matrix = lookback_data.dropna(axis=1, how='all')
         self.optimizer.optimize()
-        #self.initialize()
-    
-    # def initialize(self):
-    #     if(self.portfolio.stocks == []):
-    #         self.portfolio = self.optimizer.portfolio
-
-    # def update_stocks(self, dayend_prices):
-    #     df = pd.read_json(self.optimizer.metadata_loc)
-    #     for s in self.portfolio.stocks:
-    #         s.price = dayend_prices[s.ticker]
-    #         s.metadata['Price'] = dayend_prices[s.ticker]
-    #         s.metadata['Price'] = dayend_prices[s.ticker]
-    #         s.metadata['Price'] = dayend_prices[s.ticker]
-    
-    # def compute_daily_orders(self, dayend_prices=None):
-    #     portfolio_comp = self.portfolio.discrete_composition
-    #     self.orders = {}
-
-    #     for stock in self.portfolio.stocks:
-    #         if(stock.price <= stock.metadata['Bollinger Band Down']):
-    #             self.orders[stock.ticker]= -stock.metadata['Portfolio Allocation']
-    #         elif(stock.price >= stock.metadata['Bollinger Band Up']):
-    #             self.orders[stock.ticker]= -stock.metadata['Portfolio Allocation']
 
     def compute_allocation_orders(self):
         portfolio_comp = self.portfolio.discrete_composition
         optimizer_comp = self.optimizer.portfolio.discrete_composition
-        #optimizer_comp = sort_dict(optimizer_comp, reverse=True)
         self.orders = {}
         if len(self.portfolio.stocks) == 0:
             self.orders = optimizer_comp
@@ -118,18 +108,13 @@ class Agent:
                         self.orders[k] = v - portfolio_comp[k]
                 self.orders[k] = v
         
-        # if(self.num_stocks>0):
-        #     self.orders = slice_dict(self.orders, self.num_stocks)
-
     def execute_orders(self, dayend_prices=None):
         self.order_log = []
-        #self.orders = sort_dict(self.orders, True)
         for ticker, shares in self.orders.items():
             if shares > 0:
                 self.execute_buy(ticker, shares, dayend_prices[ticker])
             elif shares < 0:
                 self.execute_sell(ticker, shares, dayend_prices[ticker])
-        #self.orders = []
     
     def execute_buy(self, ticker, quantity, price):
 
@@ -147,30 +132,36 @@ class Agent:
                 stock.metadata['Value'] = quantity*price
                 self.portfolio.stocks.append(stock)
 
-            self.portfolio.cash_left -= quantity*price
-            self.order_log.append("Bought {} shares of {} at {}".format(quantity, ticker, quantity*price))
-            #print("Bought {} shares of {} at {}".format(quantity, ticker, quantity*price))
+            self.total_cash -= (quantity*price)
+            self.order_log.append({"Stock": ticker, "Sold": 0, "Bought": quantity, "Value": quantity*price})
     
     def execute_sell(self, ticker, quantity, price):
 
         if(self.portfolio.stock_in_portfolio(ticker)):
             self.portfolio.update_allocation(ticker, quantity, price)
-            
-        # metadata = find_in_json(read_json(self.optimizer.metadata_loc), "Ticker", ticker)
-        # stock = Stock()
-        # stock.load(metadata)
-
-        # if(self.portfolio.stock_in_portfolio(ticker)):
-        #         self.portfolio.update_allocation(ticker, -quantity, price)
-        # else:
-        #         self.portfolio.stocks.remove(stock)
-        self.portfolio.cash_left += (-quantity)*price
-
-        self.order_log.append("Sold {} shares of {} at {}".format(-quantity, ticker, -quantity*price))
-        #print("Sold {} shares of {} at {}".format(-quantity, ticker, -quantity*price))
+        self.total_cash += ((-quantity)*price)
+        self.order_log.append({"Stock": ticker, "Sold": -quantity, "Bought": 0, "Value": -quantity*price})
     
-    def log(self):       
-        pass
+    def log(self, date, is_realloc):       
+        pvalue = self.portfolio.total_portfolio_value()
+        portfolio_log = {
+            "Portfolio Name":self.name,
+            "Date":date.strftime('%Y-%m-%d'),
+            "Total Portfolio Value": pvalue + self.total_cash,
+            "Cumulative Portfolio Return":((pvalue + self.total_cash - \
+                                    self.init_portfolio)/self.init_portfolio)*100,
+            "Amount Invested":pvalue,
+            "Amount Reserved":self.total_cash,
+            "Reallocation Day":is_realloc,
+        }
+
+        print(json.dumps(portfolio_log, indent = 4))
+
+        portfolio_log["Optimizer Allocation"] = self.optimizer.portfolio.discrete_composition
+        portfolio_log["Executed Orders"] = self.order_log
+        portfolio_log["Portfolio Composition"] = [s.metadata for s in self.portfolio.stocks]
+
+        self.portfolio_logs.append(portfolio_log)
 
 class Backtesting:
     def __init__(self, start_date=date(1980, 1, 1), end_date=date.today(), 
@@ -209,42 +200,21 @@ class Backtesting:
     def backtest(self):
         for a in self.agents:
             for i in range(len(self.env.dates)):
-                # a.allocate_portfolio(self.env.lookback_data[i])
-                # a.compute_orders()
-                #try:
-                    dayend_prices = self.env.load_next_day(a)
-                    #a.update_stocks(dayend_prices,)
-                    #a.compute_daily_orders(dayend_prices)
-                    #a.execute_orders(dayend_prices)
 
+                    print("Day: {}".format(self.env.current_date+1))
+
+                    dayend_prices = self.env.load_next_day(a, self.bband_margins)
                     if(self.env.is_reallocation_day()):
-                        print("Reallocation day")
-                        print(self.env.current_date)
-                        #print(self.env.current_date)
-                        # start_cond = (self.env.data.index > self.env.dates[i-self.lookback_period])
-                        # end_cond = (self.env.data.index <= self.env.dates[i])
-                        # allocation_data = self.env.data.loc[start_cond & end_cond]
 
                         allocation_data = self.env.load_lookback_data()
-                        # print("This is allocation data")
-                        # print("Date: {}".format(self.env.dates[i]))
-                        # print(allocation_data.head())
-                        # print(allocation_data.info())
-
                         a.allocate_portfolio(allocation_data)
                         a.compute_allocation_orders()
                         a.execute_orders(dayend_prices)
                         
-                    #print()
-                    #print(self.env.dates[i])
-                    print(self.env.dates[i])
-                    print(a.order_log)
+                    a.total_cash += a.portfolio.cash_left
+                    a.portfolio.cash_left = 0
+                    a.log(self.env.dates[i], self.env.is_reallocation_day())
                     print()
-                    print(dict(zip([s.ticker for s in a.portfolio.stocks], [s.metadata['Portfolio Allocation'] for s in a.portfolio.stocks])))
-                    # for s in a.portfolio.stocks:
-                    #     s.ticker
-                    #     s.metadata['Portfolio Allocation']
-                    print()
-                # except Exception as e:
-                #     print(e)
+            
+            write_json(a.portfolio_logs, self.processor.proc_metadata_loc+"AGENT_{}.json".format(a.name))
         

@@ -92,7 +92,7 @@ class Portfolio:
         optimizer and portfolio's value
     """
 
-    def __init__(self, value=100000):
+    def __init__(self, value=0):
         self.stocks = []
         self.portfolio_value = value
         self.composition = {}
@@ -210,7 +210,7 @@ class Portfolio:
                 break
     
     def total_portfolio_value(self):
-        total_val = self.cash_left
+        total_val = 0
         for s in self.stocks:
-            total_val += s.price
+            total_val += s.metadata['Value']
         return total_val

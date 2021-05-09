@@ -76,6 +76,9 @@ class IndexFetcher:
         if not os.path.exists('data/cleaned/OHLC'):
             os.makedirs('data/cleaned/OHLC')
 
+        if not os.path.exists('data/cleaned/OHLC/Index'):
+            os.makedirs('data/cleaned/OHLC/Index')
+
         if not os.path.exists('data/cleaned/Metadata'):
             os.makedirs('data/cleaned/Metadata')
         
@@ -84,6 +87,9 @@ class IndexFetcher:
         
         if not os.path.exists('data/processed/OHLC'):
             os.makedirs('data/processed/OHLC')
+
+        if not os.path.exists('data/processed/OHLC/Index'):
+            os.makedirs('data/processed/OHLC/Index')
 
         if not os.path.exists('data/processed/Metadata'):
             os.makedirs('data/processed/Metadata')
@@ -195,6 +201,9 @@ class Nifty500Fetcher(IndexFetcher):
         if not os.path.exists(nifty500_ohlc_dir):
             os.makedirs(nifty500_ohlc_dir)
 
+        if not os.path.exists(nifty500_ohlc_dir+"/Index"):
+            os.makedirs(nifty500_ohlc_dir+"/Index")
+
         self.metadata_dir = nifty500_metadata_dir
         self.ohlc_dir = nifty500_ohlc_dir
 
@@ -282,6 +291,10 @@ class Nifty500Fetcher(IndexFetcher):
             progress_perc = np.round((progress/num_tickers)*100, 2)
             print("Progress: {}% Last ticker: {}".format(progress_perc, c))
             time.sleep(timeout)
+    
+    def fetch_index(self, index_name='NIFTY500', start_date=date(1980, 1, 1), end_date=date.today()):
+        data = get_history(symbol=index_name, start=start_date, end=end_date)
+        data.to_csv("{}/{}.csv".format(self.ohlc_dir+"/Index", index_name)
     
     def ohlc_updation_check(self):
         """Checks if static CSVs are outdated and returns a dictionary
