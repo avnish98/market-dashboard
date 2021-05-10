@@ -1,0 +1,3911 @@
+[
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-06-01",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-06-02",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-06-03",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-06-06",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-06-07",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-06-08",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-06-09",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-06-10",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-06-13",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-06-14",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-06-15",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-06-16",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-06-17",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-06-20",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-06-21",
+        "Executed Orders": [
+            {
+                "Stock": "PFIZER",
+                "Sold": 0,
+                "Bought": 132,
+                "Value": 181506.6
+            },
+            {
+                "Stock": "GODFRYPHLP",
+                "Sold": 0,
+                "Bought": 66,
+                "Value": 158116.19999999998
+            },
+            {
+                "Stock": "TITAN",
+                "Sold": 0,
+                "Bought": 18,
+                "Value": 83182.5
+            },
+            {
+                "Stock": "GILLETTE",
+                "Sold": 0,
+                "Bought": 40,
+                "Value": 80734.0
+            },
+            {
+                "Stock": "SUNDARMFIN",
+                "Sold": 0,
+                "Bought": 104,
+                "Value": 54506.4
+            },
+            {
+                "Stock": "NESCO",
+                "Sold": 0,
+                "Bought": 73,
+                "Value": 41248.649999999994
+            },
+            {
+                "Stock": "VSTIND",
+                "Sold": 0,
+                "Bought": 45,
+                "Value": 41427.0
+            },
+            {
+                "Stock": "SKFINDIA",
+                "Sold": 0,
+                "Bought": 60,
+                "Value": 37293.0
+            },
+            {
+                "Stock": "COLPAL",
+                "Sold": 0,
+                "Bought": 37,
+                "Value": 33829.1
+            },
+            {
+                "Stock": "NAUKRI",
+                "Sold": 0,
+                "Bought": 45,
+                "Value": 32292.0
+            },
+            {
+                "Stock": "TRENT",
+                "Sold": 0,
+                "Bought": 23,
+                "Value": 24012.0
+            },
+            {
+                "Stock": "SCHAEFFLER",
+                "Sold": 0,
+                "Bought": 20,
+                "Value": 22816.0
+            },
+            {
+                "Stock": "J&KBANK",
+                "Sold": 0,
+                "Bought": 21,
+                "Value": 17764.95
+            },
+            {
+                "Stock": "ZYDUSWELL",
+                "Sold": 0,
+                "Bought": 29,
+                "Value": 17123.050000000003
+            },
+            {
+                "Stock": "WABCOINDIA",
+                "Sold": 0,
+                "Bought": 14,
+                "Value": 14280.0
+            },
+            {
+                "Stock": "RALLIS",
+                "Sold": 0,
+                "Bought": 9,
+                "Value": 13557.6
+            },
+            {
+                "Stock": "BATAINDIA",
+                "Sold": 0,
+                "Bought": 21,
+                "Value": 11070.15
+            },
+            {
+                "Stock": "PGHH",
+                "Sold": 0,
+                "Bought": 5,
+                "Value": 9575.25
+            },
+            {
+                "Stock": "SRTRANSFIN",
+                "Sold": 0,
+                "Bought": 7,
+                "Value": 4252.150000000001
+            },
+            {
+                "Stock": "ABBOTINDIA",
+                "Sold": 0,
+                "Bought": 2,
+                "Value": 2861.3
+            },
+            {
+                "Stock": "SOLARINDS",
+                "Sold": 0,
+                "Bought": 4,
+                "Value": 2539.6
+            },
+            {
+                "Stock": "SBIN",
+                "Sold": 0,
+                "Bought": 1,
+                "Value": 2180.2
+            },
+            {
+                "Stock": "KANSAINER",
+                "Sold": 0,
+                "Bought": 2,
+                "Value": 1773.9
+            },
+            {
+                "Stock": "AKZOINDIA",
+                "Sold": 0,
+                "Bought": 1,
+                "Value": 890.5
+            },
+            {
+                "Stock": "THERMAX",
+                "Sold": 0,
+                "Bought": 2,
+                "Value": 1185.7
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-06-22",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-06-23",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-06-24",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-06-27",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-06-28",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-06-29",
+        "Executed Orders": [
+            {
+                "Stock": "TRENT",
+                "Sold": 23,
+                "Bought": 0,
+                "Value": 25918.7
+            },
+            {
+                "Stock": "ZYDUSWELL",
+                "Sold": 29,
+                "Bought": 0,
+                "Value": 17874.15
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-06-30",
+        "Executed Orders": [
+            {
+                "Stock": "PFIZER",
+                "Sold": 132,
+                "Bought": 0,
+                "Value": 199227.6
+            },
+            {
+                "Stock": "VSTIND",
+                "Sold": 45,
+                "Bought": 0,
+                "Value": 44419.5
+            },
+            {
+                "Stock": "COLPAL",
+                "Sold": 37,
+                "Bought": 0,
+                "Value": 36482.0
+            },
+            {
+                "Stock": "BATAINDIA",
+                "Sold": 21,
+                "Bought": 0,
+                "Value": 12306.0
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-07-01",
+        "Executed Orders": [
+            {
+                "Stock": "SKFINDIA",
+                "Sold": 60,
+                "Bought": 0,
+                "Value": 40902.0
+            },
+            {
+                "Stock": "WABCOINDIA",
+                "Sold": 14,
+                "Bought": 0,
+                "Value": 14868.699999999999
+            },
+            {
+                "Stock": "ABBOTINDIA",
+                "Sold": 2,
+                "Bought": 0,
+                "Value": 2964.3
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-07-04",
+        "Executed Orders": [
+            {
+                "Stock": "GODFRYPHLP",
+                "Sold": 66,
+                "Bought": 0,
+                "Value": 193861.80000000002
+            },
+            {
+                "Stock": "KANSAINER",
+                "Sold": 2,
+                "Bought": 0,
+                "Value": 1840.0
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-07-05",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-07-06",
+        "Executed Orders": [
+            {
+                "Stock": "AKZOINDIA",
+                "Sold": 1,
+                "Bought": 0,
+                "Value": 957.8
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-07-07",
+        "Executed Orders": [
+            {
+                "Stock": "RALLIS",
+                "Sold": 9,
+                "Bought": 0,
+                "Value": 14166.9
+            },
+            {
+                "Stock": "SRTRANSFIN",
+                "Sold": 7,
+                "Bought": 0,
+                "Value": 4786.95
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-07-08",
+        "Executed Orders": [
+            {
+                "Stock": "SUNDARMFIN",
+                "Sold": 104,
+                "Bought": 0,
+                "Value": 58338.8
+            },
+            {
+                "Stock": "PGHH",
+                "Sold": 5,
+                "Bought": 0,
+                "Value": 10178.75
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-07-11",
+        "Executed Orders": [
+            {
+                "Stock": "GODFRYPHLP",
+                "Sold": 0,
+                "Bought": 84,
+                "Value": 254217.6
+            },
+            {
+                "Stock": "NESCO",
+                "Sold": 0,
+                "Bought": 105,
+                "Value": 70696.5
+            },
+            {
+                "Stock": "BATAINDIA",
+                "Sold": 0,
+                "Bought": 71,
+                "Value": 44559.6
+            },
+            {
+                "Stock": "ZYDUSWELL",
+                "Sold": 0,
+                "Bought": 62,
+                "Value": 43592.200000000004
+            },
+            {
+                "Stock": "GODREJPROP",
+                "Sold": 0,
+                "Bought": 46,
+                "Value": 35537.299999999996
+            },
+            {
+                "Stock": "TRENT",
+                "Sold": 0,
+                "Bought": 30,
+                "Value": 36039.0
+            },
+            {
+                "Stock": "PFIZER",
+                "Sold": 0,
+                "Bought": 17,
+                "Value": 24569.25
+            },
+            {
+                "Stock": "GILLETTE",
+                "Sold": 0,
+                "Bought": 8,
+                "Value": 17267.2
+            },
+            {
+                "Stock": "VSTIND",
+                "Sold": 0,
+                "Bought": 17,
+                "Value": 17419.050000000003
+            },
+            {
+                "Stock": "BALMLAWRIE",
+                "Sold": 0,
+                "Bought": 24,
+                "Value": 15325.199999999999
+            },
+            {
+                "Stock": "HONAUT",
+                "Sold": 0,
+                "Bought": 5,
+                "Value": 13949.25
+            },
+            {
+                "Stock": "ECLERX",
+                "Sold": 0,
+                "Bought": 15,
+                "Value": 12606.0
+            },
+            {
+                "Stock": "COLPAL",
+                "Sold": 0,
+                "Bought": 12,
+                "Value": 12079.8
+            },
+            {
+                "Stock": "WABCOINDIA",
+                "Sold": 0,
+                "Bought": 10,
+                "Value": 11500.5
+            },
+            {
+                "Stock": "AKZOINDIA",
+                "Sold": 0,
+                "Bought": 12,
+                "Value": 11142.599999999999
+            },
+            {
+                "Stock": "PGHL",
+                "Sold": 0,
+                "Bought": 15,
+                "Value": 10088.25
+            },
+            {
+                "Stock": "SCHAEFFLER",
+                "Sold": 0,
+                "Bought": 9,
+                "Value": 10653.300000000001
+            },
+            {
+                "Stock": "TECHM",
+                "Sold": 0,
+                "Bought": 12,
+                "Value": 8827.8
+            },
+            {
+                "Stock": "J&KBANK",
+                "Sold": 0,
+                "Bought": 10,
+                "Value": 8492.0
+            },
+            {
+                "Stock": "SKFINDIA",
+                "Sold": 0,
+                "Bought": 11,
+                "Value": 7194.0
+            },
+            {
+                "Stock": "NAUKRI",
+                "Sold": 0,
+                "Bought": 6,
+                "Value": 4332.0
+            },
+            {
+                "Stock": "VIPIND",
+                "Sold": 0,
+                "Bought": 5,
+                "Value": 4233.5
+            },
+            {
+                "Stock": "SUNDARMFIN",
+                "Sold": 0,
+                "Bought": 7,
+                "Value": 3848.5999999999995
+            },
+            {
+                "Stock": "BLUEDART",
+                "Sold": 0,
+                "Bought": 3,
+                "Value": 4680.15
+            },
+            {
+                "Stock": "SANOFI",
+                "Sold": 0,
+                "Bought": 1,
+                "Value": 2048.0
+            },
+            {
+                "Stock": "CONCOR",
+                "Sold": 0,
+                "Bought": 2,
+                "Value": 2276.6
+            },
+            {
+                "Stock": "CRISIL",
+                "Sold": 0,
+                "Bought": 1,
+                "Value": 7293.15
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-07-12",
+        "Executed Orders": [
+            {
+                "Stock": "NESCO",
+                "Sold": 178,
+                "Bought": 0,
+                "Value": 124466.5
+            },
+            {
+                "Stock": "GODREJPROP",
+                "Sold": 46,
+                "Bought": 0,
+                "Value": 37398.0
+            },
+            {
+                "Stock": "HONAUT",
+                "Sold": 5,
+                "Bought": 0,
+                "Value": 13898.5
+            },
+            {
+                "Stock": "CRISIL",
+                "Sold": 1,
+                "Bought": 0,
+                "Value": 7369.4
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-07-13",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-07-14",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-07-15",
+        "Executed Orders": [
+            {
+                "Stock": "SCHAEFFLER",
+                "Sold": 29,
+                "Bought": 0,
+                "Value": 36035.399999999994
+            },
+            {
+                "Stock": "WABCOINDIA",
+                "Sold": 10,
+                "Bought": 0,
+                "Value": 12123.5
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-07-18",
+        "Executed Orders": [
+            {
+                "Stock": "VSTIND",
+                "Sold": 17,
+                "Bought": 0,
+                "Value": 20174.75
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-07-19",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-07-20",
+        "Executed Orders": [
+            {
+                "Stock": "SOLARINDS",
+                "Sold": 4,
+                "Bought": 0,
+                "Value": 2638.6
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-07-21",
+        "Executed Orders": [
+            {
+                "Stock": "SKFINDIA",
+                "Sold": 11,
+                "Bought": 0,
+                "Value": 6953.1
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-07-22",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-07-25",
+        "Executed Orders": [
+            {
+                "Stock": "NAUKRI",
+                "Sold": 51,
+                "Bought": 0,
+                "Value": 38428.5
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-07-26",
+        "Executed Orders": [
+            {
+                "Stock": "GILLETTE",
+                "Sold": 48,
+                "Bought": 0,
+                "Value": 110001.59999999999
+            },
+            {
+                "Stock": "AKZOINDIA",
+                "Sold": 12,
+                "Bought": 0,
+                "Value": 11745.599999999999
+            },
+            {
+                "Stock": "TECHM",
+                "Sold": 12,
+                "Bought": 0,
+                "Value": 9265.2
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-07-27",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-07-28",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-07-29",
+        "Executed Orders": [
+            {
+                "Stock": "PIIND",
+                "Sold": 0,
+                "Bought": 146,
+                "Value": 161768.0
+            },
+            {
+                "Stock": "GODFRYPHLP",
+                "Sold": 0,
+                "Bought": 15,
+                "Value": 45175.5
+            },
+            {
+                "Stock": "VSTIND",
+                "Sold": 0,
+                "Bought": 32,
+                "Value": 40118.4
+            },
+            {
+                "Stock": "BATAINDIA",
+                "Sold": 0,
+                "Bought": 46,
+                "Value": 28605.100000000002
+            },
+            {
+                "Stock": "WABCOINDIA",
+                "Sold": 0,
+                "Bought": 20,
+                "Value": 24953.0
+            },
+            {
+                "Stock": "PAGEIND",
+                "Sold": 0,
+                "Bought": 11,
+                "Value": 25466.65
+            },
+            {
+                "Stock": "PFIZER",
+                "Sold": 0,
+                "Bought": 11,
+                "Value": 16671.05
+            },
+            {
+                "Stock": "GILLETTE",
+                "Sold": 0,
+                "Bought": 7,
+                "Value": 15884.050000000001
+            },
+            {
+                "Stock": "TRENT",
+                "Sold": 0,
+                "Bought": 10,
+                "Value": 11993.5
+            },
+            {
+                "Stock": "SCHAEFFLER",
+                "Sold": 0,
+                "Bought": 9,
+                "Value": 12105.449999999999
+            },
+            {
+                "Stock": "ICRA",
+                "Sold": 0,
+                "Bought": 9,
+                "Value": 11017.800000000001
+            },
+            {
+                "Stock": "GODREJPROP",
+                "Sold": 0,
+                "Bought": 14,
+                "Value": 10853.5
+            },
+            {
+                "Stock": "PGHL",
+                "Sold": 0,
+                "Bought": 15,
+                "Value": 10575.0
+            },
+            {
+                "Stock": "CRISIL",
+                "Sold": 0,
+                "Bought": 2,
+                "Value": 17008.0
+            },
+            {
+                "Stock": "BLUEDART",
+                "Sold": 0,
+                "Bought": 6,
+                "Value": 9602.7
+            },
+            {
+                "Stock": "BALMLAWRIE",
+                "Sold": 0,
+                "Bought": 13,
+                "Value": 8697.0
+            },
+            {
+                "Stock": "HONAUT",
+                "Sold": 0,
+                "Bought": 3,
+                "Value": 8394.45
+            },
+            {
+                "Stock": "SUNDARMFIN",
+                "Sold": 0,
+                "Bought": 14,
+                "Value": 7851.900000000001
+            },
+            {
+                "Stock": "ASTRAZEN",
+                "Sold": 0,
+                "Bought": 5,
+                "Value": 6984.25
+            },
+            {
+                "Stock": "3MINDIA",
+                "Sold": 0,
+                "Bought": 2,
+                "Value": 9282.3
+            },
+            {
+                "Stock": "TECHM",
+                "Sold": 0,
+                "Bought": 6,
+                "Value": 4706.1
+            },
+            {
+                "Stock": "COLPAL",
+                "Sold": 0,
+                "Bought": 4,
+                "Value": 3920.8
+            },
+            {
+                "Stock": "BAJFINANCE",
+                "Sold": 0,
+                "Bought": 5,
+                "Value": 3465.0
+            },
+            {
+                "Stock": "J&KBANK",
+                "Sold": 0,
+                "Bought": 4,
+                "Value": 3537.8
+            },
+            {
+                "Stock": "SOLARINDS",
+                "Sold": 0,
+                "Bought": 5,
+                "Value": 3353.25
+            },
+            {
+                "Stock": "BAJAJ-AUTO",
+                "Sold": 0,
+                "Bought": 2,
+                "Value": 2896.7
+            },
+            {
+                "Stock": "NAUKRI",
+                "Sold": 0,
+                "Bought": 3,
+                "Value": 2213.8500000000004
+            },
+            {
+                "Stock": "ZYDUSWELL",
+                "Sold": 0,
+                "Bought": 4,
+                "Value": 2518.8
+            },
+            {
+                "Stock": "NESCO",
+                "Sold": 0,
+                "Bought": 4,
+                "Value": 2503.4
+            },
+            {
+                "Stock": "SKFINDIA",
+                "Sold": 0,
+                "Bought": 3,
+                "Value": 1991.3999999999999
+            },
+            {
+                "Stock": "BASF",
+                "Sold": 0,
+                "Bought": 3,
+                "Value": 1999.0500000000002
+            },
+            {
+                "Stock": "SIEMENS",
+                "Sold": 0,
+                "Bought": 2,
+                "Value": 1845.9
+            },
+            {
+                "Stock": "SANOFI",
+                "Sold": 0,
+                "Bought": 1,
+                "Value": 2087.3
+            },
+            {
+                "Stock": "AXISBANK",
+                "Sold": 0,
+                "Bought": 1,
+                "Value": 1301.5
+            },
+            {
+                "Stock": "MRF",
+                "Sold": 0,
+                "Bought": 1,
+                "Value": 7101.95
+            },
+            {
+                "Stock": "AKZOINDIA",
+                "Sold": 0,
+                "Bought": 1,
+                "Value": 1021.55
+            },
+            {
+                "Stock": "PNB",
+                "Sold": 0,
+                "Bought": 1,
+                "Value": 1100.35
+            },
+            {
+                "Stock": "ABBOTINDIA",
+                "Sold": 0,
+                "Bought": 1,
+                "Value": 1461.25
+            },
+            {
+                "Stock": "ECLERX",
+                "Sold": 0,
+                "Bought": 1,
+                "Value": 820.05
+            },
+            {
+                "Stock": "TORNTPHARM",
+                "Sold": 0,
+                "Bought": 1,
+                "Value": 654.55
+            },
+            {
+                "Stock": "M&M",
+                "Sold": 0,
+                "Bought": 1,
+                "Value": 716.1
+            },
+            {
+                "Stock": "BPCL",
+                "Sold": 0,
+                "Bought": 1,
+                "Value": 654.4
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-08-01",
+        "Executed Orders": [
+            {
+                "Stock": "SBIN",
+                "Sold": 1,
+                "Bought": 0,
+                "Value": 2344.8
+            },
+            {
+                "Stock": "BATAINDIA",
+                "Sold": 117,
+                "Bought": 0,
+                "Value": 77120.55
+            },
+            {
+                "Stock": "VIPIND",
+                "Sold": 5,
+                "Bought": 0,
+                "Value": 4061.75
+            },
+            {
+                "Stock": "WABCOINDIA",
+                "Sold": 20,
+                "Bought": 0,
+                "Value": 25838.0
+            },
+            {
+                "Stock": "PFIZER",
+                "Sold": 11,
+                "Bought": 0,
+                "Value": 16876.2
+            },
+            {
+                "Stock": "ICRA",
+                "Sold": 9,
+                "Bought": 0,
+                "Value": 11392.199999999999
+            },
+            {
+                "Stock": "ASTRAZEN",
+                "Sold": 5,
+                "Bought": 0,
+                "Value": 7056.75
+            },
+            {
+                "Stock": "BAJAJ-AUTO",
+                "Sold": 2,
+                "Bought": 0,
+                "Value": 2939.2
+            },
+            {
+                "Stock": "ECLERX",
+                "Sold": 1,
+                "Bought": 0,
+                "Value": 809.7
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-08-02",
+        "Executed Orders": [
+            {
+                "Stock": "J&KBANK",
+                "Sold": 4,
+                "Bought": 0,
+                "Value": 3539.2
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-08-03",
+        "Executed Orders": [
+            {
+                "Stock": "GODREJPROP",
+                "Sold": 14,
+                "Bought": 0,
+                "Value": 10464.300000000001
+            },
+            {
+                "Stock": "SOLARINDS",
+                "Sold": 5,
+                "Bought": 0,
+                "Value": 3671.75
+            },
+            {
+                "Stock": "BASF",
+                "Sold": 3,
+                "Bought": 0,
+                "Value": 1895.1000000000001
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-08-04",
+        "Executed Orders": [
+            {
+                "Stock": "SUNDARMFIN",
+                "Sold": 21,
+                "Bought": 0,
+                "Value": 11428.2
+            },
+            {
+                "Stock": "HONAUT",
+                "Sold": 3,
+                "Bought": 0,
+                "Value": 8016.450000000001
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-08-05",
+        "Executed Orders": [
+            {
+                "Stock": "ABBOTINDIA",
+                "Sold": 1,
+                "Bought": 0,
+                "Value": 1440.5
+            },
+            {
+                "Stock": "M&M",
+                "Sold": 1,
+                "Bought": 0,
+                "Value": 679.45
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-08-08",
+        "Executed Orders": [
+            {
+                "Stock": "TITAN",
+                "Sold": 18,
+                "Bought": 0,
+                "Value": 3851.1
+            },
+            {
+                "Stock": "TRENT",
+                "Sold": 40,
+                "Bought": 0,
+                "Value": 46708.0
+            },
+            {
+                "Stock": "PGHL",
+                "Sold": 30,
+                "Bought": 0,
+                "Value": 19408.5
+            },
+            {
+                "Stock": "NESCO",
+                "Sold": 4,
+                "Bought": 0,
+                "Value": 2418.2
+            },
+            {
+                "Stock": "TORNTPHARM",
+                "Sold": 1,
+                "Bought": 0,
+                "Value": 631.4
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-08-09",
+        "Executed Orders": [
+            {
+                "Stock": "BALMLAWRIE",
+                "Sold": 37,
+                "Bought": 0,
+                "Value": 23134.25
+            },
+            {
+                "Stock": "BLUEDART",
+                "Sold": 9,
+                "Bought": 0,
+                "Value": 13460.85
+            },
+            {
+                "Stock": "TECHM",
+                "Sold": 6,
+                "Bought": 0,
+                "Value": 4279.799999999999
+            },
+            {
+                "Stock": "SIEMENS",
+                "Sold": 2,
+                "Bought": 0,
+                "Value": 1744.9
+            },
+            {
+                "Stock": "BPCL",
+                "Sold": 1,
+                "Bought": 0,
+                "Value": 702.95
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-08-10",
+        "Executed Orders": [
+            {
+                "Stock": "COLPAL",
+                "Sold": 16,
+                "Bought": 0,
+                "Value": 14907.2
+            },
+            {
+                "Stock": "CONCOR",
+                "Sold": 2,
+                "Bought": 0,
+                "Value": 2096.9
+            },
+            {
+                "Stock": "GILLETTE",
+                "Sold": 7,
+                "Bought": 0,
+                "Value": 14403.550000000001
+            },
+            {
+                "Stock": "NAUKRI",
+                "Sold": 3,
+                "Bought": 0,
+                "Value": 2123.1000000000004
+            },
+            {
+                "Stock": "AXISBANK",
+                "Sold": 1,
+                "Bought": 0,
+                "Value": 1205.2
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-08-11",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-08-12",
+        "Executed Orders": [
+            {
+                "Stock": "SANOFI",
+                "Sold": 2,
+                "Bought": 0,
+                "Value": 4036.3
+            },
+            {
+                "Stock": "PAGEIND",
+                "Sold": 11,
+                "Bought": 0,
+                "Value": 28320.6
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-08-16",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-08-17",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-08-18",
+        "Executed Orders": [
+            {
+                "Stock": "PIIND",
+                "Sold": 146,
+                "Bought": 0,
+                "Value": 79212.29999999999
+            },
+            {
+                "Stock": "MRF",
+                "Sold": 1,
+                "Bought": 0,
+                "Value": 6742.75
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-08-19",
+        "Executed Orders": [
+            {
+                "Stock": "GODFRYPHLP",
+                "Sold": 0,
+                "Bought": 34,
+                "Value": 109673.79999999999
+            },
+            {
+                "Stock": "PAGEIND",
+                "Sold": 0,
+                "Bought": 40,
+                "Value": 108686.0
+            },
+            {
+                "Stock": "VSTIND",
+                "Sold": 0,
+                "Bought": 46,
+                "Value": 54882.6
+            },
+            {
+                "Stock": "BATAINDIA",
+                "Sold": 0,
+                "Bought": 75,
+                "Value": 50002.5
+            },
+            {
+                "Stock": "3MINDIA",
+                "Sold": 0,
+                "Bought": 5,
+                "Value": 22887.25
+            },
+            {
+                "Stock": "WABCOINDIA",
+                "Sold": 0,
+                "Bought": 19,
+                "Value": 23757.600000000002
+            },
+            {
+                "Stock": "SOLARINDS",
+                "Sold": 0,
+                "Bought": 22,
+                "Value": 16385.6
+            },
+            {
+                "Stock": "CRISIL",
+                "Sold": 0,
+                "Bought": 2,
+                "Value": 15772.4
+            },
+            {
+                "Stock": "TRENT",
+                "Sold": 0,
+                "Bought": 10,
+                "Value": 11874.5
+            },
+            {
+                "Stock": "BALMLAWRIE",
+                "Sold": 0,
+                "Bought": 17,
+                "Value": 11178.349999999999
+            },
+            {
+                "Stock": "BPCL",
+                "Sold": 0,
+                "Bought": 13,
+                "Value": 8830.9
+            },
+            {
+                "Stock": "BLUEDART",
+                "Sold": 0,
+                "Bought": 6,
+                "Value": 9943.5
+            },
+            {
+                "Stock": "VIPIND",
+                "Sold": 0,
+                "Bought": 5,
+                "Value": 4101.25
+            },
+            {
+                "Stock": "PFIZER",
+                "Sold": 0,
+                "Bought": 3,
+                "Value": 4203.0
+            },
+            {
+                "Stock": "ASTRAZEN",
+                "Sold": 0,
+                "Bought": 3,
+                "Value": 4079.7000000000003
+            },
+            {
+                "Stock": "HEROMOTOCO",
+                "Sold": 0,
+                "Bought": 2,
+                "Value": 3907.4
+            },
+            {
+                "Stock": "SANOFI",
+                "Sold": 0,
+                "Bought": 1,
+                "Value": 2051.05
+            },
+            {
+                "Stock": "OIL",
+                "Sold": 0,
+                "Bought": 2,
+                "Value": 2635.1
+            },
+            {
+                "Stock": "ABBOTINDIA",
+                "Sold": 0,
+                "Bought": 1,
+                "Value": 1484.1
+            },
+            {
+                "Stock": "SUNDARMFIN",
+                "Sold": 0,
+                "Bought": 2,
+                "Value": 1063.4
+            },
+            {
+                "Stock": "GILLETTE",
+                "Sold": 0,
+                "Bought": 1,
+                "Value": 2035.85
+            },
+            {
+                "Stock": "PGHL",
+                "Sold": 0,
+                "Bought": 1,
+                "Value": 633.4
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-08-22",
+        "Executed Orders": [
+            {
+                "Stock": "3MINDIA",
+                "Sold": 7,
+                "Bought": 0,
+                "Value": 33569.9
+            },
+            {
+                "Stock": "SKFINDIA",
+                "Sold": 3,
+                "Bought": 0,
+                "Value": 1864.1999999999998
+            },
+            {
+                "Stock": "HEROMOTOCO",
+                "Sold": 2,
+                "Bought": 0,
+                "Value": 3987.4
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-08-23",
+        "Executed Orders": [
+            {
+                "Stock": "BAJFINANCE",
+                "Sold": 5,
+                "Bought": 0,
+                "Value": 3188.0
+            },
+            {
+                "Stock": "PFIZER",
+                "Sold": 3,
+                "Bought": 0,
+                "Value": 3984.0
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-08-24",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-08-25",
+        "Executed Orders": [
+            {
+                "Stock": "TRENT",
+                "Sold": 10,
+                "Bought": 0,
+                "Value": 11096.5
+            },
+            {
+                "Stock": "SANOFI",
+                "Sold": 1,
+                "Bought": 0,
+                "Value": 2153.5
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-08-26",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-08-29",
+        "Executed Orders": [
+            {
+                "Stock": "ASTRAZEN",
+                "Sold": 3,
+                "Bought": 0,
+                "Value": 3770.8500000000004
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-08-30",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-09-02",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-09-05",
+        "Executed Orders": [
+            {
+                "Stock": "SOLARINDS",
+                "Sold": 22,
+                "Bought": 0,
+                "Value": 16874.0
+            },
+            {
+                "Stock": "VIPIND",
+                "Sold": 5,
+                "Bought": 0,
+                "Value": 4468.25
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-09-06",
+        "Executed Orders": [
+            {
+                "Stock": "GODFRYPHLP",
+                "Sold": 133,
+                "Bought": 0,
+                "Value": 452692.1
+            },
+            {
+                "Stock": "VSTIND",
+                "Sold": 78,
+                "Bought": 0,
+                "Value": 100155.9
+            },
+            {
+                "Stock": "BPCL",
+                "Sold": 13,
+                "Bought": 0,
+                "Value": 8643.699999999999
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-09-07",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-09-08",
+        "Executed Orders": [
+            {
+                "Stock": "ABBOTINDIA",
+                "Sold": 1,
+                "Bought": 0,
+                "Value": 1570.85
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-09-09",
+        "Executed Orders": [
+            {
+                "Stock": "PGHL",
+                "Sold": 1,
+                "Bought": 0,
+                "Value": 645.55
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-09-12",
+        "Executed Orders": [
+            {
+                "Stock": "GODFRYPHLP",
+                "Sold": 0,
+                "Bought": 39,
+                "Value": 135250.05
+            },
+            {
+                "Stock": "PAGEIND",
+                "Sold": 0,
+                "Bought": 36,
+                "Value": 96719.40000000001
+            },
+            {
+                "Stock": "VSTIND",
+                "Sold": 0,
+                "Bought": 63,
+                "Value": 82085.85
+            },
+            {
+                "Stock": "BATAINDIA",
+                "Sold": 0,
+                "Bought": 83,
+                "Value": 57224.350000000006
+            },
+            {
+                "Stock": "WABCOINDIA",
+                "Sold": 0,
+                "Bought": 29,
+                "Value": 36905.399999999994
+            },
+            {
+                "Stock": "CRISIL",
+                "Sold": 0,
+                "Bought": 4,
+                "Value": 33414.4
+            },
+            {
+                "Stock": "VIPIND",
+                "Sold": 0,
+                "Bought": 26,
+                "Value": 25188.8
+            },
+            {
+                "Stock": "BLUEDART",
+                "Sold": 0,
+                "Bought": 15,
+                "Value": 25190.25
+            },
+            {
+                "Stock": "HEROMOTOCO",
+                "Sold": 0,
+                "Bought": 10,
+                "Value": 22225.0
+            },
+            {
+                "Stock": "SOLARINDS",
+                "Sold": 0,
+                "Bought": 26,
+                "Value": 19700.2
+            },
+            {
+                "Stock": "SANOFI",
+                "Sold": 0,
+                "Bought": 8,
+                "Value": 17379.2
+            },
+            {
+                "Stock": "BAJAJ-AUTO",
+                "Sold": 0,
+                "Bought": 9,
+                "Value": 14629.050000000001
+            },
+            {
+                "Stock": "SCHAEFFLER",
+                "Sold": 0,
+                "Bought": 11,
+                "Value": 13676.3
+            },
+            {
+                "Stock": "M&M",
+                "Sold": 0,
+                "Bought": 13,
+                "Value": 10288.85
+            },
+            {
+                "Stock": "PGHL",
+                "Sold": 0,
+                "Bought": 10,
+                "Value": 6600.0
+            },
+            {
+                "Stock": "COLPAL",
+                "Sold": 0,
+                "Bought": 6,
+                "Value": 5972.4
+            },
+            {
+                "Stock": "AKZOINDIA",
+                "Sold": 0,
+                "Bought": 6,
+                "Value": 5788.799999999999
+            },
+            {
+                "Stock": "EICHERMOT",
+                "Sold": 0,
+                "Bought": 3,
+                "Value": 4295.549999999999
+            },
+            {
+                "Stock": "BALMLAWRIE",
+                "Sold": 0,
+                "Bought": 5,
+                "Value": 3173.75
+            },
+            {
+                "Stock": "BPCL",
+                "Sold": 0,
+                "Bought": 5,
+                "Value": 3313.0
+            },
+            {
+                "Stock": "ABBOTINDIA",
+                "Sold": 0,
+                "Bought": 2,
+                "Value": 3102.8
+            },
+            {
+                "Stock": "TRENT",
+                "Sold": 0,
+                "Bought": 2,
+                "Value": 2268.3
+            },
+            {
+                "Stock": "NESTLEIND",
+                "Sold": 0,
+                "Bought": 1,
+                "Value": 4387.15
+            },
+            {
+                "Stock": "OIL",
+                "Sold": 0,
+                "Bought": 1,
+                "Value": 1319.55
+            },
+            {
+                "Stock": "ULTRACEMCO",
+                "Sold": 0,
+                "Bought": 1,
+                "Value": 1088.95
+            },
+            {
+                "Stock": "PFIZER",
+                "Sold": 0,
+                "Bought": 1,
+                "Value": 1391.15
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-09-13",
+        "Executed Orders": [
+            {
+                "Stock": "SCHAEFFLER",
+                "Sold": 20,
+                "Bought": 0,
+                "Value": 25122.0
+            },
+            {
+                "Stock": "PGHL",
+                "Sold": 10,
+                "Bought": 0,
+                "Value": 6547.0
+            },
+            {
+                "Stock": "EICHERMOT",
+                "Sold": 3,
+                "Bought": 0,
+                "Value": 4340.700000000001
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-09-14",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-09-15",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-09-16",
+        "Executed Orders": [
+            {
+                "Stock": "VSTIND",
+                "Sold": 63,
+                "Bought": 0,
+                "Value": 85431.15
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-09-19",
+        "Executed Orders": [
+            {
+                "Stock": "OIL",
+                "Sold": 3,
+                "Bought": 0,
+                "Value": 4119.75
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-09-20",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-09-21",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-09-22",
+        "Executed Orders": [
+            {
+                "Stock": "ULTRACEMCO",
+                "Sold": 1,
+                "Bought": 0,
+                "Value": 1168.45
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-09-23",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-09-26",
+        "Executed Orders": [
+            {
+                "Stock": "ZYDUSWELL",
+                "Sold": 66,
+                "Bought": 0,
+                "Value": 37389.0
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-09-27",
+        "Executed Orders": [
+            {
+                "Stock": "BATAINDIA",
+                "Sold": 158,
+                "Bought": 0,
+                "Value": 101127.9
+            },
+            {
+                "Stock": "BAJAJ-AUTO",
+                "Sold": 9,
+                "Bought": 0,
+                "Value": 13581.0
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-09-28",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-09-29",
+        "Executed Orders": [
+            {
+                "Stock": "CRISIL",
+                "Sold": 8,
+                "Bought": 0,
+                "Value": 6745.2
+            },
+            {
+                "Stock": "HEROMOTOCO",
+                "Sold": 10,
+                "Bought": 0,
+                "Value": 19579.5
+            },
+            {
+                "Stock": "BPCL",
+                "Sold": 5,
+                "Bought": 0,
+                "Value": 3199.25
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-09-30",
+        "Executed Orders": [
+            {
+                "Stock": "GODFRYPHLP",
+                "Sold": 0,
+                "Bought": 24,
+                "Value": 82905.6
+            },
+            {
+                "Stock": "VSTIND",
+                "Sold": 0,
+                "Bought": 50,
+                "Value": 67390.0
+            },
+            {
+                "Stock": "PAGEIND",
+                "Sold": 0,
+                "Bought": 21,
+                "Value": 54077.1
+            },
+            {
+                "Stock": "WABCOINDIA",
+                "Sold": 0,
+                "Bought": 24,
+                "Value": 30018.0
+            },
+            {
+                "Stock": "BATAINDIA",
+                "Sold": 0,
+                "Bought": 46,
+                "Value": 29078.899999999998
+            },
+            {
+                "Stock": "SANOFI",
+                "Sold": 0,
+                "Bought": 9,
+                "Value": 20796.3
+            },
+            {
+                "Stock": "SOLARINDS",
+                "Sold": 0,
+                "Bought": 25,
+                "Value": 19150.0
+            },
+            {
+                "Stock": "EICHERMOT",
+                "Sold": 0,
+                "Bought": 12,
+                "Value": 19273.199999999997
+            },
+            {
+                "Stock": "M&M",
+                "Sold": 0,
+                "Bought": 17,
+                "Value": 13836.3
+            },
+            {
+                "Stock": "BLUEDART",
+                "Sold": 0,
+                "Bought": 9,
+                "Value": 14405.85
+            },
+            {
+                "Stock": "VIPIND",
+                "Sold": 0,
+                "Bought": 12,
+                "Value": 10892.400000000001
+            },
+            {
+                "Stock": "BAJAJ-AUTO",
+                "Sold": 0,
+                "Bought": 5,
+                "Value": 7695.0
+            },
+            {
+                "Stock": "ULTRACEMCO",
+                "Sold": 0,
+                "Bought": 5,
+                "Value": 5686.5
+            },
+            {
+                "Stock": "GILLETTE",
+                "Sold": 0,
+                "Bought": 3,
+                "Value": 6177.599999999999
+            },
+            {
+                "Stock": "ESABINDIA",
+                "Sold": 0,
+                "Bought": 9,
+                "Value": 4911.75
+            },
+            {
+                "Stock": "COLPAL",
+                "Sold": 0,
+                "Bought": 5,
+                "Value": 4946.25
+            },
+            {
+                "Stock": "SKFINDIA",
+                "Sold": 0,
+                "Bought": 7,
+                "Value": 4775.05
+            },
+            {
+                "Stock": "HONAUT",
+                "Sold": 0,
+                "Bought": 2,
+                "Value": 5034.9
+            },
+            {
+                "Stock": "AKZOINDIA",
+                "Sold": 0,
+                "Bought": 4,
+                "Value": 3760.4
+            },
+            {
+                "Stock": "APOLLOHOSP",
+                "Sold": 0,
+                "Bought": 7,
+                "Value": 3591.0
+            },
+            {
+                "Stock": "OIL",
+                "Sold": 0,
+                "Bought": 2,
+                "Value": 2689.7
+            },
+            {
+                "Stock": "PFIZER",
+                "Sold": 0,
+                "Bought": 2,
+                "Value": 2677.5
+            },
+            {
+                "Stock": "SUNDARMFIN",
+                "Sold": 0,
+                "Bought": 2,
+                "Value": 1054.1
+            },
+            {
+                "Stock": "NESTLEIND",
+                "Sold": 0,
+                "Bought": 1,
+                "Value": 4258.6
+            },
+            {
+                "Stock": "ACC",
+                "Sold": 0,
+                "Bought": 1,
+                "Value": 1089.75
+            },
+            {
+                "Stock": "SYMPHONY",
+                "Sold": 0,
+                "Bought": 1,
+                "Value": 1302.85
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-10-03",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-10-04",
+        "Executed Orders": [
+            {
+                "Stock": "GODFRYPHLP",
+                "Sold": 63,
+                "Bought": 0,
+                "Value": 210089.25
+            },
+            {
+                "Stock": "BLUEDART",
+                "Sold": 9,
+                "Bought": 0,
+                "Value": 14256.0
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-10-05",
+        "Executed Orders": [
+            {
+                "Stock": "PAGEIND",
+                "Sold": 97,
+                "Bought": 0,
+                "Value": 231999.75
+            },
+            {
+                "Stock": "AKZOINDIA",
+                "Sold": 10,
+                "Bought": 0,
+                "Value": 9201.0
+            },
+            {
+                "Stock": "WABCOINDIA",
+                "Sold": 24,
+                "Bought": 0,
+                "Value": 29577.600000000002
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-10-07",
+        "Executed Orders": [
+            {
+                "Stock": "SUNDARMFIN",
+                "Sold": 4,
+                "Bought": 0,
+                "Value": 2035.8
+            },
+            {
+                "Stock": "VIPIND",
+                "Sold": 38,
+                "Bought": 0,
+                "Value": 32368.399999999998
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-10-10",
+        "Executed Orders": [
+            {
+                "Stock": "SOLARINDS",
+                "Sold": 51,
+                "Bought": 0,
+                "Value": 39757.049999999996
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-10-11",
+        "Executed Orders": [
+            {
+                "Stock": "APOLLOHOSP",
+                "Sold": 7,
+                "Bought": 0,
+                "Value": 3496.15
+            },
+            {
+                "Stock": "ACC",
+                "Sold": 1,
+                "Bought": 0,
+                "Value": 1131.15
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-10-12",
+        "Executed Orders": [
+            {
+                "Stock": "NESTLEIND",
+                "Sold": 2,
+                "Bought": 0,
+                "Value": 8304.8
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-10-13",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-10-14",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-10-17",
+        "Executed Orders": [
+            {
+                "Stock": "PFIZER",
+                "Sold": 3,
+                "Bought": 0,
+                "Value": 4179.75
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-10-18",
+        "Executed Orders": [
+            {
+                "Stock": "BAJAJ-AUTO",
+                "Sold": 5,
+                "Bought": 0,
+                "Value": 8271.75
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-10-19",
+        "Executed Orders": [
+            {
+                "Stock": "TRENT",
+                "Sold": 2,
+                "Bought": 0,
+                "Value": 2068.7
+            },
+            {
+                "Stock": "OIL",
+                "Sold": 2,
+                "Bought": 0,
+                "Value": 2549.9
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-10-20",
+        "Executed Orders": [
+            {
+                "Stock": "HONAUT",
+                "Sold": 2,
+                "Bought": 0,
+                "Value": 4825.1
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-10-21",
+        "Executed Orders": [
+            {
+                "Stock": "GODFRYPHLP",
+                "Sold": 0,
+                "Bought": 32,
+                "Value": 115032.0
+            },
+            {
+                "Stock": "VSTIND",
+                "Sold": 0,
+                "Bought": 63,
+                "Value": 84319.20000000001
+            },
+            {
+                "Stock": "PAGEIND",
+                "Sold": 0,
+                "Bought": 22,
+                "Value": 54697.5
+            },
+            {
+                "Stock": "WABCOINDIA",
+                "Sold": 0,
+                "Bought": 40,
+                "Value": 52150.0
+            },
+            {
+                "Stock": "BATAINDIA",
+                "Sold": 0,
+                "Bought": 72,
+                "Value": 50014.799999999996
+            },
+            {
+                "Stock": "SOLARINDS",
+                "Sold": 0,
+                "Bought": 43,
+                "Value": 34088.25
+            },
+            {
+                "Stock": "EICHERMOT",
+                "Sold": 0,
+                "Bought": 19,
+                "Value": 31363.3
+            },
+            {
+                "Stock": "SANOFI",
+                "Sold": 0,
+                "Bought": 11,
+                "Value": 25439.699999999997
+            },
+            {
+                "Stock": "SCHAEFFLER",
+                "Sold": 0,
+                "Bought": 17,
+                "Value": 21255.1
+            },
+            {
+                "Stock": "BAJAJ-AUTO",
+                "Sold": 0,
+                "Bought": 12,
+                "Value": 19362.6
+            },
+            {
+                "Stock": "BLUEDART",
+                "Sold": 0,
+                "Bought": 11,
+                "Value": 17574.15
+            },
+            {
+                "Stock": "VIPIND",
+                "Sold": 0,
+                "Bought": 15,
+                "Value": 14205.0
+            },
+            {
+                "Stock": "M&M",
+                "Sold": 0,
+                "Bought": 17,
+                "Value": 13627.2
+            },
+            {
+                "Stock": "GILLETTE",
+                "Sold": 0,
+                "Bought": 4,
+                "Value": 8239.0
+            },
+            {
+                "Stock": "COLPAL",
+                "Sold": 0,
+                "Bought": 7,
+                "Value": 6977.95
+            },
+            {
+                "Stock": "HEROMOTOCO",
+                "Sold": 0,
+                "Bought": 3,
+                "Value": 6090.15
+            },
+            {
+                "Stock": "PFIZER",
+                "Sold": 0,
+                "Bought": 4,
+                "Value": 5481.6
+            },
+            {
+                "Stock": "SYMPHONY",
+                "Sold": 0,
+                "Bought": 4,
+                "Value": 5258.4
+            },
+            {
+                "Stock": "ULTRACEMCO",
+                "Sold": 0,
+                "Bought": 4,
+                "Value": 4476.2
+            },
+            {
+                "Stock": "3MINDIA",
+                "Sold": 0,
+                "Bought": 1,
+                "Value": 4260.85
+            },
+            {
+                "Stock": "PGHL",
+                "Sold": 0,
+                "Bought": 5,
+                "Value": 3181.0
+            },
+            {
+                "Stock": "NESTLEIND",
+                "Sold": 0,
+                "Bought": 1,
+                "Value": 4267.65
+            },
+            {
+                "Stock": "ACC",
+                "Sold": 0,
+                "Bought": 2,
+                "Value": 2230.1
+            },
+            {
+                "Stock": "APOLLOHOSP",
+                "Sold": 0,
+                "Bought": 3,
+                "Value": 1544.25
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-10-24",
+        "Executed Orders": [
+            {
+                "Stock": "WABCOINDIA",
+                "Sold": 40,
+                "Bought": 0,
+                "Value": 53784.0
+            },
+            {
+                "Stock": "SCHAEFFLER",
+                "Sold": 17,
+                "Bought": 0,
+                "Value": 22625.300000000003
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-10-25",
+        "Executed Orders": [
+            {
+                "Stock": "BAJAJ-AUTO",
+                "Sold": 12,
+                "Bought": 0,
+                "Value": 20332.800000000003
+            },
+            {
+                "Stock": "HEROMOTOCO",
+                "Sold": 3,
+                "Bought": 0,
+                "Value": 6217.650000000001
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-10-26",
+        "Executed Orders": [
+            {
+                "Stock": "M&M",
+                "Sold": 47,
+                "Bought": 0,
+                "Value": 40130.950000000004
+            },
+            {
+                "Stock": "SOLARINDS",
+                "Sold": 43,
+                "Bought": 0,
+                "Value": 35146.05
+            },
+            {
+                "Stock": "VIPIND",
+                "Sold": 15,
+                "Bought": 0,
+                "Value": 12473.25
+            },
+            {
+                "Stock": "ACC",
+                "Sold": 2,
+                "Bought": 0,
+                "Value": 2366.9
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-10-28",
+        "Executed Orders": [
+            {
+                "Stock": "PGHL",
+                "Sold": 5,
+                "Bought": 0,
+                "Value": 3231.25
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-10-31",
+        "Executed Orders": [
+            {
+                "Stock": "ULTRACEMCO",
+                "Sold": 9,
+                "Bought": 0,
+                "Value": 10479.6
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-11-01",
+        "Executed Orders": [
+            {
+                "Stock": "GILLETTE",
+                "Sold": 8,
+                "Bought": 0,
+                "Value": 17767.6
+            },
+            {
+                "Stock": "EICHERMOT",
+                "Sold": 31,
+                "Bought": 0,
+                "Value": 52422.549999999996
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-11-02",
+        "Executed Orders": [
+            {
+                "Stock": "COLPAL",
+                "Sold": 18,
+                "Bought": 0,
+                "Value": 18744.3
+            },
+            {
+                "Stock": "NESTLEIND",
+                "Sold": 1,
+                "Bought": 0,
+                "Value": 4359.8
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-11-03",
+        "Executed Orders": [
+            {
+                "Stock": "ABBOTINDIA",
+                "Sold": 2,
+                "Bought": 0,
+                "Value": 2950.5
+            },
+            {
+                "Stock": "SYMPHONY",
+                "Sold": 5,
+                "Bought": 0,
+                "Value": 7389.75
+            },
+            {
+                "Stock": "APOLLOHOSP",
+                "Sold": 3,
+                "Bought": 0,
+                "Value": 1588.6499999999999
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-11-04",
+        "Executed Orders": [
+            {
+                "Stock": "PAGEIND",
+                "Sold": 22,
+                "Bought": 0,
+                "Value": 57260.5
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-11-08",
+        "Executed Orders": [
+            {
+                "Stock": "3MINDIA",
+                "Sold": 1,
+                "Bought": 0,
+                "Value": 4446.35
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-11-09",
+        "Executed Orders": [
+            {
+                "Stock": "GODFRYPHLP",
+                "Sold": 32,
+                "Bought": 0,
+                "Value": 106284.8
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-11-11",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-11-14",
+        "Executed Orders": [
+            {
+                "Stock": "BALMLAWRIE",
+                "Sold": 22,
+                "Bought": 0,
+                "Value": 12519.099999999999
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-11-15",
+        "Executed Orders": [
+            {
+                "Stock": "PAGEIND",
+                "Sold": 0,
+                "Bought": 25,
+                "Value": 65011.24999999999
+            },
+            {
+                "Stock": "GODFRYPHLP",
+                "Sold": 0,
+                "Bought": 17,
+                "Value": 53918.899999999994
+            },
+            {
+                "Stock": "WABCOINDIA",
+                "Sold": 0,
+                "Bought": 34,
+                "Value": 46767.0
+            },
+            {
+                "Stock": "VSTIND",
+                "Sold": 0,
+                "Bought": 30,
+                "Value": 36057.0
+            },
+            {
+                "Stock": "SOLARINDS",
+                "Sold": 0,
+                "Bought": 44,
+                "Value": 35200.0
+            },
+            {
+                "Stock": "BATAINDIA",
+                "Sold": 0,
+                "Bought": 52,
+                "Value": 35149.4
+            },
+            {
+                "Stock": "BAJAJ-AUTO",
+                "Sold": 0,
+                "Bought": 19,
+                "Value": 33019.15
+            },
+            {
+                "Stock": "EICHERMOT",
+                "Sold": 0,
+                "Bought": 19,
+                "Value": 31925.7
+            },
+            {
+                "Stock": "SANOFI",
+                "Sold": 0,
+                "Bought": 11,
+                "Value": 25851.65
+            },
+            {
+                "Stock": "HEROMOTOCO",
+                "Sold": 0,
+                "Bought": 8,
+                "Value": 17676.4
+            },
+            {
+                "Stock": "ACC",
+                "Sold": 0,
+                "Bought": 14,
+                "Value": 17039.399999999998
+            },
+            {
+                "Stock": "APOLLOHOSP",
+                "Sold": 0,
+                "Bought": 26,
+                "Value": 14758.9
+            },
+            {
+                "Stock": "SHREECEM",
+                "Sold": 0,
+                "Bought": 7,
+                "Value": 14532.0
+            },
+            {
+                "Stock": "COLPAL",
+                "Sold": 0,
+                "Bought": 13,
+                "Value": 13473.85
+            },
+            {
+                "Stock": "SCHAEFFLER",
+                "Sold": 0,
+                "Bought": 9,
+                "Value": 11490.300000000001
+            },
+            {
+                "Stock": "GILLETTE",
+                "Sold": 0,
+                "Bought": 5,
+                "Value": 10743.5
+            },
+            {
+                "Stock": "PGHL",
+                "Sold": 0,
+                "Bought": 15,
+                "Value": 9954.75
+            },
+            {
+                "Stock": "SYMPHONY",
+                "Sold": 0,
+                "Bought": 7,
+                "Value": 9701.65
+            },
+            {
+                "Stock": "ULTRACEMCO",
+                "Sold": 0,
+                "Bought": 7,
+                "Value": 8208.199999999999
+            },
+            {
+                "Stock": "NESTLEIND",
+                "Sold": 0,
+                "Bought": 2,
+                "Value": 8777.9
+            },
+            {
+                "Stock": "BLUEDART",
+                "Sold": 0,
+                "Bought": 5,
+                "Value": 7825.25
+            },
+            {
+                "Stock": "ABBOTINDIA",
+                "Sold": 0,
+                "Bought": 3,
+                "Value": 4550.25
+            },
+            {
+                "Stock": "M&M",
+                "Sold": 0,
+                "Bought": 3,
+                "Value": 2373.1499999999996
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-11-16",
+        "Executed Orders": [
+            {
+                "Stock": "VSTIND",
+                "Sold": 143,
+                "Bought": 0,
+                "Value": 164585.85
+            },
+            {
+                "Stock": "BLUEDART",
+                "Sold": 16,
+                "Bought": 0,
+                "Value": 24514.4
+            },
+            {
+                "Stock": "GODFRYPHLP",
+                "Sold": 17,
+                "Bought": 0,
+                "Value": 52285.2
+            },
+            {
+                "Stock": "M&M",
+                "Sold": 3,
+                "Bought": 0,
+                "Value": 2277.75
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-11-17",
+        "Executed Orders": [
+            {
+                "Stock": "SOLARINDS",
+                "Sold": 44,
+                "Bought": 0,
+                "Value": 33926.2
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-11-18",
+        "Executed Orders": [
+            {
+                "Stock": "ESABINDIA",
+                "Sold": 9,
+                "Bought": 0,
+                "Value": 4446.0
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-11-21",
+        "Executed Orders": [
+            {
+                "Stock": "BATAINDIA",
+                "Sold": 170,
+                "Bought": 0,
+                "Value": 109174.00000000001
+            },
+            {
+                "Stock": "SCHAEFFLER",
+                "Sold": 9,
+                "Bought": 0,
+                "Value": 10840.949999999999
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-11-22",
+        "Executed Orders": [
+            {
+                "Stock": "PFIZER",
+                "Sold": 4,
+                "Bought": 0,
+                "Value": 4962.2
+            },
+            {
+                "Stock": "BAJAJ-AUTO",
+                "Sold": 19,
+                "Bought": 0,
+                "Value": 30841.75
+            },
+            {
+                "Stock": "ULTRACEMCO",
+                "Sold": 7,
+                "Bought": 0,
+                "Value": 7768.949999999999
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-11-23",
+        "Executed Orders": [
+            {
+                "Stock": "GILLETTE",
+                "Sold": 5,
+                "Bought": 0,
+                "Value": 9826.5
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-11-24",
+        "Executed Orders": [
+            {
+                "Stock": "PGHL",
+                "Sold": 15,
+                "Bought": 0,
+                "Value": 9063.75
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-11-25",
+        "Executed Orders": [
+            {
+                "Stock": "SANOFI",
+                "Sold": 39,
+                "Bought": 0,
+                "Value": 86665.79999999999
+            },
+            {
+                "Stock": "ACC",
+                "Sold": 14,
+                "Bought": 0,
+                "Value": 15598.100000000002
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-11-28",
+        "Executed Orders": [
+            {
+                "Stock": "HEROMOTOCO",
+                "Sold": 8,
+                "Bought": 0,
+                "Value": 16289.6
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-11-29",
+        "Executed Orders": [
+            {
+                "Stock": "APOLLOHOSP",
+                "Sold": 26,
+                "Bought": 0,
+                "Value": 16208.4
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-11-30",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-12-01",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-12-02",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-12-05",
+        "Executed Orders": [
+            {
+                "Stock": "PAGEIND",
+                "Sold": 0,
+                "Bought": 31,
+                "Value": 79009.7
+            },
+            {
+                "Stock": "APOLLOHOSP",
+                "Sold": 0,
+                "Bought": 109,
+                "Value": 72877.40000000001
+            },
+            {
+                "Stock": "VSTIND",
+                "Sold": 0,
+                "Bought": 49,
+                "Value": 55933.5
+            },
+            {
+                "Stock": "GODFRYPHLP",
+                "Sold": 0,
+                "Bought": 18,
+                "Value": 52675.200000000004
+            },
+            {
+                "Stock": "WABCOINDIA",
+                "Sold": 0,
+                "Bought": 37,
+                "Value": 47398.85
+            },
+            {
+                "Stock": "BAJAJ-AUTO",
+                "Sold": 0,
+                "Bought": 24,
+                "Value": 41149.2
+            },
+            {
+                "Stock": "BATAINDIA",
+                "Sold": 0,
+                "Bought": 52,
+                "Value": 33048.6
+            },
+            {
+                "Stock": "SHREECEM",
+                "Sold": 0,
+                "Bought": 15,
+                "Value": 31973.250000000004
+            },
+            {
+                "Stock": "SOLARINDS",
+                "Sold": 0,
+                "Bought": 39,
+                "Value": 29415.75
+            },
+            {
+                "Stock": "EICHERMOT",
+                "Sold": 0,
+                "Bought": 18,
+                "Value": 28378.8
+            },
+            {
+                "Stock": "SANOFI",
+                "Sold": 0,
+                "Bought": 11,
+                "Value": 24632.300000000003
+            },
+            {
+                "Stock": "ACC",
+                "Sold": 0,
+                "Bought": 16,
+                "Value": 19424.0
+            },
+            {
+                "Stock": "ULTRACEMCO",
+                "Sold": 0,
+                "Bought": 15,
+                "Value": 17650.5
+            },
+            {
+                "Stock": "COLPAL",
+                "Sold": 0,
+                "Bought": 13,
+                "Value": 13011.050000000001
+            },
+            {
+                "Stock": "SUNPHARMA",
+                "Sold": 0,
+                "Bought": 23,
+                "Value": 12262.449999999999
+            },
+            {
+                "Stock": "HEROMOTOCO",
+                "Sold": 0,
+                "Bought": 6,
+                "Value": 12485.699999999999
+            },
+            {
+                "Stock": "SYMPHONY",
+                "Sold": 0,
+                "Bought": 5,
+                "Value": 6783.0
+            },
+            {
+                "Stock": "SUNDARMFIN",
+                "Sold": 0,
+                "Bought": 12,
+                "Value": 6401.400000000001
+            },
+            {
+                "Stock": "MRF",
+                "Sold": 0,
+                "Bought": 1,
+                "Value": 7392.15
+            },
+            {
+                "Stock": "NESCO",
+                "Sold": 0,
+                "Bought": 1,
+                "Value": 609.1
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-12-07",
+        "Executed Orders": [
+            {
+                "Stock": "APOLLOHOSP",
+                "Sold": 109,
+                "Bought": 0,
+                "Value": 72703.0
+            },
+            {
+                "Stock": "SHREECEM",
+                "Sold": 15,
+                "Bought": 0,
+                "Value": 32184.75
+            },
+            {
+                "Stock": "MRF",
+                "Sold": 1,
+                "Bought": 0,
+                "Value": 7608.8
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-12-08",
+        "Executed Orders": [
+            {
+                "Stock": "ULTRACEMCO",
+                "Sold": 15,
+                "Bought": 0,
+                "Value": 18304.5
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-12-09",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-12-12",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-12-13",
+        "Executed Orders": [
+            {
+                "Stock": "EICHERMOT",
+                "Sold": 37,
+                "Bought": 0,
+                "Value": 56069.8
+            },
+            {
+                "Stock": "BATAINDIA",
+                "Sold": 52,
+                "Bought": 0,
+                "Value": 30063.8
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-12-14",
+        "Executed Orders": [
+            {
+                "Stock": "COLPAL",
+                "Sold": 26,
+                "Bought": 0,
+                "Value": 26832.0
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-12-15",
+        "Executed Orders": [
+            {
+                "Stock": "ABBOTINDIA",
+                "Sold": 3,
+                "Bought": 0,
+                "Value": 4319.4
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-12-16",
+        "Executed Orders": [
+            {
+                "Stock": "WABCOINDIA",
+                "Sold": 71,
+                "Bought": 0,
+                "Value": 85675.7
+            },
+            {
+                "Stock": "GODFRYPHLP",
+                "Sold": 18,
+                "Bought": 0,
+                "Value": 48749.4
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-12-19",
+        "Executed Orders": [
+            {
+                "Stock": "SYMPHONY",
+                "Sold": 12,
+                "Bought": 0,
+                "Value": 14283.599999999999
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-12-20",
+        "Executed Orders": [
+            {
+                "Stock": "PAGEIND",
+                "Sold": 56,
+                "Bought": 0,
+                "Value": 135368.80000000002
+            },
+            {
+                "Stock": "NESCO",
+                "Sold": 1,
+                "Bought": 0,
+                "Value": 535.9
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-12-21",
+        "Executed Orders": [
+            {
+                "Stock": "NESTLEIND",
+                "Sold": 2,
+                "Bought": 0,
+                "Value": 8228.5
+            },
+            {
+                "Stock": "HEROMOTOCO",
+                "Sold": 6,
+                "Bought": 0,
+                "Value": 10859.400000000001
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-12-22",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-12-23",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-12-26",
+        "Executed Orders": [
+            {
+                "Stock": "PAGEIND",
+                "Sold": 0,
+                "Bought": 38,
+                "Value": 90383.0
+            },
+            {
+                "Stock": "SOLARINDS",
+                "Sold": 0,
+                "Bought": 78,
+                "Value": 59166.899999999994
+            },
+            {
+                "Stock": "SANOFI",
+                "Sold": 0,
+                "Bought": 25,
+                "Value": 57496.25
+            },
+            {
+                "Stock": "APOLLOHOSP",
+                "Sold": 0,
+                "Bought": 82,
+                "Value": 46563.700000000004
+            },
+            {
+                "Stock": "VSTIND",
+                "Sold": 0,
+                "Bought": 44,
+                "Value": 47929.2
+            },
+            {
+                "Stock": "BAJAJ-AUTO",
+                "Sold": 0,
+                "Bought": 29,
+                "Value": 46357.95
+            },
+            {
+                "Stock": "SHREECEM",
+                "Sold": 0,
+                "Bought": 21,
+                "Value": 44119.95
+            },
+            {
+                "Stock": "WABCOINDIA",
+                "Sold": 0,
+                "Bought": 32,
+                "Value": 38051.2
+            },
+            {
+                "Stock": "COLPAL",
+                "Sold": 0,
+                "Bought": 34,
+                "Value": 34814.3
+            },
+            {
+                "Stock": "ULTRACEMCO",
+                "Sold": 0,
+                "Bought": 25,
+                "Value": 29523.75
+            },
+            {
+                "Stock": "EICHERMOT",
+                "Sold": 0,
+                "Bought": 14,
+                "Value": 20255.2
+            },
+            {
+                "Stock": "ACC",
+                "Sold": 0,
+                "Bought": 13,
+                "Value": 14807.65
+            },
+            {
+                "Stock": "BLUEDART",
+                "Sold": 0,
+                "Bought": 7,
+                "Value": 10402.35
+            },
+            {
+                "Stock": "GODFRYPHLP",
+                "Sold": 0,
+                "Bought": 3,
+                "Value": 7288.650000000001
+            },
+            {
+                "Stock": "SUNPHARMA",
+                "Sold": 0,
+                "Bought": 11,
+                "Value": 5486.25
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-12-27",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-12-28",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-12-29",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2011-12-30",
+        "Executed Orders": [
+            {
+                "Stock": "COLPAL",
+                "Sold": 34,
+                "Bought": 0,
+                "Value": 33345.5
+            },
+            {
+                "Stock": "BLUEDART",
+                "Sold": 7,
+                "Bought": 0,
+                "Value": 10812.9
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2012-01-02",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2012-01-03",
+        "Executed Orders": [
+            {
+                "Stock": "BAJAJ-AUTO",
+                "Sold": 53,
+                "Bought": 0,
+                "Value": 78201.5
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2012-01-04",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2012-01-05",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2012-01-06",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2012-01-07",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2012-01-09",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2012-01-10",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2012-01-11",
+        "Executed Orders": [
+            {
+                "Stock": "SUNDARMFIN",
+                "Sold": 12,
+                "Bought": 0,
+                "Value": 6337.200000000001
+            },
+            {
+                "Stock": "WABCOINDIA",
+                "Sold": 32,
+                "Bought": 0,
+                "Value": 41020.8
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2012-01-12",
+        "Executed Orders": [
+            {
+                "Stock": "PAGEIND",
+                "Sold": 0,
+                "Bought": 13,
+                "Value": 32043.7
+            },
+            {
+                "Stock": "WABCOINDIA",
+                "Sold": 0,
+                "Bought": 22,
+                "Value": 28141.300000000003
+            },
+            {
+                "Stock": "SOLARINDS",
+                "Sold": 0,
+                "Bought": 32,
+                "Value": 24640.0
+            },
+            {
+                "Stock": "ASTRAZEN",
+                "Sold": 0,
+                "Bought": 15,
+                "Value": 23364.0
+            },
+            {
+                "Stock": "VSTIND",
+                "Sold": 0,
+                "Bought": 19,
+                "Value": 21198.3
+            },
+            {
+                "Stock": "APOLLOHOSP",
+                "Sold": 0,
+                "Bought": 33,
+                "Value": 20083.8
+            },
+            {
+                "Stock": "SANOFI",
+                "Sold": 0,
+                "Bought": 9,
+                "Value": 20677.5
+            },
+            {
+                "Stock": "SHREECEM",
+                "Sold": 0,
+                "Bought": 7,
+                "Value": 14465.850000000002
+            },
+            {
+                "Stock": "BLUEDART",
+                "Sold": 0,
+                "Bought": 7,
+                "Value": 11128.6
+            },
+            {
+                "Stock": "EICHERMOT",
+                "Sold": 0,
+                "Bought": 6,
+                "Value": 8999.099999999999
+            },
+            {
+                "Stock": "SUNPHARMA",
+                "Sold": 0,
+                "Bought": 13,
+                "Value": 6768.45
+            },
+            {
+                "Stock": "GODFRYPHLP",
+                "Sold": 0,
+                "Bought": 3,
+                "Value": 7787.400000000001
+            },
+            {
+                "Stock": "ULTRACEMCO",
+                "Sold": 0,
+                "Bought": 4,
+                "Value": 4551.0
+            },
+            {
+                "Stock": "COLPAL",
+                "Sold": 0,
+                "Bought": 3,
+                "Value": 2945.55
+            },
+            {
+                "Stock": "BAJAJ-AUTO",
+                "Sold": 0,
+                "Bought": 1,
+                "Value": 1456.9
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2012-01-13",
+        "Executed Orders": [
+            {
+                "Stock": "VSTIND",
+                "Sold": 112,
+                "Bought": 0,
+                "Value": 125428.80000000002
+            },
+            {
+                "Stock": "WABCOINDIA",
+                "Sold": 22,
+                "Bought": 0,
+                "Value": 28380.0
+            },
+            {
+                "Stock": "SUNPHARMA",
+                "Sold": 13,
+                "Bought": 0,
+                "Value": 6760.65
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2012-01-16",
+        "Executed Orders": [
+            {
+                "Stock": "SOLARINDS",
+                "Sold": 149,
+                "Bought": 0,
+                "Value": 117657.84999999999
+            },
+            {
+                "Stock": "ASTRAZEN",
+                "Sold": 15,
+                "Bought": 0,
+                "Value": 23359.5
+            },
+            {
+                "Stock": "COLPAL",
+                "Sold": 3,
+                "Bought": 0,
+                "Value": 2826.0
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2012-01-17",
+        "Executed Orders": [
+            {
+                "Stock": "GODFRYPHLP",
+                "Sold": 6,
+                "Bought": 0,
+                "Value": 16097.699999999999
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2012-01-18",
+        "Executed Orders": [
+            {
+                "Stock": "SANOFI",
+                "Sold": 45,
+                "Bought": 0,
+                "Value": 101283.75
+            },
+            {
+                "Stock": "PAGEIND",
+                "Sold": 51,
+                "Bought": 0,
+                "Value": 128928.0
+            },
+            {
+                "Stock": "EICHERMOT",
+                "Sold": 20,
+                "Bought": 0,
+                "Value": 32083.0
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2012-01-19",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2012-01-20",
+        "Executed Orders": [
+            {
+                "Stock": "ULTRACEMCO",
+                "Sold": 29,
+                "Bought": 0,
+                "Value": 34792.75
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2012-01-23",
+        "Executed Orders": [
+            {
+                "Stock": "SHREECEM",
+                "Sold": 28,
+                "Bought": 0,
+                "Value": 60909.799999999996
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2012-01-24",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2012-01-25",
+        "Executed Orders": [
+            {
+                "Stock": "ACC",
+                "Sold": 29,
+                "Bought": 0,
+                "Value": 34125.75
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2012-01-27",
+        "Executed Orders": [
+            {
+                "Stock": "BLUEDART",
+                "Sold": 7,
+                "Bought": 0,
+                "Value": 12237.75
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2012-01-30",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2012-01-31",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2012-02-01",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2012-02-02",
+        "Executed Orders": [
+            {
+                "Stock": "PAGEIND",
+                "Sold": 0,
+                "Bought": 27,
+                "Value": 68662.35
+            },
+            {
+                "Stock": "ASTRAZEN",
+                "Sold": 0,
+                "Bought": 39,
+                "Value": 65196.3
+            },
+            {
+                "Stock": "SOLARINDS",
+                "Sold": 0,
+                "Bought": 75,
+                "Value": 61406.25
+            },
+            {
+                "Stock": "SHREECEM",
+                "Sold": 0,
+                "Bought": 25,
+                "Value": 56706.25
+            },
+            {
+                "Stock": "WABCOINDIA",
+                "Sold": 0,
+                "Bought": 44,
+                "Value": 57809.399999999994
+            },
+            {
+                "Stock": "VSTIND",
+                "Sold": 0,
+                "Bought": 37,
+                "Value": 44938.35
+            },
+            {
+                "Stock": "BATAINDIA",
+                "Sold": 0,
+                "Bought": 61,
+                "Value": 41812.450000000004
+            },
+            {
+                "Stock": "GODFRYPHLP",
+                "Sold": 0,
+                "Bought": 14,
+                "Value": 44284.1
+            },
+            {
+                "Stock": "EICHERMOT",
+                "Sold": 0,
+                "Bought": 24,
+                "Value": 40824.0
+            },
+            {
+                "Stock": "SANOFI",
+                "Sold": 0,
+                "Bought": 16,
+                "Value": 36101.6
+            },
+            {
+                "Stock": "APOLLOHOSP",
+                "Sold": 0,
+                "Bought": 45,
+                "Value": 27119.25
+            },
+            {
+                "Stock": "ULTRACEMCO",
+                "Sold": 0,
+                "Bought": 19,
+                "Value": 23543.850000000002
+            },
+            {
+                "Stock": "BLUEDART",
+                "Sold": 0,
+                "Bought": 13,
+                "Value": 21678.8
+            },
+            {
+                "Stock": "SUNPHARMA",
+                "Sold": 0,
+                "Bought": 31,
+                "Value": 17037.600000000002
+            },
+            {
+                "Stock": "MRF",
+                "Sold": 0,
+                "Bought": 2,
+                "Value": 16560.4
+            },
+            {
+                "Stock": "ACC",
+                "Sold": 0,
+                "Bought": 11,
+                "Value": 13222.0
+            },
+            {
+                "Stock": "BAJFINANCE",
+                "Sold": 0,
+                "Bought": 14,
+                "Value": 10883.6
+            },
+            {
+                "Stock": "BAJAJ-AUTO",
+                "Sold": 0,
+                "Bought": 6,
+                "Value": 9664.8
+            },
+            {
+                "Stock": "SUNDARMFIN",
+                "Sold": 0,
+                "Bought": 15,
+                "Value": 8549.25
+            },
+            {
+                "Stock": "COLPAL",
+                "Sold": 0,
+                "Bought": 4,
+                "Value": 3995.2
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2012-02-03",
+        "Executed Orders": [
+            {
+                "Stock": "PAGEIND",
+                "Sold": 27,
+                "Bought": 0,
+                "Value": 70012.35
+            },
+            {
+                "Stock": "BATAINDIA",
+                "Sold": 61,
+                "Bought": 0,
+                "Value": 42626.799999999996
+            },
+            {
+                "Stock": "MRF",
+                "Sold": 2,
+                "Bought": 0,
+                "Value": 16729.1
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2012-02-06",
+        "Executed Orders": [
+            {
+                "Stock": "EICHERMOT",
+                "Sold": 24,
+                "Bought": 0,
+                "Value": 42085.2
+            },
+            {
+                "Stock": "SUNPHARMA",
+                "Sold": 31,
+                "Bought": 0,
+                "Value": 17245.3
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2012-02-07",
+        "Executed Orders": [
+            {
+                "Stock": "SHREECEM",
+                "Sold": 25,
+                "Bought": 0,
+                "Value": 59046.25
+            },
+            {
+                "Stock": "ULTRACEMCO",
+                "Sold": 19,
+                "Bought": 0,
+                "Value": 25911.25
+            },
+            {
+                "Stock": "ACC",
+                "Sold": 11,
+                "Bought": 0,
+                "Value": 14676.2
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2012-02-08",
+        "Executed Orders": [
+            {
+                "Stock": "COLPAL",
+                "Sold": 4,
+                "Bought": 0,
+                "Value": 4087.8
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2012-02-09",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2012-02-10",
+        "Executed Orders": [
+            {
+                "Stock": "SUNDARMFIN",
+                "Sold": 15,
+                "Bought": 0,
+                "Value": 9092.25
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2012-02-13",
+        "Executed Orders": [
+            {
+                "Stock": "SANOFI",
+                "Sold": 16,
+                "Bought": 0,
+                "Value": 35094.4
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2012-02-14",
+        "Executed Orders": [
+            {
+                "Stock": "BLUEDART",
+                "Sold": 13,
+                "Bought": 0,
+                "Value": 22752.600000000002
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2012-02-15",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2012-02-16",
+        "Executed Orders": [
+            {
+                "Stock": "SOLARINDS",
+                "Sold": 75,
+                "Bought": 0,
+                "Value": 64323.75
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2012-02-17",
+        "Executed Orders": [
+            {
+                "Stock": "BAJAJ-AUTO",
+                "Sold": 7,
+                "Bought": 0,
+                "Value": 12681.199999999999
+            },
+            {
+                "Stock": "WABCOINDIA",
+                "Sold": 44,
+                "Bought": 0,
+                "Value": 63738.399999999994
+            }
+        ]
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2012-02-21",
+        "Executed Orders": []
+    },
+    {
+        "Portfolio Name": "CLA_MAX_SHARPE",
+        "Date": "2012-02-22",
+        "Executed Orders": [
+            {
+                "Stock": "APOLLOHOSP",
+                "Sold": 160,
+                "Bought": 0,
+                "Value": 93064.0
+            }
+        ]
+    }
+]

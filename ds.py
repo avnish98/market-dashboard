@@ -99,6 +99,10 @@ class Portfolio:
         self.discrete_composition = {}
         self.cash_left = value
         self.statistics = {}
+    
+    def reset(self, val):
+        self.portfolio_value = val
+        self.cash_left = val
 
     def construct(self, latest_price, metadata_loc, stats):
         """Constructs portfolio by: updating stock objects, calculating discrete

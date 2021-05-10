@@ -293,8 +293,10 @@ class Nifty500Fetcher(IndexFetcher):
             time.sleep(timeout)
     
     def fetch_index(self, index_name='NIFTY500', start_date=date(1980, 1, 1), end_date=date.today()):
-        data = get_history(symbol=index_name, start=start_date, end=end_date)
-        data.to_csv("{}/{}.csv".format(self.ohlc_dir+"/Index", index_name)
+        data = get_history(symbol=index_name, start=start_date, 
+                            end=end_date, index=True)
+        data.to_csv("{}/{}.csv".format(self.ohlc_dir+"/Index", 
+                                index_name.replace(' ','')))
     
     def ohlc_updation_check(self):
         """Checks if static CSVs are outdated and returns a dictionary
