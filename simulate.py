@@ -150,7 +150,9 @@ class Agent:
                 if k in portfolio_comp.keys():
                     if v != portfolio_comp[k]:
                         self.orders[k] = v - portfolio_comp[k]
-                self.orders[k] = v
+                else:
+                    self.orders[k] = (-portfolio_comp[k])
+                #self.orders[k] = v
         
     def execute_orders(self, dayend_prices=None):
         self.order_log = []
@@ -304,7 +306,7 @@ class Backtesting:
                         
                     print("Day: {}".format(self.env.current_date+1))
 
-                    dayend_prices = self.env.load_next_day(a, use_margins=True,
+                    dayend_prices = self.env.load_next_day(a, use_margins=False,
                                                 bband_margins=self.bband_margins)
                     if(self.env.is_reallocation_day()):
 
