@@ -146,12 +146,12 @@ class Agent:
         elif (portfolio_comp == optimizer_comp):
             self.orders = {}
         else:
-            for k, v in optimizer_comp.items():
-                if k in portfolio_comp.keys():
-                    if v != portfolio_comp[k]:
-                        self.orders[k] = v - portfolio_comp[k]
+            for k, v in portfolio_comp.items():
+                if k in optimizer_comp.keys():
+                    if v != optimizer_comp[k]:
+                        self.orders[k] = optimizer_comp[k] - v 
                 else:
-                    self.orders[k] = (-portfolio_comp[k])
+                    self.orders[k] = (-v)
                 #self.orders[k] = v
         
     def execute_orders(self, dayend_prices=None):
