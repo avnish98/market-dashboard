@@ -1,6 +1,11 @@
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 import json
+import time
+import os
 
+from bokeh.io import push_notebook, show, output_notebook
+from bokeh.models import HoverTool
+from bokeh.plotting import figure 
 import pandas as pd
 import numpy as np
 
@@ -22,7 +27,7 @@ class Environment:
     def reset(self):
         self.current_date = (-1)
 
-    def load_next_day(self, agent, bband_margins):
+    def load_next_day(self, agent, use_margins, bband_margins):
         dayend_prices = self.data[self.data.index == self.dates[self.current_date]]
         dayend_prices = dayend_prices.to_dict(orient='records')[0]
 
@@ -41,11 +46,16 @@ class Environment:
                 s.metadata['Price'] = dayend_prices[s.ticker]
                 s.metadata['Value'] = s.metadata['Portfolio Allocation']*s.metadata['Price']
 
-                if(bband_margins):
-                    if((s.price <= ohlc_data['Bollinger Band Down']) or (s.price >= ohlc_data['Bollinger Band Up'])):
-                        agent.execute_sell(s.ticker, -s.metadata['Portfolio Allocation'], s.price)   
-                    elif((s.price <= ohlc_data['Stop Loss']) or (s.price >= ohlc_data['Profit Exit'])):
-                        agent.execute_sell(s.ticker, -s.metadata['Portfolio Allocation'], s.price) 
+                if(use_margins):
+                    if(bband_margins):
+                        if((s.price <= ohlc_data['Bollinger Band Down']) or 
+                            (s.price >= ohlc_data['Bollinger Band Up'])):
+                            print("BBand Triggered")
+                            agent.execute_sell(s.ticker, -s.metadata['Portfolio Allocation'], s.price)   
+                    else:
+                        if((s.price <= ohlc_data['Stop Loss']) or 
+                            (s.price >= ohlc_data['Profit Exit'])):
+                            agent.execute_sell(s.ticker, -s.metadata['Portfolio Allocation'], s.price) 
 
             except IndexError as e:
                 print("IndexError for ticker {}".format(s.ticker))
@@ -80,9 +90,10 @@ class Environment:
 
 
 class Agent:
-    def __init__(self, name=None, optimizer=Optimizer(), portfolio_value=1000000, 
+    def __init__(self, name=None, color='navy', optimizer=Optimizer(), portfolio_value=1000000, 
                 single_day_cash=0.60, **kwargs):
         self.name = name
+        self.color = color
         self.portfolio = Portfolio()
         self.optimizer = optimizer
         self.optimizer.portfolio = Portfolio()
@@ -214,7 +225,7 @@ class Backtesting:
                 bband_margins=True, bband_ma=20, bband_std_mul=2, 
                 upper_margin=0.05, lower_margin=0.05, lookback_period=30,
                 rebalance_period=30, proc_ohlc_loc=None, proc_metadata_loc=None,
-                agents=[], benchmark={}, portfolio_value=1000000, 
+                agents=[], benchmarks=[], portfolio_value=1000000, 
                 process_metrics=False, log_data_loc="data/processed/Simulated"):
                  
         self.start_date = start_date
@@ -226,7 +237,7 @@ class Backtesting:
         self.lower_margin = lower_margin
         self.lookback_period = lookback_period
         self.rebalance_period = rebalance_period
-        self.benchmark = benchmark
+        self.benchmarks = benchmarks
         self.log_data_loc = log_data_loc
     
         self.processor = IndexProcessor(proc_ohlc_loc, proc_metadata_loc)
@@ -241,13 +252,60 @@ class Backtesting:
                                pd.DataFrame(read_json(proc_metadata_loc)),
                                self.lookback_period)
 
+    def cret_plot(self):
+        output_notebook()
+        self.p = figure(width=950, height=500, x_axis_type='datetime', 
+                    title='Benchmarks Vs Agents (Cumulative Returns)')
+
+        for b in self.benchmarks:
+            df = pd.read_csv(b['data_loc'])
+            df['Date'] = pd.to_datetime(df['Date'])#.dt.date
+            df = df[df['Date'].dt.date > self.processor.close_matrix.index[0]]
+            init_val = df['Close'].values[0]
+
+            df['CRet'] = df['Close'].apply(lambda x: ((x-init_val)/init_val)*100)
+
+            self.p.line(df['Date'], df['CRet'], color=b['color'], alpha=0.5, 
+                    legend_label=b['name'])
+
+            self.p.legend.location = "top_left"
+            self.p.legend.click_policy="hide"
+            self.p.xaxis.axis_label = 'Date'
+            self.p.yaxis.axis_label = 'Cumulative Return (in %)'
+            self.target = show(self.p, notebook_handle=True)
+        
+        self.plot1 = True
+    
+    def portfolio_plot(self):
+        #output_notebook()
+        self.p2 = figure(width=950, height=500, x_axis_type='datetime', 
+                    title='Benchmarks Vs Agents (Daily Returns)')
+
+        for b in self.benchmarks:
+            df = pd.read_csv(b['data_loc'])
+            df['Date'] = pd.to_datetime(df['Date'])#.dt.date
+            df = df[df['Date'].dt.date > self.processor.close_matrix.index[0]]
+            df['Daily Returns'] = (df['Close'].pct_change())*100
+
+            self.p2.line(df['Date'], df['Daily Returns'], color=b['color'], alpha=0.5, 
+                    legend_label=b['name'])
+
+            self.p2.legend.location = "bottom_left"
+            self.p2.legend.click_policy="hide"
+            self.p2.xaxis.axis_label = 'Date'
+            self.p2.yaxis.axis_label = 'Daily Returns (in %)'
+            self.target2 = show(self.p2, notebook_handle=True)      
+
+        self.plot2 = True 
+
     def backtest(self):
         for a in self.agents:
             for i in range(len(self.env.dates)):
                         
                     print("Day: {}".format(self.env.current_date+1))
 
-                    dayend_prices = self.env.load_next_day(a, self.bband_margins)
+                    dayend_prices = self.env.load_next_day(a, use_margins=True,
+                                                bband_margins=self.bband_margins)
                     if(self.env.is_reallocation_day()):
 
                         allocation_data = self.env.load_lookback_data()
@@ -261,10 +319,36 @@ class Backtesting:
                     a.portfolio.cash_left = 0
                     a.log(self.env.dates[i], self.env.is_reallocation_day())
                     print()
-            
-                    write_json(a.portfolio_logs, "{}/AGENT_{}_PORTFOLIO_DATA.json".format(self.log_data_loc, a.name))
-                    write_json(a.optimizer_logs, "{}/AGENT_{}_OPTIMIZER_DATA.json".format(self.log_data_loc, a.name))
-                    write_json(a.exec_order_logs, "{}/AGENT_{}_ORDER_DATA.json".format(self.log_data_loc, a.name))
 
+                    now = datetime.now().strftime("%Y-%m-%d")
+                    write_json(a.portfolio_logs, "{}/{}_AGENT_{}_PORTFOLIO_DATA.json".format(self.log_data_loc, now, a.name))
+                    write_json(a.optimizer_logs, "{}/{}_AGENT_{}_OPTIMIZER_DATA.json".format(self.log_data_loc, now, a.name))
+                    write_json(a.exec_order_logs, "{}/{}_AGENT_{}_ORDER_DATA.json".format(self.log_data_loc, now, a.name))
+
+                    df = pd.read_json("{}/{}_AGENT_{}_PORTFOLIO_DATA.json".format(self.log_data_loc, now, a.name))
+                    df['Date'] = pd.to_datetime(df['Date'])#.dt.date
+                    df = df[df['Date'].dt.date > self.processor.close_matrix.index[0]]
+                    df['Daily Returns'] = df['Current Portfolio Value'].pct_change()*100
+
+
+                    #init_val = df['Close'].values[0]
+
+                    #df['CRet'] = df['Close'].apply(lambda x: ((x-init_val)/init_val)*100)
+
+                    if(self.plot1):
+                        self.p.line(df['Date'], df['Cumulative Portfolio Return'], 
+                                    color=a.color, alpha=0.5, legend_label=a.name)
+                        push_notebook(handle=self.target)
+                    
+                    if(self.plot2):
+                        self.p2.line(df['Date'], df['Daily Returns'], color=a.color, alpha=0.5, 
+                                    legend_label=a.name)
+                        push_notebook(handle=self.target2)
+
+
+                    time.sleep(0.25)
+
+            # self.p2.legend.location = "bottom_left"
+            # self.p2.legend.click_policy="hide"
             self.env.reset()
         
