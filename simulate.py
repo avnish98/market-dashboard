@@ -128,7 +128,7 @@ class Agent:
                 self.optimizer.optimize()
             except Exception as e:
                 print("Portfolio Optimization Error: {}".format(e))
-                self.optimizer.portfolio = self.portfolio
+                #self.optimizer.portfolio = self.portfolio
         
         else:
             self.optimizer.portfolio.reset(0)
@@ -146,13 +146,18 @@ class Agent:
         elif (portfolio_comp == optimizer_comp):
             self.orders = {}
         else:
+            for k, v in optimizer_comp.items():
+                if k in portfolio_comp.keys():
+                    if portfolio_comp[k] != v:
+                        self.orders[k] = v - portfolio_comp[k]
+            
             for k, v in portfolio_comp.items():
-                if k in optimizer_comp.keys():
-                    if v != optimizer_comp[k]:
-                        self.orders[k] = optimizer_comp[k] - v 
-                else:
-                    self.orders[k] = (-v)
+                if k not in optimizer_comp.keys():
+                    self.orders[k] = (-v)   
+                # else:
+                #     self.orders[k] = (-portfolio_comp[k])
                 #self.orders[k] = v
+        print("ORDERS: {}".format(self.orders))
         
     def execute_orders(self, dayend_prices=None):
         self.order_log = []
@@ -178,15 +183,19 @@ class Agent:
                 stock.metadata['Value'] = quantity*price
                 self.portfolio.stocks.append(stock)
 
-            self.total_cash -= (quantity*price)
-            self.order_log.append({"Stock": ticker, "Sold": 0, "Bought": quantity, "Value": quantity*price})
+            self.portfolio.cash_left -= (quantity*price)
+            order_log = {"Stock": ticker, "Sold": 0, "Bought": quantity, "Value": quantity*price}
+            print("BUY ORDER: {}".format(order_log))
+            self.order_log.append(order_log)
     
     def execute_sell(self, ticker, quantity, price):
 
         if(self.portfolio.stock_in_portfolio(ticker)):
             self.portfolio.update_allocation(ticker, quantity, price)
         self.total_cash += ((-quantity)*price)
-        self.order_log.append({"Stock": ticker, "Sold": -quantity, "Bought": 0, "Value": -quantity*price})
+        order_log = {"Stock": ticker, "Sold": -quantity, "Bought": 0, "Value": -quantity*price}
+        print("SELL ORDER: {}".format(order_log))
+        self.order_log.append(order_log)
     
     def log(self, date, is_realloc):       
         pvalue = self.portfolio.total_portfolio_value()
