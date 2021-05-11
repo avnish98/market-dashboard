@@ -134,11 +134,15 @@ class Agent:
             self.optimizer.portfolio.reset(0)
             self.portfolio.reset(0)
 
-
-
     def compute_allocation_orders(self):
         portfolio_comp = self.portfolio.discrete_composition
         optimizer_comp = self.optimizer.portfolio.discrete_composition
+
+        print()
+        print("PORTFOLIO: {}".format(portfolio_comp))
+        print()
+        print("Optimizer PORTFOLIO: {}".format(optimizer_comp))
+        print()
 
         self.orders = {}
         if len(self.portfolio.stocks) == 0:
@@ -149,21 +153,28 @@ class Agent:
             for k, v in optimizer_comp.items():
                 if k in portfolio_comp.keys():
                     if portfolio_comp[k] != v:
+                        # Orders for stocks already in portfolio
                         self.orders[k] = v - portfolio_comp[k]
+                else:
+                    # New Orders
+                    self.orders[k] = v
             
-            for k, v in portfolio_comp.items():
-                if k not in optimizer_comp.keys():
+            for k, v in portfolio_comp.items():                
+                if (k not in list(optimizer_comp.keys())):
+                    # Orders for stocks not recommended
                     self.orders[k] = (-v)   
                 # else:
                 #     self.orders[k] = (-portfolio_comp[k])
                 #self.orders[k] = v
         print("ORDERS: {}".format(self.orders))
+        print()
         
     def execute_orders(self, dayend_prices=None):
         self.order_log = []
         for ticker, shares in self.orders.items():
             if shares > 0:
                 self.execute_buy(ticker, shares, dayend_prices[ticker])
+
             elif shares < 0:
                 self.execute_sell(ticker, shares, dayend_prices[ticker])
     
@@ -181,6 +192,7 @@ class Agent:
                 stock.metadata['Price'] = price
                 stock.price = price
                 stock.metadata['Value'] = quantity*price
+                self.portfolio.discrete_composition[ticker] = quantity
                 self.portfolio.stocks.append(stock)
 
             self.portfolio.cash_left -= (quantity*price)
@@ -192,7 +204,7 @@ class Agent:
 
         if(self.portfolio.stock_in_portfolio(ticker)):
             self.portfolio.update_allocation(ticker, quantity, price)
-        self.total_cash += ((-quantity)*price)
+        self.portfolio.cash_left += ((-quantity)*price)
         order_log = {"Stock": ticker, "Sold": -quantity, "Bought": 0, "Value": -quantity*price}
         print("SELL ORDER: {}".format(order_log))
         self.order_log.append(order_log)
@@ -211,6 +223,7 @@ class Agent:
             "Amount Reserved":self.total_cash,
             "Reallocation Day":is_realloc,
         }
+        print()
         print(json.dumps(portfolio_log, indent = 4))
         portfolio_log["Portfolio Composition"] = [s.metadata for s in self.portfolio.stocks]
 
@@ -262,6 +275,13 @@ class Backtesting:
         self.env = Environment(self.processor.close_matrix, 
                                pd.DataFrame(read_json(proc_metadata_loc)),
                                self.lookback_period)
+        
+        self.p = None
+        self.p2 = None
+        self.target = None
+        self.target2 = None
+        self.plot1 = False
+        self.plot2 = False
 
     def cret_plot(self):
         output_notebook()

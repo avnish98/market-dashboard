@@ -205,11 +205,13 @@ class Portfolio:
     def update_allocation(self, ticker, disc_alloc, new_price):
         for stock in self.stocks:
             if ticker == stock.ticker:
-                stock.metadata['Portfolio Allocation'] = stock.metadata['Portfolio Allocation'] + disc_alloc
-                stock.metadata['Value'] = stock.metadata['Portfolio Allocation']*new_price
-
+                self.discrete_composition[ticker] = self.discrete_composition[ticker] + disc_alloc
+                stock.metadata['Portfolio Allocation'] = self.discrete_composition[ticker]
+                stock.metadata['Value'] = self.discrete_composition[ticker]*new_price
+                
                 if(stock.metadata['Portfolio Allocation']==0):
                     self.stocks.remove(stock)
+                    del self.discrete_composition[ticker]
                 
                 break
     

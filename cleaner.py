@@ -15,7 +15,7 @@ import pandas as pd
 from utils import find_in_json, write_json
 
 
-class Cleaner:
+class IndexCleaner:
     """
     Base class to represent a Cleaner
 
@@ -59,7 +59,7 @@ class Cleaner:
         pass
 
 
-class Nifty500Cleaner(Cleaner):
+class Nifty500Cleaner(IndexCleaner):
     """
     Derived class to represent a Nifty500 Data Cleaner
 

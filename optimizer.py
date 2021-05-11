@@ -94,6 +94,8 @@ class EffOptimizer:
         self.portfolio = Portfolio()
         self.close_matrix = close_matrix
         self.metadata_loc = metadata_loc
+        self.mu = None
+        self.s = None
         self.optimizer = None
         self.optimizer_type = "max_sharpe"
     
@@ -174,6 +176,7 @@ class HRPOptimizer:
         self.close_matrix = close_matrix
         self.metadata_loc = metadata_loc
         self.optimizer = None
+        self.mu = None
 
     def optimize(self):
         """Performs portfolio optimization (aiming for most diverse portfolio)
@@ -229,6 +232,8 @@ class CLAOptimizer:
         super().__init__()
         self.portfolio = Portfolio()
         self.close_matrix = close_matrix
+        self.mu = None
+        self.s = None
         self.metadata_loc = metadata_loc
         self.optimizer = None
         self.optimizer_type = "max_sharpe"

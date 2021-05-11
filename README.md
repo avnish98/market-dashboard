@@ -6,13 +6,15 @@
 * [Processor](processor.py)
 * [Optimizer](optimizer.py)
 * [Utils](utils.py)
-* [Simulation][**WORK IN PROGRESS**]
-
-## Flowchart of Simulation
-<img src='diagrams/flowchart.png'>
+* [Simulation](simulate.py)
 
 ## Class Diagram
+  
 <img src='diagrams/class-diagram.png'>
+
+## Flowchart of Simulation
+  
+<img src='diagrams/flowchart.png'>
 
 <!-- ## Techstack (Development)
 * PostgresDB
