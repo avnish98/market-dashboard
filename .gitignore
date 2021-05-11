@@ -2,7 +2,4 @@
 __pycache__
 .ipynb_checkpoints
 *.json
-!data/processed/Simulated/*.json
-data/processed/Simulated/2021-05-10_AGENT_CLA_MAX_SHARPE_OPTIMIZER_DATA.json
-data/processed/Simulated/2021-05-10_AGENT_CLA_MAX_SHARPE_ORDER_DATA.json
-data/processed/Simulated/2021-05-10_AGENT_CLA_MAX_SHARPE_PORTFOLIO_DATA.json
+data/processed/Simulated/*
