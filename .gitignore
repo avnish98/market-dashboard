@@ -1,4 +1,4 @@
 *.csv
 __pycache__
 .ipynb_checkpoints
-data/processed/Metadata/*
+./data/processed/Metadata/*
