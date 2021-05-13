@@ -344,10 +344,21 @@ class Backtesting:
                         a.compute_allocation_orders()
                         a.execute_orders(dayend_prices)
                         
+                    
+                    
+                    if(a.portfolio.cash_left ==None or a.portfolio.cash_left == np.NaN):
+                        print("Here Cash left is Nan")
+                        break
+                    
+                    if(a.portfolio.total_portfolio_value() ==None or a.portfolio.total_portfolio_value() == np.NaN):
+                        print("Here TPV is Nan")
+                        break
+                    
                     a.total_cash += a.portfolio.cash_left
                     #print("This is cash left: {}".format(a.portfolio.cash_left))
                     #if(a.portfolio.cash_left )
                     a.portfolio.cash_left = 0
+                    
                     a.log(self.env.dates[i], self.env.is_reallocation_day())
                     print()
 
