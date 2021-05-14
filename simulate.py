@@ -2,8 +2,9 @@ from datetime import date, datetime, timedelta
 import json
 import time
 import os
+import threading
 
-from bokeh.io import push_notebook, show, output_notebook
+from bokeh.io import push_notebook, show, output_notebook, curdoc
 from bokeh.models import HoverTool
 from bokeh.plotting import figure 
 import pandas as pd
@@ -14,53 +15,61 @@ from optimizer import Optimizer
 from ds import Portfolio, Stock
 from utils import find_in_json, read_json, \
                   write_json, sort_dict, \
-                  slice_dict, return_latest_data
+                  slice_dict, return_latest_data, clean_dict
 
 class Environment:
     def __init__(self, data, metadata, lookback_period):
         self.data = data
         self.metadata = metadata
         self.dates = list(data.index)
-        self.current_date =(-1)
+        self.current_date =0
         self.lookback_period = lookback_period
     
     def reset(self):
-        self.current_date = (-1)
+        self.current_date = 0
 
     def load_next_day(self, agent, use_margins, bband_margins):
         dayend_prices = self.data[self.data.index == self.dates[self.current_date]]
         dayend_prices = dayend_prices.to_dict(orient='records')[0]
+        dayend_prices = clean_dict(dayend_prices)
 
         agent.orders = {}
         agent.order_log = []
 
         for s in agent.portfolio.stocks:
-         
-            try:#try:
-                ohlc_data = pd.read_csv(s.metadata['OHLC Data Location'])
-                ohlc_data['Date'] = pd.to_datetime(ohlc_data['Date']).dt.date
-                ohlc_data = ohlc_data[ohlc_data['Date'] == self.dates[self.current_date]]
-                ohlc_data = ohlc_data.to_dict(orient='records')[0]
+            
+            # cur_date = self.current_date
+            # ohlc_data = [] 
 
+            # while(len(ohlc_data)==0):
+            #     ohlc_data = pd.read_csv(s.metadata['OHLC Data Location'])
+            #     ohlc_data['Date'] = pd.to_datetime(ohlc_data['Date']).dt.date
+            #     ohlc_data = ohlc_data[ohlc_data['Date'] == self.dates[cur_date]]
+            #     ohlc_data = ohlc_data.to_dict(orient='records')
+            #     cur_date -= 1
+
+            # if(dayend_prices[s.ticker] != float('nan')):
+
+            try:
                 s.price = dayend_prices[s.ticker]
                 s.metadata['Price'] = dayend_prices[s.ticker]
                 s.metadata['Value'] = s.metadata['Portfolio Allocation']*s.metadata['Price']
 
-                if(use_margins):
-                    if(bband_margins):
-                        if((s.price <= ohlc_data['Bollinger Band Down']) or 
-                            (s.price >= ohlc_data['Bollinger Band Up'])):
-                            print("BBand Triggered")
-                            agent.execute_sell(s.ticker, -s.metadata['Portfolio Allocation'], s.price)   
-                    else:
-                        if((s.price <= ohlc_data['Stop Loss']) or 
-                            (s.price >= ohlc_data['Profit Exit'])):
-                            agent.execute_sell(s.ticker, -s.metadata['Portfolio Allocation'], s.price) 
+            # if(use_margins):
+            #     if(bband_margins):
+            #         if((s.price <= ohlc_data['Bollinger Band Down']) or 
+            #             (s.price >= ohlc_data['Bollinger Band Up'])):
+            #             print("BBand Triggered")
+            #             agent.execute_sell(s.ticker, -s.metadata['Portfolio Allocation'], s.price)   
+            #     else:
+            #         if((s.price <= ohlc_data['Stop Loss']) or 
+            #             (s.price >= ohlc_data['Profit Exit'])):
+            #             agent.execute_sell(s.ticker, -s.metadata['Portfolio Allocation'], s.price) 
 
-            except IndexError as e:
-                print("IndexError for ticker {}".format(s.ticker))
-                #print("Price of stock: {}".format(s.price))
-                #agent.execute_sell(s.ticker, -s.metadata['Portfolio Allocation'], s.price)
+            except Exception as e:
+                print("Exception {} for ticker {}".format(e, s.ticker))
+                # print("Price of stock: {}".format(s.price))
+                # agent.execute_sell(s.ticker, -s.metadata['Portfolio Allocation'], s.price)
 
 
 
@@ -69,12 +78,12 @@ class Environment:
             #     # continue
             #     agent.execute_sell(s.ticker, -s.metadata['Portfolio Allocation'], s.price)
             
-        self.current_date += 1
+        #self.current_date += 1
         return dayend_prices
     
     def load_lookback_data(self, cumulative=True):
-        start_cond = (self.data.index > self.dates[self.current_date - self.lookback_period])
-        end_cond = (self.data.index <= self.dates[self.current_date])
+        #start_cond = (self.data.index > self.dates[self.current_date - self.lookback_period])
+        end_cond = (self.data.index < self.dates[self.current_date])
         if cumulative:
             allocation_data = self.data.loc[end_cond]
         else:
@@ -139,10 +148,10 @@ class Agent:
         optimizer_comp = self.optimizer.portfolio.discrete_composition
 
         print()
-        print("PORTFOLIO: {}".format(portfolio_comp))
+        print("AGENT_{} PORTFOLIO: {}".format(self.name, portfolio_comp))
         print()
-        print("Optimizer PORTFOLIO: {}".format(optimizer_comp))
-        print()
+        #print("Optimizer PORTFOLIO: {}".format(optimizer_comp))
+        #print()
 
         self.orders = {}
         if len(self.portfolio.stocks) == 0:
@@ -166,10 +175,11 @@ class Agent:
                 # else:
                 #     self.orders[k] = (-portfolio_comp[k])
                 #self.orders[k] = v
-        print("ORDERS: {}".format(self.orders))
-        print()
+        #print("ORDERS: {}".format(self.orders))
+        #print()
         
     def execute_orders(self, dayend_prices=None):
+        #dayend_prices = dayend_prices.dropna()
         self.order_log = []
         for ticker, shares in self.orders.items():
             if shares > 0:
@@ -197,7 +207,7 @@ class Agent:
 
             self.portfolio.cash_left -= (quantity*price)
             order_log = {"Stock": ticker, "Sold": 0, "Bought": quantity, "Value": quantity*price}
-            print("BUY ORDER: {}".format(order_log))
+            #print("BUY ORDER: {}".format(order_log))
             self.order_log.append(order_log)
     
     def execute_sell(self, ticker, quantity, price):
@@ -206,7 +216,7 @@ class Agent:
             self.portfolio.update_allocation(ticker, quantity, price)
         self.portfolio.cash_left += ((-quantity)*price)
         order_log = {"Stock": ticker, "Sold": -quantity, "Bought": 0, "Value": -quantity*price}
-        print("SELL ORDER: {}".format(order_log))
+        #print("SELL ORDER: {}".format(order_log))
         self.order_log.append(order_log)
     
     def log(self, date, is_realloc):       
@@ -225,6 +235,7 @@ class Agent:
         }
         print()
         print(json.dumps(portfolio_log, indent = 4))
+        print()
         portfolio_log["Portfolio Composition"] = [s.metadata for s in self.portfolio.stocks]
 
         self.portfolio_logs.append(portfolio_log)
@@ -272,7 +283,7 @@ class Backtesting:
 
         self.agents = agents
 
-        self.env = Environment(self.processor.close_matrix, 
+        self.env = Environment(self.processor.close_matrix.fillna(method='ffill'), 
                                pd.DataFrame(read_json(proc_metadata_loc)),
                                self.lookback_period)
         
@@ -285,13 +296,15 @@ class Backtesting:
 
     def cret_plot(self):
         output_notebook()
-        self.p = figure(width=950, height=500, x_axis_type='datetime', 
+        #curdoc().theme = 'dark_minimal'
+        self.p = figure(width=950, height=600, x_axis_type='datetime', 
                     title='Benchmarks Vs Agents (Cumulative Returns)')
 
         for b in self.benchmarks:
             df = pd.read_csv(b['data_loc'])
             df['Date'] = pd.to_datetime(df['Date'])#.dt.date
             df = df[df['Date'].dt.date > self.processor.close_matrix.index[0]]
+            df = df[df['Date'].dt.date <= self.end_date]
             init_val = df['Close'].values[0]
 
             df['CRet'] = df['Close'].apply(lambda x: ((x-init_val)/init_val)*100)
@@ -299,98 +312,153 @@ class Backtesting:
             self.p.line(df['Date'], df['CRet'], color=b['color'], alpha=0.5, 
                     legend_label=b['name'])
 
-            self.p.legend.location = "top_left"
-            self.p.legend.click_policy="hide"
-            self.p.xaxis.axis_label = 'Date'
-            self.p.yaxis.axis_label = 'Cumulative Return (in %)'
-            self.target = show(self.p, notebook_handle=True)
+        self.p.legend.location = "top_left"
+        self.p.legend.click_policy="hide"
+        self.p.xaxis.axis_label = 'Date'
+        self.p.yaxis.axis_label = 'Cumulative Return (in %)'
+        self.target = show(self.p, notebook_handle=True)
         
         self.plot1 = True
     
     def portfolio_plot(self):
         #output_notebook()
-        self.p2 = figure(width=950, height=500, x_axis_type='datetime', 
+        #curdoc().theme = 'dark_minimal'
+        self.p2 = figure(width=950, height=600, x_axis_type='datetime', 
                     title='Benchmarks Vs Agents (Daily Returns)')
 
         for b in self.benchmarks:
             df = pd.read_csv(b['data_loc'])
             df['Date'] = pd.to_datetime(df['Date'])#.dt.date
             df = df[df['Date'].dt.date > self.processor.close_matrix.index[0]]
+            df = df[df['Date'].dt.date <= self.end_date]
             df['Daily Returns'] = (df['Close'].pct_change())*100
 
             self.p2.line(df['Date'], df['Daily Returns'], color=b['color'], alpha=0.5, 
                     legend_label=b['name'])
 
-            self.p2.legend.location = "bottom_left"
-            self.p2.legend.click_policy="hide"
-            self.p2.xaxis.axis_label = 'Date'
-            self.p2.yaxis.axis_label = 'Daily Returns (in %)'
-            self.target2 = show(self.p2, notebook_handle=True)      
+        self.p2.legend.location = "bottom_right"
+        self.p2.legend.click_policy="hide"
+        self.p2.xaxis.axis_label = 'Date'
+        self.p2.yaxis.axis_label = 'Daily Returns (in %)'
+        self.target2 = show(self.p2, notebook_handle=True)      
 
         self.plot2 = True 
+    
+    def agent_exec(self, agent):
+
+        #cur_date = self.env.current_date
+        dayend_prices = self.env.load_next_day(agent, use_margins=False,
+                                            bband_margins=self.bband_margins)
+
+        if(self.env.is_reallocation_day()):
+
+            allocation_data = self.env.load_lookback_data()
+            agent.allocate_portfolio(allocation_data)
+            agent.compute_allocation_orders()
+            agent.execute_orders(dayend_prices)
+
+        agent.total_cash += agent.portfolio.cash_left
+        #print("This is cash left: {}".format(a.portfolio.cash_left))
+        #if(a.portfolio.cash_left )
+        agent.portfolio.cash_left = 0
+
+        agent.log(self.env.dates[self.env.current_date], self.env.is_reallocation_day())
+        print()
+
+        now = datetime.now().strftime("%Y-%m-%d")
+        write_json(agent.portfolio_logs, "{}/{}_AGENT_{}_PORTFOLIO_DATA.json".format(self.log_data_loc, now, agent.name))
+        write_json(agent.optimizer_logs, "{}/{}_AGENT_{}_OPTIMIZER_DATA.json".format(self.log_data_loc, now, agent.name))
+        write_json(agent.exec_order_logs, "{}/{}_AGENT_{}_ORDER_DATA.json".format(self.log_data_loc, now, agent.name))
+        
+        #self.env.current_date = self.env.current_date-1
+
+        #init_val = df['Close'].values[0]
+
+        #df['CRet'] = df['Close'].apply(lambda x: ((x-init_val)/init_val)*100)
+
+
 
     def backtest(self):
-        for a in self.agents:
-            for i in range(len(self.env.dates)):
-                        
-                    print("Day: {}".format(self.env.current_date+1))
+        #for a in self.agents:
+        for i in range(len(self.env.dates)):
+                    
+                print("Day: {}".format(self.env.current_date))
 
-                    dayend_prices = self.env.load_next_day(a, use_margins=False,
-                                                bband_margins=self.bband_margins)
-                    if(self.env.is_reallocation_day()):
+                thread_list = []
+                #cur_date = self.env.current_date
 
-                        allocation_data = self.env.load_lookback_data()
-                        a.allocate_portfolio(allocation_data)
-                        a.compute_allocation_orders()
-                        a.execute_orders(dayend_prices)
-                        
-                    
-                    
-                    if(a.portfolio.cash_left ==None or a.portfolio.cash_left == np.NaN):
-                        print("Here Cash left is Nan")
-                        break
-                    
-                    if(a.portfolio.total_portfolio_value() ==None or a.portfolio.total_portfolio_value() == np.NaN):
-                        print("Here TPV is Nan")
-                        break
-                    
-                    a.total_cash += a.portfolio.cash_left
-                    #print("This is cash left: {}".format(a.portfolio.cash_left))
-                    #if(a.portfolio.cash_left )
-                    a.portfolio.cash_left = 0
-                    
-                    a.log(self.env.dates[i], self.env.is_reallocation_day())
-                    print()
-
+                for a in range(len(self.agents)):
+                    thread_list.append(threading.Thread(target=self.agent_exec, args=(self.agents[a], )))
+                    thread_list[a].start()
+                    #self.env.current_date = cur_date
+                
+                for a in range(len(self.agents)):
+                    thread_list[a].join()
+                
+                for agent in self.agents:
                     now = datetime.now().strftime("%Y-%m-%d")
-                    write_json(a.portfolio_logs, "{}/{}_AGENT_{}_PORTFOLIO_DATA.json".format(self.log_data_loc, now, a.name))
-                    write_json(a.optimizer_logs, "{}/{}_AGENT_{}_OPTIMIZER_DATA.json".format(self.log_data_loc, now, a.name))
-                    write_json(a.exec_order_logs, "{}/{}_AGENT_{}_ORDER_DATA.json".format(self.log_data_loc, now, a.name))
-
-                    df = pd.read_json("{}/{}_AGENT_{}_PORTFOLIO_DATA.json".format(self.log_data_loc, now, a.name))
+                    df = pd.read_json("{}/{}_AGENT_{}_PORTFOLIO_DATA.json".format(self.log_data_loc, now, agent.name))
                     df['Date'] = pd.to_datetime(df['Date'])#.dt.date
                     df = df[df['Date'].dt.date > self.processor.close_matrix.index[0]]
                     df['Daily Returns'] = df['Current Portfolio Value'].pct_change()*100
 
-
-                    #init_val = df['Close'].values[0]
-
-                    #df['CRet'] = df['Close'].apply(lambda x: ((x-init_val)/init_val)*100)
-
                     if(self.plot1):
                         self.p.line(df['Date'], df['Cumulative Portfolio Return'], 
-                                    color=a.color, alpha=0.5, legend_label=a.name)
+                        color=agent.color, alpha=0.5, legend_label=agent.name)
                         push_notebook(handle=self.target)
-                    
+
                     if(self.plot2):
-                        self.p2.line(df['Date'], df['Daily Returns'], color=a.color, alpha=0.5, 
-                                    legend_label=a.name)
+                        self.p2.line(df['Date'], df['Daily Returns'], color=agent.color, alpha=0.5, 
+                        legend_label=agent.name)
                         push_notebook(handle=self.target2)
 
+                self.env.current_date += 1
 
-                    time.sleep(0.25)
+                time.sleep(0.1)
+                # if(self.env.is_reallocation_day()):
+
+                #     allocation_data = self.env.load_lookback_data()
+                #     a.allocate_portfolio(allocation_data)
+                #     a.compute_allocation_orders()
+                #     a.execute_orders(dayend_prices)
+                
+                # a.total_cash += a.portfolio.cash_left
+                # #print("This is cash left: {}".format(a.portfolio.cash_left))
+                # #if(a.portfolio.cash_left )
+                # a.portfolio.cash_left = 0
+                
+                # a.log(self.env.dates[i-1], self.env.is_reallocation_day())
+                # print()
+
+                # now = datetime.now().strftime("%Y-%m-%d")
+                # write_json(a.portfolio_logs, "{}/{}_AGENT_{}_PORTFOLIO_DATA.json".format(self.log_data_loc, now, a.name))
+                # write_json(a.optimizer_logs, "{}/{}_AGENT_{}_OPTIMIZER_DATA.json".format(self.log_data_loc, now, a.name))
+                # write_json(a.exec_order_logs, "{}/{}_AGENT_{}_ORDER_DATA.json".format(self.log_data_loc, now, a.name))
+
+                # df = pd.read_json("{}/{}_AGENT_{}_PORTFOLIO_DATA.json".format(self.log_data_loc, now, a.name))
+                # df['Date'] = pd.to_datetime(df['Date'])#.dt.date
+                # df = df[df['Date'].dt.date > self.processor.close_matrix.index[0]]
+                # df['Daily Returns'] = df['Current Portfolio Value'].pct_change()*100
+
+
+                # #init_val = df['Close'].values[0]
+
+                # #df['CRet'] = df['Close'].apply(lambda x: ((x-init_val)/init_val)*100)
+
+                # if(self.plot1):
+                #     self.p.line(df['Date'], df['Cumulative Portfolio Return'], 
+                #                 color=a.color, alpha=0.5, legend_label=a.name)
+                #     push_notebook(handle=self.target)
+                
+                # if(self.plot2):
+                #     self.p2.line(df['Date'], df['Daily Returns'], color=a.color, alpha=0.5, 
+                #                 legend_label=a.name)
+                #     push_notebook(handle=self.target2)
+
+
+                # time.sleep(0.1)
 
             # self.p2.legend.location = "bottom_left"
             # self.p2.legend.click_policy="hide"
-            self.env.reset()
+            #self.env.reset()
         

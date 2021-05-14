@@ -113,3 +113,10 @@ def return_latest_data(file, date):
     df['Date'] = pd.to_datetime(df['Date']).dt.date
     df = df[df["Date"]==date]
     return df
+
+def clean_dict(x):
+    new_x = {}
+    for k, v in x.items():
+        if(v!=float('nan')):
+            new_x[k] = v
+    return new_x
