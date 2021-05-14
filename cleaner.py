@@ -93,7 +93,8 @@ class Nifty500Cleaner(IndexCleaner):
         """Cleanes OHLC data and stores as static CSVs in ohlc_clean_data directory
         """
         
-        for file in os.listdir(self.ohlc_raw_data):
+        file_list = os.listdir(self.ohlc_raw_data).remove('Index')
+        for file in file_list:
             try:
                 temp_df = pd.read_csv("{}/{}".format(self.ohlc_raw_data,file))
                 if(temp_df.shape[0] != 0):

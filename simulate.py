@@ -237,6 +237,7 @@ class Agent:
         print(json.dumps(portfolio_log, indent = 4))
         print()
         portfolio_log["Portfolio Composition"] = [s.metadata for s in self.portfolio.stocks]
+        portfolio_log['Optimizer Statistics'] = self.portfolio.statistics
 
         self.portfolio_logs.append(portfolio_log)
 
@@ -257,7 +258,7 @@ class Agent:
 
 class Backtesting:
     def __init__(self, start_date=date(1980, 1, 1), end_date=date.today(), 
-                bband_margins=True, bband_ma=20, bband_std_mul=2, 
+                use_margins=False, bband_margins=False, bband_ma=20, bband_std_mul=2, 
                 upper_margin=0.05, lower_margin=0.05, lookback_period=30,
                 rebalance_period=30, proc_ohlc_loc=None, proc_metadata_loc=None,
                 agents=[], benchmarks=[], portfolio_value=1000000, 
@@ -265,6 +266,7 @@ class Backtesting:
                  
         self.start_date = start_date
         self.end_date = end_date
+        self.use_margins = use_margins
         self.bband_margins = bband_margins
         self.bband_ma = bband_ma,
         self.bband_std_mul = bband_std_mul
@@ -320,7 +322,7 @@ class Backtesting:
         
         self.plot1 = True
     
-    def portfolio_plot(self):
+    def daily_plot(self):
         #output_notebook()
         #curdoc().theme = 'dark_minimal'
         self.p2 = figure(width=950, height=600, x_axis_type='datetime', 
@@ -336,7 +338,7 @@ class Backtesting:
             self.p2.line(df['Date'], df['Daily Returns'], color=b['color'], alpha=0.5, 
                     legend_label=b['name'])
 
-        self.p2.legend.location = "bottom_right"
+        self.p2.legend.location = "bottom_left"
         self.p2.legend.click_policy="hide"
         self.p2.xaxis.axis_label = 'Date'
         self.p2.yaxis.axis_label = 'Daily Returns (in %)'
@@ -347,7 +349,7 @@ class Backtesting:
     def agent_exec(self, agent):
 
         #cur_date = self.env.current_date
-        dayend_prices = self.env.load_next_day(agent, use_margins=False,
+        dayend_prices = self.env.load_next_day(agent, use_margins=self.use_margins,
                                             bband_margins=self.bband_margins)
 
         if(self.env.is_reallocation_day()):
@@ -414,7 +416,7 @@ class Backtesting:
 
                 self.env.current_date += 1
 
-                time.sleep(0.1)
+                #time.sleep(0.1)
                 # if(self.env.is_reallocation_day()):
 
                 #     allocation_data = self.env.load_lookback_data()
